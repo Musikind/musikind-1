@@ -1,0 +1,51 @@
+<!--
+  Generated template for the UsingMusicPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!--<ion-header>
+
+  <ion-navbar>
+    <ion-title>usingmusic</ion-title>
+  </ion-navbar>
+
+</ion-header>-->
+
+
+<ion-content>
+  <div class="step_one_heading">
+    <ion-list class="home">
+      <ion-row>
+
+        <ion-col text-center col-6 class="step_one">
+          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png">
+              {{translate.instant("commonBack")}}</a></div>
+          <h1 text-center ion-text>{{translate.instant("startUsingMusictitle")}}</h1>
+          <ion-list radio-group [(ngModel)]="startUsingMusicOption" value="1">
+            <ul>
+              <li>
+                <span>{{translate.instant("startUsingMusicFirstOption")}}</span>
+                <span class="round">
+                  <ion-radio type="radio" color="texasRose" name="demo" value="1" id="radio-one" class="form-radio">
+                  </ion-radio>
+                </span></li>
+
+              <li><span>{{translate.instant("startUsingMusicSecondOption")}}</span>
+                <span class="round">
+                  <ion-radio color="texasRose" type="radio" name="demo" value="2" id="radio-two" class="form-radio"></ion-radio>
+                </span></li>
+              <li><span>{{translate.instant("startUsingMusicThirdOption")}}</span> <span class="round">
+                  <ion-radio type="radio" color="texasRose" name="demo" value="3" id="radio-three" class="form-radio"></ion-radio>
+                </span></li>
+            </ul>
+          </ion-list>
+          <ion-col text-center>
+            <div class="next_bta" (click)="goToMusicBenefit()"><button>{{translate.instant("commonNext")}}</button></div>
+          </ion-col>
+        </ion-col>
+
+      </ion-row>
+    </ion-list>
+  </div>
+</ion-content>

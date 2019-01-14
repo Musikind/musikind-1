@@ -1,0 +1,17 @@
+# Mac
+.DS_Store
+.sourcemaps/
+
+# Node
+npm-debug.log
+/node_modules
+
+# Cordova
+/platforms
+/plugins
+/www/builds/
+.vscode/
+.sourcemaps/
+
+# res
+resources/signing

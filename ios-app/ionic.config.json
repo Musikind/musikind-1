@@ -1,0 +1,7 @@
+{
+  "name": "musikind-ios-app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

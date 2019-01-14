@@ -1,0 +1,41 @@
+<!--
+  Generated template for the TipsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{translate.instant("tabsTitleTips")}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content id="tipsScroll">
+  <div class="tips_one_heading">
+    <ion-grid class="home">
+      <ion-row>
+        <ion-col class="tip_left" col-8>
+          <div class="tips_img"><img src="assets/imgs/guitar.jpg" width="100%"></div>
+          <h1>{{translate.instant("musicProfileTitle")}}</h1>
+          <p>{{translate.instant("musicFirstText")}}.<br><br>
+            {{translate.instant("musicSecondText")}}.<br><br>
+            {{translate.instant("musicThirdText")}}.<br><br>
+            {{translate.instant("musicFourthText")}}.<br><br>
+            {{translate.instant("musicFifthText")}}.<br><br>
+          <strong><i>{{translate.instant("musicSixthText")}}</i></strong>
+          </p>
+        </ion-col>
+        <ion-col class="tip_right" col-3 offset-1>
+          <h2>{{translate.instant("articlesText")}}</h2>
+          <ul>
+            <li><a href="#">{{translate.instant("rightFirstText")}}</a></li>
+            <li><a href="#">{{translate.instant("rightSecondText")}}</a></li>
+              <li><a href="#">{{translate.instant("rightThirdText")}}</a></li>
+          </ul>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+ </div>
+</ion-content>

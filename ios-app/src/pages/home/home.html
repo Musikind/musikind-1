@@ -1,0 +1,40 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<ion-content no-bounce>
+	<ion-list>
+		<ion-row class="home_heading">
+			<ion-col text-center col-12>
+					<h1>{{translate.instant("homeTitle")}}</h1>
+					<a href="#" class="white-btn" (click)="goToMusicPage()">{{translate.instant("homeButton")}}</a>
+			</ion-col>
+		</ion-row>
+		<ion-row class="home_four_icons">
+			<ion-col class="section_one" col-6>
+				<h2>{{translate.instant("homeLeftTitle")}}</h2>
+				<ion-col class="home_icons">
+					<a class="face_icon" href="#" (click)="goToMusicActivity()">
+						<i class="material-icons md-48">face</i><h4> {{translate.instant("homeFirstIcon")}}</h4>
+					</a>
+				</ion-col>
+				<ion-col class="home_icons">
+					<a class="group_icon" href="#" (click)="goToMusicActivity()">
+						<div><img src="assets/imgs/gourp_icon.png" width="100%"></div>
+						<h4>{{translate.instant("homeSecondIcon")}}</h4>
+					</a>
+				</ion-col>
+			</ion-col>
+			<ion-col class="section_one" col-6>
+				<h2> {{translate.instant("homeRightTitle")}} </h2>
+				<ion-col class="home_icons">
+					<a class="music_profile_icon" href="#" (click)="goToMusicProfile()">
+						<i class="material-icons md-48">music_note</i><h4> {{translate.instant("musicProfileTitle")}}</h4>
+					</a>
+				</ion-col>
+				<ion-col class="home_icons">
+					<a class="music_plan_icon" href="#" (click)="goToGettingStarted()">
+						<i class="material-icons md-48">calendar_today</i><h4> {{translate.instant("homeFourthIcon")}}</h4>
+					</a>
+				</ion-col>
+			</ion-col>
+		</ion-row>
+	</ion-list>
+</ion-content>

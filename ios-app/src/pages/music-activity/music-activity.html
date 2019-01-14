@@ -1,0 +1,50 @@
+<!--
+  Generated template for the MusicActivityPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!--<ion-header>
+
+  <ion-navbar>
+    <ion-title>musicactivity</ion-title>
+  </ion-navbar>
+
+</ion-header>-->
+
+
+<ion-content>
+    <div class="step_one_heading">
+      <ion-list class="home">
+        <ion-row>
+          <ion-col col-3></ion-col>
+          <ion-col text-center col-6 class="step_one">
+            <button class="back_btn"  (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</button>
+            <h1 text-center ion-text>{{translate.instant("commonActivityTitle")}}</h1>
+            <ul>
+              <li>{{translate.instant("commonActivityFirstOption")}} <span class="round">
+                <input type="radio" name="demo" value="1" id="radio-one" class="form-radio" />
+                <label for="radio-one"></label>
+  </span></li>
+              <li>{{translate.instant("commonActivitySecondOption")}} <span class="round">
+                <input type="radio" name="demo" value="2" id="radio-two" class="form-radio" checked />
+                <label for="radio-two"></label>
+  </span></li>
+              <li>{{translate.instant("commonActivityThirdOption")}} <span class="round">
+                <input type="radio" name="demo" value="3" id="radio-three" class="form-radio" />
+                <label for="radio-three"></label>
+  </span></li>
+              <li>{{translate.instant("commonActivityFourthOption")}} <span class="right-arrow-icon">
+                  <ion-icon name="arrow-forward" end></ion-icon>
+                  <label for="radio-four"></label>
+            </span></li>
+            </ul>
+            <ion-col text-center>
+                <div class="next_bta" (click)="goToMusicLength()"><button>{{translate.instant("commonNext")}}</button></div>
+            </ion-col>
+          </ion-col>
+          <ion-col col-3></ion-col>
+        </ion-row>
+      </ion-list>
+    </div>
+    </ion-content>
