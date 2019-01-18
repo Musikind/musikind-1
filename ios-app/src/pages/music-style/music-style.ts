@@ -1,6 +1,7 @@
 import { Component, Injectable } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import {LibraryPage} from '../library/library';
 
 /**
  * Generated class for the MusicStylePage page.
@@ -27,6 +28,14 @@ export class MusicStylePage {
 
   closeModal() {
     this.navCtrl.pop();
+  }
+  goToLibrary(){
+    this.navCtrl.parent.select(1);
+    this.navCtrl.push(LibraryPage, {
+      style : 'Classical', 
+      audio : 'Calm'
+    });
+    this.navCtrl.popToRoot();
   }
 
 }
