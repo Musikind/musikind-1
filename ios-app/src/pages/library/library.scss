@@ -277,12 +277,20 @@ ul.left_btns {
 .audio_top ul li {
     list-style: none;
     display: inline;
-    width: 50%;
+    width: 33%;
     float: left;
     text-align: center;
     -webkit-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.1);
     box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #bfbfbf;
+    border-right: 1px solid #bfbfbf;
+}
+.audio_top ul li:last-child {
+ 
+    display: inline;
+    width: 34%;
+    float: left;
     border-bottom: 1px solid #bfbfbf;
 }
 .audio_top ul li.active{

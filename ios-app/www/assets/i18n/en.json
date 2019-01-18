@@ -6,16 +6,16 @@
     "homeFirstIcon": "One to one",
     "homeSecondIcon": "Group",
     "homeFourthIcon": "Music Plan",
-    "startUsingMusictitle": "How are you using music?",
+    "startUsingMusictitle": "What type of care are you providing?",
     "startUsingMusicFirstOption": "General well-being",
     "startUsingMusicSecondOption": "Close personal care",
-    "startUsingMusicThirdOption": "Support",
+    "startUsingMusicThirdOption": "Support with dining",
     "commonNext": "Next",
     "commonBack": "Back",
     "startMusicBenefitTitle": "What is the main benefit music can bring?",
     "startMusicBenefitFirstOption": "Calm",
     "startMusicBenefitSecondOption": "Stimulation",
-    "startMusicBenefitThirdOption": "Focus",
+    "startMusicBenefitThirdOption": "Concentration",
     "commonMusicStyleTitle": "Select a music style",
     "commonMusicStyleFirstOption": "Classical",
     "commonMusicStyleSecondOption": "Traditional Songs",
@@ -76,5 +76,12 @@
     "schedulingWeekTitle": "Scheduling into the week",
     "schedulingWeekFirstText": "Now add the numbers corresponding to the 'Uses of music' to the days and times when it is best to offer them.",
     "schedulingWeekSecondText": "Think about the times of day that are best for the individual. Are there any times when they are alone in their room for long periods? Or a time of day the person is more likely to become unsettled?",
-    "schedulingWeekThirdText": "Click Next when you have finished."
+    "schedulingWeekThirdText": "Click Next when you have finished.",
+    "library":{
+        "title": "Library", 
+        "items" : {
+            "Items_one" : ["Classical", "Traditional Songs", "Popular Music"], 
+            "Items_two" : ["Calm", "Stimulating", "Concentration"]
+        }
+    }
 }   

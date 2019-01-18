@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 /*
  * Generated class for the LibraryPage page.
@@ -9,13 +10,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  */
 
 @IonicPage()
+@Injectable()
 @Component({
     selector: 'page-library',
     templateUrl: 'library.html',
 
 })
 export class LibraryPage {
-
     items_one = [
         { id: 1, name: 'Classical', active: true },
         { id: 2, name: 'Traditional Songs', active: false },
@@ -33,7 +34,8 @@ export class LibraryPage {
     }
     items_two = [
         { id: 1, name: 'Calm', active: true },
-        { id: 2, name: 'Stimulating and Focus', active: false },
+        { id: 2, name: 'Stimulation', active: false },
+        { id: 3, name: 'Concentration', active: false },
     ];
     item_two:any; 
     toggleClass_two(item) {
@@ -45,16 +47,13 @@ export class LibraryPage {
             }
         });
     }
-
-
-
-
     tracks: any;
     currentTrack: any;
     activeProgress: any;
     progressInterval: any;
 
-    constructor(public navCtrl: NavController, public navParams: NavParams) {
+    constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule) {
+        this.translate.setDefaultLang('en');
         this.tracks = this.generateTracks();
         this.currentTrack = this.tracks[0];
         this.item_two = this.items_two[0];

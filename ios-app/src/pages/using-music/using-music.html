@@ -25,19 +25,23 @@
           <ion-list radio-group [(ngModel)]="startUsingMusicOption" value="1">
             <ul>
               <li>
-                <span>{{translate.instant("startUsingMusicFirstOption")}}</span>
-                <span class="round">
-                  <ion-radio type="radio" color="texasRose" name="demo" value="1" id="radio-one" class="form-radio">
-                  </ion-radio>
-                </span></li>
-
-              <li><span>{{translate.instant("startUsingMusicSecondOption")}}</span>
-                <span class="round">
-                  <ion-radio color="texasRose" type="radio" name="demo" value="2" id="radio-two" class="form-radio"></ion-radio>
-                </span></li>
-              <li><span>{{translate.instant("startUsingMusicThirdOption")}}</span> <span class="round">
-                  <ion-radio type="radio" color="texasRose" name="demo" value="3" id="radio-three" class="form-radio"></ion-radio>
-                </span></li>
+                {{translate.instant("startUsingMusicFirstOption")}} <ion-icon name="help-circle" mode="md" (click)="showMessage()" ></ion-icon> &nbsp; <span class="round">
+                  <input type="radio" name="demo" value="1" id="radio-one" class="form-radio" />
+                  <label for="radio-one"></label>
+                </span>
+              </li>
+              <li>
+                {{translate.instant("startUsingMusicSecondOption")}}  <ion-icon name="help-circle" mode="md" (click)="showMessage()"></ion-icon> &nbsp; <span class="round">
+                  <input type="radio" name="demo" value="2" id="radio-two" class="form-radio" checked />
+                  <label for="radio-two"></label>
+                </span>
+              </li>
+              <li>
+                {{translate.instant("startUsingMusicThirdOption")}}  <ion-icon name="help-circle" mode="md" (click)="showMessage()" ></ion-icon> &nbsp; <span class="round">
+                  <input type="radio" name="demo" value="3" id="radio-three" class="form-radio" />
+                  <label for="radio-three"></label>
+                </span>
+              </li>
             </ul>
           </ion-list>
           <ion-col text-center>

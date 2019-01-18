@@ -2,6 +2,7 @@ import { Component, Injectable } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { MusicBenefitPage } from '../music-benefit/music-benefit';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { ToastController } from 'ionic-angular';
 
 /**
  * Generated class for the UsingMusicPage page.
@@ -18,7 +19,7 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
 })
 export class UsingMusicPage {
   startUsingMusicOption:number;
-  constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule, public toastCtrl: ToastController) {
     this.startUsingMusicOption = 1; 
     /*translate.addLangs(["en"]);
       //translate.addLangs(["en", "pt"]);
@@ -33,12 +34,23 @@ export class UsingMusicPage {
     console.log('ionViewDidLoad UsingMusicPage');
   }
 
+  presentToast() {
+    const toast = this.toastCtrl.create({
+      message: 'A default toast message',
+      duration: 3000
+    });
+    toast.present();
+  }
+
   closeModal() {
     this.navCtrl.pop();
   }
 
   goToMusicBenefit() {
     this.navCtrl.push(MusicBenefitPage);
+  }
+  showMessage(){
+    this.presentToast();
   }
 
 }
