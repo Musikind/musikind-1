@@ -1,6 +1,8 @@
 import { Component, Injectable } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import {UsingMusicPage} from '../using-music/using-music';
+
 
 /*
  * Generated class for the TipsPage page.
@@ -24,5 +26,9 @@ export class TipsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad TipsPage');
   }
+  goToUsingMusicInPersonalCare(){
+    this.navCtrl.push(UsingMusicPage)
+  }
+  
 
 }

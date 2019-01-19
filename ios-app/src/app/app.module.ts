@@ -29,8 +29,8 @@ import { SchedulingWeekPage } from '../pages/scheduling-week/scheduling-week';
 import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
 import { AudioProvider } from '../providers/audio/audio';
 import { SmartAudioProvider } from '../providers/smart-audio/smart-audio';
-
-
+import {TooltipsModule} from 'ionic-tooltips'; 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -73,7 +73,10 @@ export function HttpLoaderFactory(http: HttpClient) {
                 deps: [HttpClient]
             }
         }),
-    IonicModule.forRoot(MyApp)
+        BrowserAnimationsModule,
+        IonicModule.forRoot(MyApp),
+    TooltipsModule.forRoot(),
+    
   ],
   bootstrap: [IonicApp],
   entryComponents: [

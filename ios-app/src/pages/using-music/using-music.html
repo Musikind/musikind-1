@@ -25,19 +25,19 @@
           <ion-list radio-group [(ngModel)]="startUsingMusicOption" value="1">
             <ul>
               <li>
-                {{translate.instant("startUsingMusicFirstOption")}} <ion-icon name="help-circle" mode="md" (click)="showMessage()" ></ion-icon> &nbsp; <span class="round">
+                {{translate.instant("startUsingMusicFirstOption")}}  &nbsp; <ion-icon name="ios-help-circle-outline" color="primary" tooltip=' {{translate.instant("startUsingMusicFirstOption")}}' positionV="bottom" event="click" ></ion-icon>  <span class="round">
                   <input type="radio" name="demo" value="1" id="radio-one" class="form-radio" />
                   <label for="radio-one"></label>
                 </span>
               </li>
               <li>
-                {{translate.instant("startUsingMusicSecondOption")}}  <ion-icon name="help-circle" mode="md" (click)="showMessage()"></ion-icon> &nbsp; <span class="round">
+                {{translate.instant("startUsingMusicSecondOption")}}   &nbsp; <ion-icon name="ios-help-circle-outline" color="primary"  tooltip='{{translate.instant("startUsingMusicSecondOption")}}' positionV="top"event="click" ></ion-icon>  <span class="round">
                   <input type="radio" name="demo" value="2" id="radio-two" class="form-radio" checked />
                   <label for="radio-two"></label>
                 </span>
               </li>
               <li>
-                {{translate.instant("startUsingMusicThirdOption")}}  <ion-icon name="help-circle" mode="md" (click)="showMessage()" ></ion-icon> &nbsp; <span class="round">
+                {{translate.instant("startUsingMusicThirdOption")}}  &nbsp; <ion-icon name="ios-help-circle-outline"  color="primary" tooltip='{{translate.instant("startUsingMusicThirdOption")}}' positionV="top" event="click"></ion-icon>  <span class="round">
                   <input type="radio" name="demo" value="3" id="radio-three" class="form-radio" />
                   <label for="radio-three"></label>
                 </span>
