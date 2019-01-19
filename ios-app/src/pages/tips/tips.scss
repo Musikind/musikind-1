@@ -84,7 +84,7 @@ body, html {
     width: 400px;
     margin: auto;
     border-radius: 4px;
-    padding: 40px 90px;
+    padding: 30px;
     position: relative;
 }
 .step_one h1 {
@@ -103,7 +103,7 @@ body, html {
     border-bottom: 2px solid #eee;
 }
 .next_bta {
-    margin-top: 40px;
+    margin: 15px 0px;
 }
 .next_bta button {
     background: #ffa455;
@@ -207,6 +207,7 @@ label
     list-style: none;
     line-height: 2em;
     padding-top: 10px;
+    cursor: pointer;
 }
 .tip_right ul li a {
     text-decoration: none;

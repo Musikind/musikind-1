@@ -85,10 +85,10 @@ body, html {
 }
 .step_one {
     background: #fff;
-    width: 400px;
+    width: 500px;
     margin: auto;
     border-radius: 4px;
-    padding: 40px 90px;
+    padding: 30px;
     position: relative;
 }
 .step_one h1 {
@@ -107,7 +107,7 @@ body, html {
     border-bottom: 2px solid #eee;
 }
 .next_bta {
-    margin-top: 40px;
+    margin: 15px 0px;
 }
 .next_bta button {
     background: #ffa455;
@@ -220,10 +220,7 @@ label
         display: block;
     }
     ion-list.home.list.list-ios {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        position: relative;
     }
 }
 
@@ -253,10 +250,7 @@ label
         display: block;
     }
     ion-list.home.list.list-ios {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        position: relative;
     }
 }
 @media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait) {
@@ -273,10 +267,7 @@ label
         display: block;
     }
     ion-list.home.list.list-ios {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        position: relative;
     }
 }
 @media all and (device-width: 1366px) and (device-height: 1024px) and (orientation:landscape) {
@@ -293,10 +284,7 @@ label
         display: block;
     }
     ion-list.home.list.list-ios {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        position: relative;
     }
 }
 

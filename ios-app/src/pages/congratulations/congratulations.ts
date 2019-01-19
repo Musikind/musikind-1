@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import {MusicProfilePage} from '../music-profile/music-profile'; 
 
 /**
  * Generated class for the CongratulationsPage page.
@@ -30,6 +31,10 @@ export class CongratulationsPage {
 
   goToHomePage() {
     this.navCtrl.popToRoot();
+    this.navCtrl.parent.select(0);
   }
-
+  goToCreateMusicProfilePage() {
+    this.navCtrl.popToRoot();
+    this.navCtrl.push(MusicProfilePage);
+  }
 }

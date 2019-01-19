@@ -18,7 +18,7 @@
     <ion-list class="home">
       <ion-row>
         <ion-col col-3></ion-col>
-        <ion-col text-center col-6 class="step_one">
+        <ion-col text-center class="step_one">
           <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>
           <h1 text-center ion-text>{{translate.instant("schedulingWeekTitle")}}</h1>
           <ion-col col-12 text-left>
@@ -31,7 +31,7 @@
             <p class="first-txt">{{translate.instant("schedulingWeekThirdText")}}</p>
           </ion-col>
           <ion-col text-center>
-            <div class="next_bta"><button>{{translate.instant("commonNext")}}</button></div>
+            <div class="next_bta" (click)="goToCongratulation()" ><button>{{translate.instant("commonNext")}}</button></div>
           </ion-col>
         </ion-col>
         <ion-col col-3></ion-col>

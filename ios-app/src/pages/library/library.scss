@@ -84,10 +84,10 @@ body, html {
 }
 .step_one {
     background: #fff;
-    width: 400px;
+    width: 500px;
     margin: auto;
     border-radius: 4px;
-    padding: 40px 90px;
+    padding: 30px;
     position: relative;
 }
 .step_one h1 {
@@ -106,7 +106,7 @@ body, html {
     border-bottom: 2px solid #eee;
 }
 .next_bta {
-    margin-top: 40px;
+    margin: 15px 0px;
 }
 .next_bta button {
     background: #ffa455;
@@ -596,8 +596,14 @@ ion-footer {
 .menu_icon ul li { margin: 4px 16px;}
 }
 
-
-
+.valume-right{
+    position: absolute;
+    right: 15px;
+}
+.valume-left{
+    position: absolute;
+    left: 15px;
+}
     
 
 

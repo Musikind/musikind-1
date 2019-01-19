@@ -87,7 +87,15 @@ export class LibraryPage {
         console.log('play track');
         // First stop any currently playing tracks
         if (this.currentTrack) {
-            this.pauseTrack(this.currentTrack);
+            if(track === this.currentTrack){
+                track.playing = true;
+            }else {
+                this.pauseTrack(this.currentTrack);
+                this.currentTrack.progress = 0; 
+                this.currentTrack.laps
+
+            }
+           
             track.playing = true;
             this.currentTrack = track;
         }

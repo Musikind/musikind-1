@@ -2,6 +2,7 @@ import { Component, Injectable } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import {UsingMusicPage} from '../using-music/using-music';
+import {MusicActivityPage} from '../music-activity/music-activity';
 
 
 /*
@@ -29,6 +30,8 @@ export class TipsPage {
   goToUsingMusicInPersonalCare(){
     this.navCtrl.push(UsingMusicPage)
   }
-  
+  goToUsingMusicActivity(){
+    this.navCtrl.push(MusicActivityPage);
+  }
 
 }

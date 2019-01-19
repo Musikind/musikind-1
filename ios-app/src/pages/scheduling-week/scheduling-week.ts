@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import {CongratulationsPage} from '../congratulations/congratulations';
 
 /**
  * Generated class for the SchedulingWeekPage page.
@@ -26,6 +27,9 @@ export class SchedulingWeekPage {
 
   closeModal() {
     this.navCtrl.pop();
+  }
+  goToCongratulation(){
+    this.navCtrl.push(CongratulationsPage);
   }
 
 }

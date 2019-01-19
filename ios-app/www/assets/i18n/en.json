@@ -83,5 +83,14 @@
             "Items_one" : ["Classical", "Traditional Songs", "Popular Music"], 
             "Items_two" : ["Calm", "Stimulating", "Concentration"]
         }
+    }, 
+    "Congratulations" : {
+        "title": "Congratulations", 
+        "text1" : "This music plan is now complete. All of the uses of music suggessted can be delivered with this app.", 
+        "text2" : "You may also want to create a music profile for this person and use this to help music suggesations", 
+        "Buttons" : {
+            "CreateMusicProfile" : "CREATE MUSIC PROFILE", 
+            "BackHome" : "Return Home"
+        }
     }
 }   

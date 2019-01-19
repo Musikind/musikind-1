@@ -18,7 +18,7 @@ import { MusicActivityPage } from '../pages/music-activity/music-activity';
 import { MusicLengthPage } from '../pages/music-length/music-length';
 import { SelectMusicStylePage } from '../pages/select-music-style/select-music-style';
 import { MusicProfilePage } from '../pages/music-profile/music-profile';
-
+import { CongratulationsPage } from '../pages/congratulations/congratulations';
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { HttpClient, HttpClientModule } from "@angular/common/http"; 
@@ -60,8 +60,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     SettingAimPage,
     MusicSectionPage,
     SchedulingWeekPage,
-    ProgressBarComponent
-    
+    ProgressBarComponent,
+    CongratulationsPage
   ],
   imports: [
     BrowserModule,
@@ -96,7 +96,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     GettingStartedPage,
     SettingAimPage,
     MusicSectionPage,
-    SchedulingWeekPage
+    SchedulingWeekPage,
+    CongratulationsPage
   ],
   providers: [
     StatusBar,

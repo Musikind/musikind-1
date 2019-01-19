@@ -84,10 +84,10 @@ body, html {
 }
 .step_one {
     background: #fff;
-    width: 400px;
+    width: 500px;
     margin: auto;
     border-radius: 4px;
-    padding: 40px 90px;
+    padding: 30px;
     position: relative;
 }
 .step_one h1 {
@@ -110,7 +110,7 @@ body, html {
     float: left;
 }
 .next_bta {
-    margin-top: 40px;
+    margin: 15px 0px;
 }
 .next_bta button {
     background: #ffa455;
@@ -210,8 +210,8 @@ label
     ion-list.home.list.list-ios {
         position: absolute;
         left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        top: 40%;
+        transform: translateX(-50%) translateY(-40%);
     }
 }
 @media(max-width: 768px){
@@ -231,8 +231,8 @@ label
     ion-list.home.list.list-ios {
         position: absolute;
         left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        top: 40%;
+        transform: translateX(-50%) translateY(-40%);
     }
 }
 @media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait) {
@@ -243,10 +243,7 @@ label
         top: 0;
     }
     ion-list.home.list.list-ios {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        position: relative;
     }
 }
 @media all and (device-width: 1366px) and (device-height: 1024px) and (orientation:landscape) {
@@ -259,8 +256,8 @@ label
     ion-list.home.list.list-ios {
         position: absolute;
         left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        top: 40%;
+        transform: translateX(-50%) translateY(-40%);
     }
 }
 

@@ -85,10 +85,10 @@ body, html {
 }
 .step_one {
     background: #fff;
-    width: 400px;
+    width: 500px;
     margin: auto;
     border-radius: 4px;
-    padding: 40px 90px;
+    padding: 30px;
     position: relative;
 }
 .step_one h1 {
@@ -107,7 +107,7 @@ body, html {
     border-bottom: 2px solid #eee;
 }
 .next_bta {
-    margin-top: 40px;
+    margin: 15px 0px;
 }
 .next_bta button {
     background: #ffa455;
@@ -282,7 +282,7 @@ label
         }
         .step_one {
             width: 100%;
-            padding: 9px 7%;
+            padding: 30px;
             max-width: 61%;
             flex: 100%;
         }
@@ -314,7 +314,7 @@ label
         }
         .step_one {
             width: 100%;
-            padding: 40px 7%;
+            padding: 30px;
             max-width: 61%;
             flex: 100%;
         }
@@ -364,7 +364,7 @@ label
         }
         .step_one {
             width: 100%;
-            padding: 40px 7%;
+            padding: 30px 7%;
             max-width: 86%;
             flex: 100%;
         }
@@ -387,7 +387,7 @@ label
         }
         .step_one {
             width: 100%;
-            padding: 40px 7%;
+            padding: 30px 7%;
             max-width: 86%;
             -webkit-box-flex: 100%;
             -webkit-flex: 100%;
