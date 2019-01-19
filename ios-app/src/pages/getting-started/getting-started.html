@@ -14,28 +14,33 @@
 
 
 <ion-content>
-  <div class="step_one_heading">
-    <ion-list class="home">
-      <ion-row>
-        <div text-center class="step_one">
-          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>
-          <div text-left>
-              <h1 text-center ion-text>{{translate.instant("gettingTitle")}}</h1>
-            <p class="first-txt">{{translate.instant("gettingFirstText")}}</p>
-            <p class="first-txt">{{translate.instant("gettingSecondText")}}</p>
-          </div>
-          <ion-item class="txt-block-email">
-            <ion-input type="email" placeholder="{{translate.instant('commonEmailText')}}"></ion-input>
-            <button ion-button color="dark" class="btn-color" clear item-right>{{translate.instant("commonSend")}}</button>
-          </ion-item>
-          <ion-col text-center>
-            <div class="next_bta" (click)="goToSettingAim()"><button>{{translate.instant("commonNext")}}</button></div>
+    <div class="step_one_heading">
+      <ion-list class="home">
+        <ion-row>
+          <ion-col col-3></ion-col>
+          <ion-col text-center class="step_one">
+            <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>
+            <h1 text-center ion-text>{{translate.instant("gettingTitle")}}</h1>
+            <ion-col col-12 text-left>
+              <p class="first-txt">{{translate.instant("gettingFirstText")}}</p>
+            </ion-col>
+            <ion-col col-12 text-left>
+              <p class="first-txt">{{translate.instant("gettingSecondText")}}</p>
+            </ion-col>
+            <ion-item class="txt-block-email">
+              <ion-input type="email" placeholder="{{translate.instant('commonEmailText')}}"></ion-input>
+              <button ion-button color="dark" class="btn-color" clear item-right>{{translate.instant("commonSend")}}</button>
+            </ion-item>
+            <ion-col text-center>
+              <div class="next_bta" (click)="goToSettingAim()"><button>{{translate.instant("commonNext")}}</button></div>
+            </ion-col>
+            <ion-col col-12 class="bottom-txt">
+              <p>{{translate.instant("commonStoreText")}}.</p>
+            </ion-col>
           </ion-col>
-          <ion-col col-12 class="bottom-txt">
-            <p>{{translate.instant("commonStoreText")}}.</p>
-          </ion-col>
-        </div>
-      </ion-row>
-    </ion-list>
-  </div>
-  </ion-content>
+          <ion-col col-3></ion-col>
+        </ion-row>
+      </ion-list>
+    </div>
+    </ion-content>
+  

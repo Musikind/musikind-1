@@ -208,10 +208,7 @@ label
         top: 0;
     }
     ion-list.home.list.list-ios {
-        position: absolute;
-        left: 50%;
-        top: 40%;
-        transform: translateX(-50%) translateY(-40%);
+        position: relative;
     }
 }
 @media(max-width: 768px){
@@ -229,10 +226,7 @@ label
         top: 0;
     }
     ion-list.home.list.list-ios {
-        position: absolute;
-        left: 50%;
-        top: 40%;
-        transform: translateX(-50%) translateY(-40%);
+        position: relative;
     }
 }
 @media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait) {
@@ -254,10 +248,7 @@ label
         top: 0;
     }
     ion-list.home.list.list-ios {
-        position: absolute;
-        left: 50%;
-        top: 40%;
-        transform: translateX(-50%) translateY(-40%);
+        position: relative;
     }
 }
 

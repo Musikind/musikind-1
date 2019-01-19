@@ -34,7 +34,7 @@ export class CongratulationsPage {
     this.navCtrl.parent.select(0);
   }
   goToCreateMusicProfilePage() {
-    this.navCtrl.popToRoot();
+   // this.navCtrl.popToRoot();
     this.navCtrl.push(MusicProfilePage);
   }
 }
