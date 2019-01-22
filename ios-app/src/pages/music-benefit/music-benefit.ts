@@ -1,8 +1,8 @@
 import { Component, Injectable } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, PopoverController } from 'ionic-angular';
 import { MusicStylePage } from '../music-style/music-style';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
-import { ToastController } from 'ionic-angular';
+import { PopOverComponent } from '../../components/pop-over/pop-over';
 /**
  * Generated class for the MusicBenefitPage page.
  *
@@ -18,7 +18,7 @@ import { ToastController } from 'ionic-angular';
 })
 export class MusicBenefitPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule,  public toastCtrl: ToastController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule,  public popoverCtrl: PopoverController) {
     this.translate.setDefaultLang('en');
    }
 
@@ -34,16 +34,10 @@ export class MusicBenefitPage {
     this.navCtrl.push(MusicStylePage);
   }
 
-  presentToast() {
-    const toast = this.toastCtrl.create({
-      message: 'A default toast message',
-      duration: 3000
+  presentPopover(myEvent) {
+    let popover = this.popoverCtrl.create(PopOverComponent);
+    popover.present({
+      ev: myEvent
     });
-    toast.present();
-  }
-
-
-  showMessage(){
-    this.presentToast();
   }
 }

@@ -31,6 +31,7 @@ import { AudioProvider } from '../providers/audio/audio';
 import { SmartAudioProvider } from '../providers/smart-audio/smart-audio';
 import {TooltipsModule} from 'ionic-tooltips'; 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PopOverComponent } from '../components/pop-over/pop-over';
 
 
 
@@ -61,7 +62,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     MusicSectionPage,
     SchedulingWeekPage,
     ProgressBarComponent,
-    CongratulationsPage
+    CongratulationsPage,
+    PopOverComponent
   ],
   imports: [
     BrowserModule,
@@ -97,7 +99,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     SettingAimPage,
     MusicSectionPage,
     SchedulingWeekPage,
-    CongratulationsPage
+    CongratulationsPage,
+    PopOverComponent
   ],
   providers: [
     StatusBar,
