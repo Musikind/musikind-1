@@ -23,7 +23,7 @@
           <h1 text-center ion-text>{{translate.instant("commonMusicStyleTitle")}}</h1>
           <ul>
               <li *ngFor="let item of items_one; let i = index" >{{ item.name }}
-                  <span class="round">  <input type="radio" name="demo" value="{{ i }}" id="radio-one" class="form-radio" /> <label for="radio-one" ></label> </span>
+                  <span class="round">  <input type="radio" name="demo" value="{{ i }}" id="radio-one" class="form-radio" [checked]=" (item.active)"  /> <label for="radio-one" ></label> </span>
               </li>
           </ul>
           <ion-col text-center>
