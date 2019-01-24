@@ -61,7 +61,9 @@ body, html {
 .home_icons i {border-radius: 100%;padding:30px; margin-bottom: 20px; font-size: 46px; color:#fff;}
 .home_icons a{text-decoration: none;}
 .face_icon i {background:#C3618C;}
-.txt-bottom {color: #fff;}
+.txt-bottom {color: #fff;
+    font-size: 16px !important; 
+}
 .group_icon div {
     background: #FF8F98;
     border-radius: 100%;
@@ -99,7 +101,7 @@ body, html {
 }
 .step_one ul li {
     list-style: none;
-    padding: 22px 0px;
+    padding: 16px 0px;
     text-align: left;
     font-size: 16px;
     font-weight: bold;
@@ -135,7 +137,7 @@ cursor: pointer;
      position: relative;
      background-color: #f0f1f7;
      color: #fff;
-     top: 10px;
+     top: 0px;
      height: 24px;
      width: 24px;
      border: 1px solid #eee;

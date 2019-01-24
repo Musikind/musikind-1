@@ -21,8 +21,8 @@
     "commonMusicStyleSecondOption": "Traditional Songs",
     "commonMusicStyleThirdOption": "Popular Music",
     "commonMusicPlay": "Play",
-    "startMusicStyleBottomTextOne": "View tips on",
-    "startMusicStyleBottomTextTwo": "close personal care",
+    "startMusicStyleBottomTextOne": "View tips",
+    "startMusicStyleBottomTextTwo": "on close personal care",
     "startMusicStyleBottomTextThree": "for",
     "startMusicStyleBottomTextFour": "stimulation",
     "commonActivityTitle": "Choose Activity",
@@ -33,7 +33,7 @@
     "commonActivityLengthTitle": "Choose activity length",
     "commonActivityLengthFirstOption": "25 minutes",
     "commonActivityLengthSecondOption": "45 minutes",
-    "commonMusicStylebottomText": "View tips on group activities for relaxation",
+    "commonMusicStylebottomText": "on group activities for relaxation",
     "musicProfileTitle": "Music Profile",
     "musicProfileFirstText": "Please enter your email below to receive a Music Profile template",
     "musicProfileSecondText": "Need some help? Learn about the benefits of creating a music profile",
@@ -80,8 +80,18 @@
     "library":{
         "title": "Library", 
         "items" : {
-            "Items_one" : ["Classical", "Traditional Songs", "Popular Music"], 
-            "Items_two" : ["Calm", "Stimulating", "Concentration"]
+           "Items_one" : [
+            { "id": 1, "name": "Classical", "active": true },
+            { "id": 2, "name": "Traditional", "active": false },
+            { "id": 3,  "name": "Traditional (with lyrics reminder)", "active": false },
+            { "id": 4,  "name": "Popular", "active": false },
+            { "id": 5,  "name": "Popular (with lyrics reminder)", "active": false },
+            { "id": 6,  "name": "Minimal singing", "active": false },
+            { "id": 7,  "name": "Minimal (with lyrics reminder)", "active": false }
+        ], 
+            "items_two" : [{ "id": 1,"name": "Calm","active": true },
+                { "id": 2,"name": "Stimulation","active": false },
+                { "id": 3,"name": "Concentration","active": false }]
         }
     }, 
     "Congratulations" : {

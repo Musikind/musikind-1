@@ -17,11 +17,7 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 })
 export class LibraryPage {
-    items_one = [
-        { id: 1, name: 'Classical', active: true },
-        { id: 2, name: 'Traditional Songs', active: false },
-        { id: 3, name: 'Populer Music', active: false },
-    ];
+    items_one: any = [];
     audioProgress: number;
     toggleClass_one(item) {
         Object.keys(this.items_one).forEach(key => {
@@ -32,12 +28,8 @@ export class LibraryPage {
             }
         });
     }
-    items_two = [
-        { id: 1, name: 'Calm', active: true },
-        { id: 2, name: 'Stimulation', active: false },
-        { id: 3, name: 'Concentration', active: false },
-    ];
-    item_two:any; 
+    items_two:any = [];
+    item_two:any=[]; 
     toggleClass_two(item) {
         Object.keys(this.items_two).forEach(key => {
             if (this.items_two[key].id != item.id) {
@@ -54,9 +46,12 @@ export class LibraryPage {
 
     constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule) {
         this.translate.setDefaultLang('en');
+        this.items_one = this.translate.instant('library.items.Items_one');
+        this.items_two = this.translate.instant('library.items.items_two');
         this.tracks = this.generateTracks();
         this.currentTrack = this.tracks[0];
-        this.item_two = this.items_two[0];
+        this.item_two = this.items_two[0];      
+//        alert(title);
     }
     generateTracks() {
         let tracks = [];

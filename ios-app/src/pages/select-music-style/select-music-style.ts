@@ -17,9 +17,11 @@ import {LibraryPage} from '../library/library';
   templateUrl: 'select-music-style.html',
 })
 export class SelectMusicStylePage {
-
+  items_one:any = [];
   constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule) {
     this.translate.setDefaultLang('en');
+    this.items_one = this.translate.instant('library.items.Items_one');
+    //alert('items ' + this.items[0].name);
   }
 
   ionViewDidLoad() {

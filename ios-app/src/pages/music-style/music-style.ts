@@ -17,9 +17,13 @@ import {LibraryPage} from '../library/library';
   templateUrl: 'music-style.html',
 })
 export class MusicStylePage {
-
+  commonMusicStyle: string; 
+  commonMusicStyles: any = ["0", "1", "2"]; 
+  items_one:any = [];
   constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule) {
     this.translate.setDefaultLang('en');
+    this.items_one = this.translate.instant('library.items.Items_one');
+    this.commonMusicStyle = "0"; 
   }
 
   ionViewDidLoad() {
