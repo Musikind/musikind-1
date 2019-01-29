@@ -17,9 +17,12 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
   templateUrl: 'music-length.html',
 })
 export class MusicLengthPage {
-
+  customMusicLength: boolean = false; 
+  isGroup:boolean = false; 
   constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule) {
     this.translate.setDefaultLang('en');
+    this.customMusicLength = this.navParams.data.updateMusicStyle; 
+    this.isGroup = this.navParams.data.isGroup; 
   }
 
   ionViewDidLoad() {
@@ -29,7 +32,15 @@ export class MusicLengthPage {
     this.navCtrl.pop();
   }
   goToSelectMusicStyle() {
-    this.navCtrl.push(SelectMusicStylePage);
+    if(this.customMusicLength){
+        this.navCtrl.push(SelectMusicStylePage, { 
+          "items_one" : this.isGroup?  this.translate.instant('MusicLength.MusicStyleGroup.Items_one'): this.translate.instant('MusicLength.MusicStyle.Items_one')
+        });
+    }
+    else {
+        this.navCtrl.push(SelectMusicStylePage);  
+    }
+    
   }
 
 }

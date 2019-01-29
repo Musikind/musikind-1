@@ -20,8 +20,11 @@ export class SelectMusicStylePage {
   items_one:any = [];
   constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule) {
     this.translate.setDefaultLang('en');
-    this.items_one = this.translate.instant('library.items.Items_one');
-    //alert('items ' + this.items[0].name);
+    if(navParams.data && navParams.data.items_one){
+      this.items_one = navParams.data.items_one;
+    }else {
+        this.items_one = this.translate.instant('MusicBenefit.MusicStyle.Items_one');
+    }
   }
 
   ionViewDidLoad() {

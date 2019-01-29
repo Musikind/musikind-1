@@ -22,7 +22,12 @@ export class MusicStylePage {
   items_one:any = [];
   constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule) {
     this.translate.setDefaultLang('en');
-    this.items_one = this.translate.instant('library.items.Items_one');
+    if(navParams.data){
+      this.items_one = navParams.data.items_one;
+    }else {
+      this.items_one = this.translate.instant('library.items.items_two');
+    }
+  
     this.commonMusicStyle = "0"; 
   }
 

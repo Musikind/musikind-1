@@ -25,6 +25,10 @@
     "startMusicStyleBottomTextTwo": "on close personal care",
     "startMusicStyleBottomTextThree": "for",
     "startMusicStyleBottomTextFour": "stimulation",
+    "CommonActivity": {
+        "Title": "Choose Activity", 
+        "Choices": ["Singing", "Instrument Playing", "Relaxation"]
+    }, 
     "commonActivityTitle": "Choose Activity",
     "commonActivityFirstOption": "Singing",
     "commonActivitySecondOption": "Instrument Playing",
@@ -77,6 +81,39 @@
     "schedulingWeekFirstText": "Now add the numbers corresponding to the 'Uses of music' to the days and times when it is best to offer them.",
     "schedulingWeekSecondText": "Think about the times of day that are best for the individual. Are there any times when they are alone in their room for long periods? Or a time of day the person is more likely to become unsettled?",
     "schedulingWeekThirdText": "Click Next when you have finished.",
+    "MusicBenefit" : {
+        "Title": "What type of care are you providing?",
+        "MusicStyle": {
+            "Items_one" : [
+                { "id": 1, "name": "Classical", "active": true },
+                { "id": 2, "name": "Traditional", "active": false },
+                { "id": 4,  "name": "Popular", "active": false }
+            ]
+        }
+    }, 
+    "MusicLength" : {
+        "Title": "Choose activity length?",
+        "MusicStyle": {
+            "Items_one" : [
+                { "id": 1, "name": "Classical", "active": true },
+                { "id": 2, "name": "Traditional", "active": false },
+                { "id": 3,  "name": "Traditional (with lyrics reminder)", "active": false },
+                { "id": 4,  "name": "Popular", "active": false },
+                { "id": 5,  "name": "Popular (with lyrics reminder)", "active": false },
+                { "id": 6,  "name": "Minimal singing", "active": false },
+                { "id": 7,  "name": "Minimal (with lyrics reminder)", "active": false }
+            ]
+        }, 
+        "MusicStyleGroup": {
+            "Items_one" : [
+                { "id": 1, "name": "Classical", "active": true },
+                { "id": 2, "name": "Traditional", "active": false },
+                { "id": 3,  "name": "Traditional (with lyrics reminder)", "active": false },
+                { "id": 4,  "name": "Popular", "active": false },
+                { "id": 5,  "name": "Popular (with lyrics reminder)", "active": false }
+            ]
+        }
+    }, 
     "library":{
         "title": "Library", 
         "items" : {

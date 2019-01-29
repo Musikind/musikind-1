@@ -17,9 +17,13 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
   templateUrl: 'music-activity.html',
 })
 export class MusicActivityPage {
-
+  choices: any = []; 
+  selectedChoice: any = "1";
+  isGroup = false; 
   constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule) {
     this.translate.setDefaultLang('en');
+    this.choices = this.translate.instant('CommonActivity.Choices');
+    this.isGroup = navParams.data.isGroup;  
   }
 
   ionViewDidLoad() {
@@ -29,7 +33,14 @@ export class MusicActivityPage {
     this.navCtrl.pop();
   }
   goToMusicLength() {
-    this.navCtrl.push(MusicLengthPage);
+    let showCustomMusicStyle= false; 
+    if(this.selectedChoice === "Singing"){
+      showCustomMusicStyle =true; 
+    }
+    this.navCtrl.push(MusicLengthPage, {
+      updateMusicStyle : showCustomMusicStyle, 
+      isGroup: this.isGroup 
+    });
   }
 
 }

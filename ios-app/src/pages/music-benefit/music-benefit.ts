@@ -31,7 +31,9 @@ export class MusicBenefitPage {
   }
 
   goToMusicStyle() {
-    this.navCtrl.push(MusicStylePage);
+    this.navCtrl.push(MusicStylePage, {
+        "items_one" : this.translate.instant('MusicBenefit.MusicStyle.Items_one')
+    });
   }
 
   presentPopover(myEvent) {

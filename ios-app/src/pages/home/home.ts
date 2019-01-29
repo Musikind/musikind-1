@@ -30,8 +30,10 @@ export class HomePage {
   goToMusicPage() {
     this.navCtrl.push(UsingMusicPage);
   }
-  goToMusicActivity() {
-    this.navCtrl.push(MusicActivityPage);
+  goToMusicActivity(isGroup: boolean) {
+    this.navCtrl.push(MusicActivityPage, {
+      isGroup : isGroup 
+    });
   }
   goToMusicProfile() {
     this.navCtrl.push(MusicProfilePage);

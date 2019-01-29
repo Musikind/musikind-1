@@ -20,20 +20,16 @@
           <ion-col col-3></ion-col>
           <ion-col text-center class="step_one">
             <button class="back_btn"  (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</button>
-            <h1 text-center ion-text>{{translate.instant("commonActivityTitle")}}</h1>
+            <h1 text-center ion-text>{{translate.instant("CommonActivity.Title")}}</h1>
             <ul>
-              <li>{{translate.instant("commonActivityFirstOption")}} <span class="round">
-                <input type="radio" name="demo" value="1" id="radio-one" class="form-radio" />
-                <label for="radio-one"></label>
-  </span></li>
-              <li>{{translate.instant("commonActivitySecondOption")}} <span class="round">
-                <input type="radio" name="demo" value="2" id="radio-two" class="form-radio" checked />
-                <label for="radio-two"></label>
-  </span></li>
-              <li>{{translate.instant("commonActivityThirdOption")}} <span class="round">
-                <input type="radio" name="demo" value="3" id="radio-three" class="form-radio" />
-                <label for="radio-three"></label>
-  </span></li>
+              <li *ngFor="let choice of choices" >{{ choice }}
+                <span class="round">
+                  <input  type="radio" name="demo" [(ngModel)]="selectedChoice"  [value]="choice" id="radio-one" class="form-radio" />
+                  <label for="radio-one"></label>
+                </span>
+            </li>
+            </ul>
+            <ul>
               <li>{{translate.instant("commonActivityFourthOption")}} <span class="right-arrow-icon">
                   <ion-icon name="arrow-forward" end></ion-icon>
                   <label for="radio-four"></label>
