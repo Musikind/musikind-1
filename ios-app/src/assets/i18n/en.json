@@ -139,5 +139,52 @@
             "CreateMusicProfile" : "CREATE MUSIC PROFILE", 
             "BackHome" : "Return Home"
         }
+    }, 
+    "PlaylistPage": {
+        "title": "music section",
+        "footer" : 
+        {
+            "str1":"view tips on",
+            "str2":"group activites",
+            "str3":"for",
+            "str4":"relaxation?"
+        },
+        "Songs": [
+            {
+                "id": 1,
+                "name": "Song1",
+                "active": true
+            },
+            {
+                "id": 2,
+                "name": "Song2",
+                "active": false
+            },
+            {
+                "id": 3,
+                "name": "Song3",
+                "active": false
+            },
+            {
+                "id": 4,
+                "name": "Song4",
+                "active": false
+            },
+            {
+                "id": 5,
+                "name": "Song5",
+                "active": false
+            },
+            {
+                "id": 6,
+                "name": "Song6",
+                "active": false
+            },
+            {
+                "id": 7,
+                "name": "Song7",
+                "active": false
+            }
+        ]
     }
 }   

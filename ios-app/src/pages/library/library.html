@@ -30,7 +30,7 @@
       </ion-row>
         <ion-row class="audio_listing">
           <ion-content fullscreen>
-            <ion-list no-lines>
+            <ion-list no-lines style="width: 100%">
                 <button detail-none ion-item *ngFor="let track of tracks; let i = index;" (click)="track.playing ? pauseTrack(track) : playTrack(track)" [ngClass]="{ 'alternate': i % 2, 'playing': track.playing }">
                     <ion-avatar item-left>
                     <button *ngIf="!track.playing" (click)="playTrack(currentTrack)"  class="play_list" ion-button icon-only><ion-icon name="play"></ion-icon></button>
