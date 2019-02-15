@@ -29,6 +29,7 @@ import { SchedulingWeekPage } from '../pages/scheduling-week/scheduling-week';
 import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
 import { AudioProvider } from '../providers/audio/audio';
 import { SmartAudioProvider } from '../providers/smart-audio/smart-audio';
+import { MusicSectionNewPage } from '../pages/music-section-new/music-section-new';
 
 
 
@@ -60,7 +61,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     SettingAimPage,
     MusicSectionPage,
     SchedulingWeekPage,
-    ProgressBarComponent
+    ProgressBarComponent,
+    MusicSectionNewPage
     
   ],
   imports: [
@@ -93,7 +95,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     GettingStartedPage,
     SettingAimPage,
     MusicSectionPage,
-    SchedulingWeekPage
+    SchedulingWeekPage,
+    MusicSectionNewPage
   ],
   providers: [
     StatusBar,
