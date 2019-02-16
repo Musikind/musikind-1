@@ -3,7 +3,7 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { TabsPage } from '../pages/tabs/tabs';
-import {PlayListPage} from '../pages/play-list/play-list'
+
 
 @Component({
   templateUrl: 'app.html'
@@ -17,8 +17,6 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
-      this.rootPage = PlayListPage;
-
     });
   }
 }

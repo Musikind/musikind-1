@@ -32,7 +32,7 @@ import { SmartAudioProvider } from '../providers/smart-audio/smart-audio';
 import {TooltipsModule} from 'ionic-tooltips'; 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PopOverComponent } from '../components/pop-over/pop-over';
-import {PlayListPage } from '../pages/play-list/play-list'; 
+import {MusicSectionNewPage} from '../pages/music-section-new/music-section-new'; 
 
 
 // AoT requires an exported function for factories
@@ -63,7 +63,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ProgressBarComponent,
     CongratulationsPage,
     PopOverComponent,
-    PlayListPage
+    MusicSectionNewPage
   ],
   imports: [
     BrowserModule,
@@ -101,7 +101,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     SchedulingWeekPage,
     CongratulationsPage,
     PopOverComponent,
-    PlayListPage
+    MusicSectionNewPage
   ],
   providers: [
     StatusBar,

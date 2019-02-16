@@ -11,11 +11,11 @@
           <h1 text-center ion-text>{{translate.instant("commonMusicStyleTitle")}}</h1>
           <ul>
               <li *ngFor="let item of items_one; let i = index" >{{ item.name }}
-                  <span class="round">  <input type="radio" name="demo" value="{{ i }}" id="radio-one" class="form-radio" [checked]=" (item.active)"  /> <label for="radio-one" ></label> </span>
+                  <span class="round">  <input type="radio" name="demo" (click)="changeStatus(i)" value="{{ i }}" id="radio-one" class="form-radio" [checked]=" (item.active)"  /> <label for="radio-one" ></label> </span>
               </li>
           </ul>
           <ion-col text-center>
-            <div class="next_bta"><button (click)="goToLibrary()"><ion-icon ios="ios-play" md="md-play"></ion-icon>&nbsp;&nbsp;{{translate.instant("commonMusicPlay")}}</button></div>
+            <div class="next_bta"><button (click)="goToMusicSectionNewPage()"><ion-icon ios="ios-play" md="md-play"></ion-icon>&nbsp;&nbsp;{{translate.instant("commonMusicPlay")}}</button></div>
           </ion-col>
         </ion-col>
         
