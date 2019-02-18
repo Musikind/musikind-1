@@ -578,13 +578,11 @@ ion-footer {
 }
 .footer.footer-ios .grid {
     background-color: #f4f4fe;
-    width: 61%;
+    width: 80%;
     margin: 20px auto;
 }
 .volume_icon.col {
-    width: 50%;
     max-width: 50%;
-    margin-left: 14%;
     margin-top: 6px;
 }
 
@@ -612,13 +610,11 @@ ion-footer {
     }
     .footer.footer-ios .grid {
         background-color: #f4f4fe;
-        width: 61%;
+        width: 80%;
         margin: 20px auto;
     }
     .volume_icon.col {
-        width: 50%;
-        max-width: 50%;
-        margin-left: 14%;
+        max-width: 60%;
         margin-top: 6px;
     }
     span.bottomTagline {
@@ -650,13 +646,11 @@ ion-footer {
 }
 .footer.footer-ios .grid {
     background-color: #f4f4fe;
-    width: 61%;
+    width: 80%;
     margin: 20px auto;
 }
 .volume_icon.col {
-    width: 50%;
-    max-width: 50%;
-    margin-left: 14%;
+    max-width: 60%;
     margin-top: 6px;
 }
 }
@@ -673,7 +667,7 @@ ion-footer {
     bottom: -10px;
 }
 .listing {
-    height: 594px;
+    height: 500px;
     overflow: hidden;
     margin-bottom: 60px;
 }
@@ -687,9 +681,7 @@ ion-footer {
     margin: 20px auto !important;
 }
 .volume_icon.col {
-    width: 49% !important;
-    max-width: 49% !important;
-    margin-left: 14%;
+    max-width: 50% !important;
     margin-top: 6px;
     flex: inherit;
 }
@@ -725,7 +717,7 @@ span.bottomTagLine {
 }
 
 .calm{
-    background-color: #aa73ec;
+    background-color: #b5ec73;
     background-image: none;
 }
 .stimulation{
@@ -733,8 +725,38 @@ span.bottomTagLine {
     background-image: none;
 }
 .concentration{
-    background-color: #ecaa73;
+    background-color: #73b5ec;
     background-image: none;
 }
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) and (orientation : landscape)  { 
+        .listing {
+            height: 165px;
+            overflow: hidden;
+          }
+    }
+
+    @media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) and (orientation : landscape)  { 
+        .listing {
+            height: 165px;
+            overflow: hidden;
+          }
+    }
+
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2)  and (orientation : landscape)  { 
+        .listing {
+            height: 165px;
+            overflow: hidden;
+          }
+    }
 
 }

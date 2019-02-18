@@ -46,6 +46,8 @@ export class MusicSectionNewPage {
     currentTrack: any;
     activeProgress: any;
     progressInterval: any;
+    activeCls: string = ""; 
+    footerRowCls: string = "row"; 
     musicSectionCls:any = "step_one_heading"; 
 
     constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule) {
@@ -53,9 +55,9 @@ export class MusicSectionNewPage {
         this.tracks = this.generateTracks();
         this.currentTrack = this.tracks[0];
         this.item_two = this.items_two[0];
-        let musicStyleCls = (this.navParams.data && typeof this.navParams.data.audio === "object") ? this.navParams.data.audio.name.toLocaleLowerCase(): "";   
-        this.musicSectionCls = musicStyleCls === ""? "step_one_heading" : "step_one_heading " + musicStyleCls;  //(this.navParams.data && typeof this.navParams.data.audio) ? this.navParams.data.audio.name.toLocaleLowerCase(): ""  
-        //console.log(navParams);
+        let activeCls = (this.navParams.data && typeof this.navParams.data.audio === "object") ? this.navParams.data.audio.name.toLocaleLowerCase(): "";   
+        this.musicSectionCls = activeCls === ""? "step_one_heading" : "step_one_heading " + activeCls;  //(this.navParams.data && typeof this.navParams.data.audio) ? this.navParams.data.audio.name.toLocaleLowerCase(): ""  
+        this.footerRowCls = activeCls === ""? "row" : "row " + activeCls;  
     }
     generateTracks() {
         let tracks = [];

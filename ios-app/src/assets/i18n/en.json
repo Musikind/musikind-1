@@ -126,9 +126,9 @@
             { "id": 6,  "name": "Minimal singing", "active": false },
             { "id": 7,  "name": "Minimal (with lyrics reminder)", "active": false }
         ], 
-            "items_two" : [{ "id": 1,"name": "Calm","active": true, "color": "#aa73ec" },
+            "items_two" : [{ "id": 1,"name": "Calm","active": true, "color": "#b5ec73" },
                 { "id": 2,"name": "Stimulation","active": false, "color": "#ffb732"  },
-                { "id": 3,"name": "Concentration","active": false, "color": "#ecaa73" }]
+                { "id": 3,"name": "Concentration","active": false, "color": "#73b5ec" }]
         }
     }, 
     "Congratulations" : {

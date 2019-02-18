@@ -2,6 +2,7 @@ import { Component, Injectable } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import {LibraryPage} from '../library/library';
+import {MusicSectionNewPage} from '../music-section-new/music-section-new'
 
 /**
  * Generated class for the SelectMusicStylePage page.
@@ -40,6 +41,12 @@ export class SelectMusicStylePage {
       audio : 'Calm'
     });
     this.navCtrl.popToRoot();
+  }
+  goToPlayer(){
+    this.navCtrl.push(MusicSectionNewPage, {
+      style : 'Classical', 
+      audio : 'Calm'
+    });
   }
 
 }

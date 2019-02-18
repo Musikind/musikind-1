@@ -40,26 +40,21 @@
 
               </ion-content>
             </ion-row>
-
-
           </ion-col>
         </ion-row>
 
 
 
         <ion-footer>
-
           <ion-grid>
-
-            <ion-row>
-
+            <ion-row [class]="footerRowCls">
               <ion-col col-1>
                 <button (click)="prevTrack()" class="rewind" ion-button icon-only>
                   <ion-icon name="rewind"></ion-icon>
                 </button>
               </ion-col>
 
-              <ion-col col-1>
+              <ion-col col-2>
                 <button *ngIf="!currentTrack.playing" (click)="playTrack(currentTrack)" class="play" ion-button
                   icon-only>
                   <ion-icon name="play"></ion-icon>
