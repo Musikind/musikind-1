@@ -17,21 +17,17 @@ import { PopOverComponent } from '../../components/pop-over/pop-over';
   templateUrl: 'music-benefit.html',
 })
 export class MusicBenefitPage {
-  selected:any = ""; 
+  selected:any = 0; 
   musicStyle: any; 
   items_one:any = this.translate.instant('library.items.items_two');
   constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule,  public popoverCtrl: PopoverController) {
     this.translate.setDefaultLang('en');
-    let lastSelection = this.getFromLocal('musicStyle'); 
-    console.log('Music style navParams.data' + navParams.data);
-    this.selected = lastSelection? lastSelection : 0; 
     this.items_one = this.translate.instant('library.items.items_two');
    }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MusicBenefitPage');
+   ionViewWillEnter(){
+    console.log('ionViewWillEnter' + this.selected);
   }
-
   closeModal() {
     this.navCtrl.pop();
   }

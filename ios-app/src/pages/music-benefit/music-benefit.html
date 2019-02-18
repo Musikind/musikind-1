@@ -22,24 +22,12 @@
           <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>
             <h1 text-center ion-text>{{translate.instant("startMusicBenefitTitle")}}</h1>
             <ul>
-                <li *ngFor="let item of items_one; let i = index" >{{ item.name }}
-                    <span class="round">  <input type="radio" name="demo" (click)="changeStatus(i)" value="{{ i }}" id="radio-one" class="form-radio" [checked]=" (item.active)"  /> <label for="radio-one" ></label> </span>
+                <li *ngFor="let item of items_one; let i = index">
+                  {{ item.name }}
+                    <span class="round"> 
+                      <input type="radio" name="demo" (click)="changeStatus(i)" value="{{ i }}" id="radio-one" class="form-radio" [checked]=" (item.active)"  /></span>
                 </li>
             </ul>
-            <!-- <ul>
-              <li>{{translate.instant("startMusicBenefitFirstOption")}}  &nbsp; <ion-icon name="ios-help-circle-outline" (click)="presentPopover($event)" ></ion-icon> <span class="round">
-                <input type="radio" name="demo" value="1" (change)="onChange(0)" id="radio-one" class="form-radio" />
-                <label for="radio-one"></label>
-  </span></li>
-              <li>{{translate.instant("startMusicBenefitSecondOption")}}  &nbsp; <ion-icon name="ios-help-circle-outline" (click)="presentPopover($event)" ></ion-icon>  <span class="round">
-                <input type="radio" name="demo" value="2" (change)="onChange(1)" id="radio-two" class="form-radio" checked />
-                <label for="radio-two"></label>
-  </span></li>
-              <li>{{translate.instant("startMusicBenefitThirdOption")}}  &nbsp; <ion-icon name="ios-help-circle-outline" (click)="presentPopover($event)" ></ion-icon>  <span class="round">
-                <input type="radio" name="demo" value="3" (change)="onChange(2)" id="radio-three" class="form-radio" />
-                <label for="radio-three"></label>
-  </span></li>
-            </ul> -->
             <ion-col text-center>
               <div class="next_bta" (click)="goToMusicStyle()"><button>{{translate.instant("commonNext")}} </button></div>
             </ion-col>
