@@ -56,10 +56,8 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.2.2",
-<<<<<<< HEAD
-=======
+
     "@ionic/lab": "1.0.19",
->>>>>>> master
     "typescript": "~2.6.2"
   },
   "description": "An Ionic project",
