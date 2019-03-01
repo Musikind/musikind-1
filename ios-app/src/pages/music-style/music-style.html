@@ -20,17 +20,21 @@
                     <ion-label style="color:rgb(27, 27, 27);">{{ item.name }}</ion-label> 
                     <ion-radio value="{{i}}" class="form-radio"(ionSelect)="changeStatus(i)" [checked]=" (item.active)" ></ion-radio>
                </ion-item>
+              
                </ion-list>
           <ion-col text-center>
             <div class="next_bta"><button (click)="goToMusicSectionNewPage()"><ion-icon ios="ios-play" md="md-play"></ion-icon>&nbsp;&nbsp;{{translate.instant("commonMusicPlay")}}</button></div>
           </ion-col>
+          
         </ion-col>
-        
+      
           <ion-col text-center col-12 id="musicStyle">
               <span class="txt-bottom"><b><i>{{translate.instant("startMusicStyleBottomTextOne")}}</i></b> {{translate.instant("startMusicStyleBottomTextTwo")}}
                {{translate.instant("startMusicStyleBottomTextThree")}} {{translate.instant("startMusicStyleBottomTextFour")}}
               </span>
           </ion-col>
+         
+    
       </ion-row>
     </ion-list>
   </div>

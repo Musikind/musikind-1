@@ -43738,6 +43738,7 @@ ion-navbar.toolbar {
   position: absolute;
   left: -135px;
   top: 10px;
+  z-index: 999;
 }
 
 #myModel .back_btn a {
@@ -43794,6 +43795,7 @@ ion-navbar.toolbar {
   #myModel .back_btn {
     left: -104px;
     top: 10px;
+    z-index: 999;
   }
   #myModel .step_one {
     max-width: 64%;
@@ -43830,6 +43832,7 @@ ion-navbar.toolbar {
   #myModel .back_btn {
     left: -14px;
     top: 105%;
+    z-index: 999;
   }
   #myModel .step_one {
     width: 100%;

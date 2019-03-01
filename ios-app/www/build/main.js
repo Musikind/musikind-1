@@ -4,245 +4,10 @@ webpackJsonp([17],{
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GettingStartedPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__setting_aim_setting_aim__ = __webpack_require__(161);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(17);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-/**
- * Generated class for the GettingStartedPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var GettingStartedPage = /** @class */ (function () {
-    function GettingStartedPage(navCtrl, navParams, translate, translateModule) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.translate = translate;
-        this.translateModule = translateModule;
-        this.translate.setDefaultLang('en');
-    }
-    GettingStartedPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad GettingStartedPage');
-    };
-    GettingStartedPage.prototype.goToSettingAim = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_0__setting_aim_setting_aim__["a" /* SettingAimPage */]);
-    };
-    GettingStartedPage.prototype.closeModal = function () {
-        this.navCtrl.pop();
-    };
-    GettingStartedPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-getting-started',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/getting-started/getting-started.html"*/'<!--\n\n  Generated template for the GettingStartedPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>gettingStarted</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content>\n\n    <div class="step_one_heading">\n\n      <ion-list class="home">\n\n        <ion-row>\n\n          <ion-col col-3></ion-col>\n\n          <ion-col text-center class="step_one">\n\n            <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n            <h1 text-center ion-text>{{translate.instant("gettingTitle")}}</h1>\n\n            <ion-col col-12 text-left>\n\n              <p class="first-txt">{{translate.instant("gettingFirstText")}}</p>\n\n            </ion-col>\n\n            <ion-col col-12 text-left>\n\n              <p class="first-txt">{{translate.instant("gettingSecondText")}}</p>\n\n            </ion-col>\n\n            <ion-item class="txt-block-email">\n\n              <ion-input type="email" placeholder="{{translate.instant(\'commonEmailText\')}}"></ion-input>\n\n              <button ion-button color="dark" class="btn-color" clear item-right>{{translate.instant("commonSend")}}</button>\n\n            </ion-item>\n\n            <ion-col text-center>\n\n              <div class="next_bta" (click)="goToSettingAim()"><button>{{translate.instant("commonNext")}}</button></div>\n\n            </ion-col>\n\n            <ion-col col-12 class="bottom-txt">\n\n              <p>{{translate.instant("commonStoreText")}}.</p>\n\n            </ion-col>\n\n          </ion-col>\n\n          <ion-col col-3></ion-col>\n\n        </ion-row>\n\n      </ion-list>\n\n    </div>\n\n    </ion-content>\n\n  '/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/getting-started/getting-started.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */]])
-    ], GettingStartedPage);
-    return GettingStartedPage;
-}());
-
-//# sourceMappingURL=getting-started.js.map
-
-/***/ }),
-
-/***/ 161:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingAimPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__music_section_music_section__ = __webpack_require__(162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(17);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-/**
- * Generated class for the SettingAimPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var SettingAimPage = /** @class */ (function () {
-    function SettingAimPage(navCtrl, navParams, translate, translateModule) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.translate = translate;
-        this.translateModule = translateModule;
-        this.translate.setDefaultLang('en');
-    }
-    SettingAimPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad SettingAimPage');
-    };
-    SettingAimPage.prototype.goToMusicSection = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_0__music_section_music_section__["a" /* MusicSectionPage */]);
-    };
-    SettingAimPage.prototype.closeModal = function () {
-        this.navCtrl.pop();
-    };
-    SettingAimPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-setting-aim',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/setting-aim/setting-aim.html"*/'<!--\n\n  Generated template for the SettingAimPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>settingAim</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n<ion-content>\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        <ion-col col-3></ion-col>\n\n        <ion-col text-center class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n          <h1 text-center ion-text>{{translate.instant("settingAimTitle")}}</h1>\n\n          <ion-col col-12 text-left>\n\n            <p class="first-txt">{{translate.instant("settingAimFirstText")}}</p>\n\n          </ion-col>\n\n          <ion-col col-12 text-left>\n\n            <p class="first-txt">{{translate.instant("settingAimSecondText")}}</p>\n\n          </ion-col>\n\n          <ul>\n\n            <li>{{translate.instant("settingAimFirstOption")}} <span class="round">\n\n              <input type="radio" name="demo" value="1" id="radio-one" class="form-radio" />\n\n              <label for="radio-one"></label>\n\n</span></li>\n\n            <li>{{translate.instant("settingAimSecondOption")}} <span class="round">\n\n              <input type="radio" name="demo" value="2" id="radio-two" class="form-radio" />\n\n              <label for="radio-two"></label>\n\n</span></li>\n\n            <li>{{translate.instant("settingAimThirdOption")}} <span class="round">\n\n              <input type="radio" name="demo" value="3" id="radio-three" class="form-radio" checked />\n\n              <label for="radio-three"></label>\n\n</span></li>\n\n            <li>{{translate.instant("settingAimFourthOption")}} <span class="round">\n\n              <input type="radio" name="demo" value="4" id="radio-four" class="form-radio" />\n\n              <label for="radio-three"></label>\n\n            </span></li>\n\n          </ul>\n\n          <ion-col text-center>\n\n            <div class="next_bta" (click)="goToMusicSection()"><button>{{translate.instant("commonNext")}}</button></div>\n\n          </ion-col>\n\n        </ion-col>\n\n        <ion-col col-3></ion-col>\n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n  </ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/setting-aim/setting-aim.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */]])
-    ], SettingAimPage);
-    return SettingAimPage;
-}());
-
-//# sourceMappingURL=setting-aim.js.map
-
-/***/ }),
-
-/***/ 162:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MusicSectionPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scheduling_week_scheduling_week__ = __webpack_require__(163);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(17);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-/**
- * Generated class for the MusicSectionPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var MusicSectionPage = /** @class */ (function () {
-    function MusicSectionPage(navCtrl, navParams, translate, translateModule) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.translate = translate;
-        this.translateModule = translateModule;
-        this.translate.setDefaultLang('en');
-    }
-    MusicSectionPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad MusicSectionPage');
-    };
-    MusicSectionPage.prototype.goToSchedulingWeek = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_0__scheduling_week_scheduling_week__["a" /* SchedulingWeekPage */]);
-    };
-    MusicSectionPage.prototype.closeModal = function () {
-        this.navCtrl.pop();
-    };
-    MusicSectionPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-music-section',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-section/music-section.html"*/'<!--\n\n  Generated template for the MusicSectionPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>musicSection</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content>\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        <ion-col col-3></ion-col>\n\n        <ion-col text-center  class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n          <h1 text-center ion-text>{{translate.instant("musicSectionTitle")}}</h1>\n\n          <ion-col col-12 text-left>\n\n            <p class="first-txt">{{translate.instant("musicSectionFirstText")}}</p>\n\n          </ion-col>\n\n          <ul>\n\n            <li><p class="leftTextColor">1. {{translate.instant("musicSectionFirstOptionLeft")}}</p>&nbsp;&nbsp;{{translate.instant("musicSectionFirstOptionRight")}}</li>\n\n            <li><p class="leftTextColor">2. {{translate.instant("musicSectionLeftCommon")}}</p>&nbsp;&nbsp;{{translate.instant("musicSectionSecondOptionRight")}}</li>\n\n            <li><p class="leftTextColor">3. {{translate.instant("musicSectionLeftCommon")}}</p>&nbsp;&nbsp;{{translate.instant("musicSectionThirdOptionRight")}}</li>\n\n          </ul>\n\n          <ion-col col-12 text-left>\n\n            <p class="first-txt">{{translate.instant("musicSectionBottomText")}}</p>\n\n          </ion-col>\n\n          <ion-col text-center>\n\n            <div class="next_bta" (click)="goToSchedulingWeek()"><button>{{translate.instant("commonNext")}}</button></div>\n\n          </ion-col>\n\n        </ion-col>\n\n        <ion-col col-3></ion-col>\n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n  </ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-section/music-section.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */]])
-    ], MusicSectionPage);
-    return MusicSectionPage;
-}());
-
-//# sourceMappingURL=music-section.js.map
-
-/***/ }),
-
-/***/ 163:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SchedulingWeekPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__congratulations_congratulations__ = __webpack_require__(366);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-/**
- * Generated class for the SchedulingWeekPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var SchedulingWeekPage = /** @class */ (function () {
-    function SchedulingWeekPage(navCtrl, navParams, translate, translateModule) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.translate = translate;
-        this.translateModule = translateModule;
-        this.translate.setDefaultLang('en');
-    }
-    SchedulingWeekPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad SchedulingWeekPage');
-    };
-    SchedulingWeekPage.prototype.closeModal = function () {
-        this.navCtrl.pop();
-    };
-    SchedulingWeekPage.prototype.goToCongratulation = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__congratulations_congratulations__["a" /* CongratulationsPage */]);
-    };
-    SchedulingWeekPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-scheduling-week',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/scheduling-week/scheduling-week.html"*/'<!--\n\n  Generated template for the SchedulingWeekPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>schedulingWeek</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content>\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        <ion-col col-3></ion-col>\n\n        <ion-col text-center class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n          <h1 text-center ion-text>{{translate.instant("schedulingWeekTitle")}}</h1>\n\n          <ion-col col-12 text-left>\n\n            <p class="first-txt">{{translate.instant("schedulingWeekFirstText")}}</p>\n\n          </ion-col>\n\n          <ion-col col-12 text-left>\n\n            <p class="first-txt">{{translate.instant("schedulingWeekSecondText")}}</p>\n\n          </ion-col>\n\n          <ion-col col-12 text-left>\n\n            <p class="first-txt">{{translate.instant("schedulingWeekThirdText")}}</p>\n\n          </ion-col>\n\n          <ion-col text-center>\n\n            <div class="next_bta" (click)="goToCongratulation()" ><button>{{translate.instant("commonNext")}}</button></div>\n\n          </ion-col>\n\n        </ion-col>\n\n        <ion-col col-3></ion-col>\n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n  </ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/scheduling-week/scheduling-week.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */]])
-    ], SchedulingWeekPage);
-    return SchedulingWeekPage;
-}());
-
-//# sourceMappingURL=scheduling-week.js.map
-
-/***/ }),
-
-/***/ 164:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MusicBenefitPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__music_style_music_style__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__music_style_music_style__ = __webpack_require__(161);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_pop_over_pop_over__ = __webpack_require__(673);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -341,7 +106,7 @@ var MusicBenefitPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 165:
+/***/ 161:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -417,26 +182,25 @@ var MusicStylePage = /** @class */ (function () {
     MusicStylePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-musicstyle',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-style/music-style.html"*/'\n\n\n\n\n\n<ion-content id="myModel">\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        \n\n        <ion-col text-center col-6 class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n          <h1 text-center ion-text>{{translate.instant("commonMusicStyleTitle")}}</h1>\n\n          <!-- <ul>\n\n              <li *ngFor="let item of items_one; let i = index" >{{ item.name }}\n\n                  <span class="round">  <input type="radio" name="demo" (click)="changeStatus(i)" value="{{ i }}" id="radio-one" class="form-radio" [checked]=" (item.active)"  /> <label for="radio-one" ></label> </span>\n\n              </li>\n\n          </ul> -->\n\n          <ion-list radio-group [(ngModel)]="commonMusicStyle">\n\n                  \n\n              <ion-item *ngFor="let item of items_one; let i = index">              \n\n                    <ion-label style="color:rgb(27, 27, 27);">{{ item.name }}</ion-label> \n\n                    <ion-radio value="{{i}}" class="form-radio"(ionSelect)="changeStatus(i)" [checked]=" (item.active)" ></ion-radio>\n\n               </ion-item>\n\n               </ion-list>\n\n          <ion-col text-center>\n\n            <div class="next_bta"><button (click)="goToMusicSectionNewPage()"><ion-icon ios="ios-play" md="md-play"></ion-icon>&nbsp;&nbsp;{{translate.instant("commonMusicPlay")}}</button></div>\n\n          </ion-col>\n\n        </ion-col>\n\n        \n\n          <ion-col text-center col-12 id="musicStyle">\n\n              <span class="txt-bottom"><b><i>{{translate.instant("startMusicStyleBottomTextOne")}}</i></b> {{translate.instant("startMusicStyleBottomTextTwo")}}\n\n               {{translate.instant("startMusicStyleBottomTextThree")}} {{translate.instant("startMusicStyleBottomTextFour")}}\n\n              </span>\n\n          </ion-col>\n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n  </ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-style/music-style.html"*/,
+            selector: 'page-musicstyle',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-style/music-style.html"*/'\n\n\n\n\n\n<ion-content id="myModel">\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        \n\n        <ion-col text-center col-6 class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n          <h1 text-center ion-text>{{translate.instant("commonMusicStyleTitle")}}</h1>\n\n          <!-- <ul>\n\n              <li *ngFor="let item of items_one; let i = index" >{{ item.name }}\n\n                  <span class="round">  <input type="radio" name="demo" (click)="changeStatus(i)" value="{{ i }}" id="radio-one" class="form-radio" [checked]=" (item.active)"  /> <label for="radio-one" ></label> </span>\n\n              </li>\n\n          </ul> -->\n\n          <ion-list radio-group [(ngModel)]="commonMusicStyle">\n\n                  \n\n              <ion-item *ngFor="let item of items_one; let i = index">              \n\n                    <ion-label style="color:rgb(27, 27, 27);">{{ item.name }}</ion-label> \n\n                    <ion-radio value="{{i}}" class="form-radio"(ionSelect)="changeStatus(i)" [checked]=" (item.active)" ></ion-radio>\n\n               </ion-item>\n\n              \n\n               </ion-list>\n\n          <ion-col text-center>\n\n            <div class="next_bta"><button (click)="goToMusicSectionNewPage()"><ion-icon ios="ios-play" md="md-play"></ion-icon>&nbsp;&nbsp;{{translate.instant("commonMusicPlay")}}</button></div>\n\n          </ion-col>\n\n          \n\n        </ion-col>\n\n      \n\n          <ion-col text-center col-12 id="musicStyle">\n\n              <span class="txt-bottom"><b><i>{{translate.instant("startMusicStyleBottomTextOne")}}</i></b> {{translate.instant("startMusicStyleBottomTextTwo")}}\n\n               {{translate.instant("startMusicStyleBottomTextThree")}} {{translate.instant("startMusicStyleBottomTextFour")}}\n\n              </span>\n\n          </ion-col>\n\n         \n\n    \n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n  </ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-style/music-style.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */]) === "function" && _d || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */]])
     ], MusicStylePage);
     return MusicStylePage;
-    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=music-style.js.map
 
 /***/ }),
 
-/***/ 166:
+/***/ 162:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MusicLengthPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select_music_style_select_music_style__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select_music_style_select_music_style__ = __webpack_require__(163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(17);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -504,7 +268,7 @@ var MusicLengthPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 167:
+/***/ 163:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -588,6 +352,241 @@ var SelectMusicStylePage = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 164:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GettingStartedPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__setting_aim_setting_aim__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(17);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the GettingStartedPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var GettingStartedPage = /** @class */ (function () {
+    function GettingStartedPage(navCtrl, navParams, translate, translateModule) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.translate = translate;
+        this.translateModule = translateModule;
+        this.translate.setDefaultLang('en');
+    }
+    GettingStartedPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad GettingStartedPage');
+    };
+    GettingStartedPage.prototype.goToSettingAim = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_0__setting_aim_setting_aim__["a" /* SettingAimPage */]);
+    };
+    GettingStartedPage.prototype.closeModal = function () {
+        this.navCtrl.pop();
+    };
+    GettingStartedPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
+            selector: 'page-getting-started',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/getting-started/getting-started.html"*/'<!--\n\n  Generated template for the GettingStartedPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>gettingStarted</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content>\n\n    <div class="step_one_heading">\n\n      <ion-list class="home">\n\n        <ion-row>\n\n          <ion-col col-3></ion-col>\n\n          <ion-col text-center class="step_one">\n\n            <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n            <h1 text-center ion-text>{{translate.instant("gettingTitle")}}</h1>\n\n            <ion-col col-12 text-left>\n\n              <p class="first-txt">{{translate.instant("gettingFirstText")}}</p>\n\n            </ion-col>\n\n            <ion-col col-12 text-left>\n\n              <p class="first-txt">{{translate.instant("gettingSecondText")}}</p>\n\n            </ion-col>\n\n            <ion-item class="txt-block-email">\n\n              <ion-input type="email" placeholder="{{translate.instant(\'commonEmailText\')}}"></ion-input>\n\n              <button ion-button color="dark" class="btn-color" clear item-right>{{translate.instant("commonSend")}}</button>\n\n            </ion-item>\n\n            <ion-col text-center>\n\n              <div class="next_bta" (click)="goToSettingAim()"><button>{{translate.instant("commonNext")}}</button></div>\n\n            </ion-col>\n\n            <ion-col col-12 class="bottom-txt">\n\n              <p>{{translate.instant("commonStoreText")}}.</p>\n\n            </ion-col>\n\n          </ion-col>\n\n          <ion-col col-3></ion-col>\n\n        </ion-row>\n\n      </ion-list>\n\n    </div>\n\n    </ion-content>\n\n  '/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/getting-started/getting-started.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */]])
+    ], GettingStartedPage);
+    return GettingStartedPage;
+}());
+
+//# sourceMappingURL=getting-started.js.map
+
+/***/ }),
+
+/***/ 165:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingAimPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__music_section_music_section__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(17);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the SettingAimPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var SettingAimPage = /** @class */ (function () {
+    function SettingAimPage(navCtrl, navParams, translate, translateModule) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.translate = translate;
+        this.translateModule = translateModule;
+        this.translate.setDefaultLang('en');
+    }
+    SettingAimPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad SettingAimPage');
+    };
+    SettingAimPage.prototype.goToMusicSection = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_0__music_section_music_section__["a" /* MusicSectionPage */]);
+    };
+    SettingAimPage.prototype.closeModal = function () {
+        this.navCtrl.pop();
+    };
+    SettingAimPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
+            selector: 'page-setting-aim',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/setting-aim/setting-aim.html"*/'<!--\n\n  Generated template for the SettingAimPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>settingAim</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n<ion-content>\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        <ion-col col-3></ion-col>\n\n        <ion-col text-center class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n          <h1 text-center ion-text>{{translate.instant("settingAimTitle")}}</h1>\n\n          <ion-col col-12 text-left>\n\n            <p class="first-txt">{{translate.instant("settingAimFirstText")}}</p>\n\n          </ion-col>\n\n          <ion-col col-12 text-left>\n\n            <p class="first-txt">{{translate.instant("settingAimSecondText")}}</p>\n\n          </ion-col>\n\n          <ul>\n\n            <li>{{translate.instant("settingAimFirstOption")}} <span class="round">\n\n              <input type="radio" name="demo" value="1" id="radio-one" class="form-radio" />\n\n              <label for="radio-one"></label>\n\n</span></li>\n\n            <li>{{translate.instant("settingAimSecondOption")}} <span class="round">\n\n              <input type="radio" name="demo" value="2" id="radio-two" class="form-radio" />\n\n              <label for="radio-two"></label>\n\n</span></li>\n\n            <li>{{translate.instant("settingAimThirdOption")}} <span class="round">\n\n              <input type="radio" name="demo" value="3" id="radio-three" class="form-radio" checked />\n\n              <label for="radio-three"></label>\n\n</span></li>\n\n            <li>{{translate.instant("settingAimFourthOption")}} <span class="round">\n\n              <input type="radio" name="demo" value="4" id="radio-four" class="form-radio" />\n\n              <label for="radio-three"></label>\n\n            </span></li>\n\n          </ul>\n\n          <ion-col text-center>\n\n            <div class="next_bta" (click)="goToMusicSection()"><button>{{translate.instant("commonNext")}}</button></div>\n\n          </ion-col>\n\n        </ion-col>\n\n        <ion-col col-3></ion-col>\n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n  </ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/setting-aim/setting-aim.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */]])
+    ], SettingAimPage);
+    return SettingAimPage;
+}());
+
+//# sourceMappingURL=setting-aim.js.map
+
+/***/ }),
+
+/***/ 166:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MusicSectionPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scheduling_week_scheduling_week__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(17);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the MusicSectionPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var MusicSectionPage = /** @class */ (function () {
+    function MusicSectionPage(navCtrl, navParams, translate, translateModule) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.translate = translate;
+        this.translateModule = translateModule;
+        this.translate.setDefaultLang('en');
+    }
+    MusicSectionPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad MusicSectionPage');
+    };
+    MusicSectionPage.prototype.goToSchedulingWeek = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_0__scheduling_week_scheduling_week__["a" /* SchedulingWeekPage */]);
+    };
+    MusicSectionPage.prototype.closeModal = function () {
+        this.navCtrl.pop();
+    };
+    MusicSectionPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
+            selector: 'page-music-section',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-section/music-section.html"*/'<!--\n\n  Generated template for the MusicSectionPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>musicSection</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content>\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        <ion-col col-3></ion-col>\n\n        <ion-col text-center  class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n          <h1 text-center ion-text>{{translate.instant("musicSectionTitle")}}</h1>\n\n          <ion-col col-12 text-left>\n\n            <p class="first-txt">{{translate.instant("musicSectionFirstText")}}</p>\n\n          </ion-col>\n\n          <ul>\n\n            <li><p class="leftTextColor">1. {{translate.instant("musicSectionFirstOptionLeft")}}</p>&nbsp;&nbsp;{{translate.instant("musicSectionFirstOptionRight")}}</li>\n\n            <li><p class="leftTextColor">2. {{translate.instant("musicSectionLeftCommon")}}</p>&nbsp;&nbsp;{{translate.instant("musicSectionSecondOptionRight")}}</li>\n\n            <li><p class="leftTextColor">3. {{translate.instant("musicSectionLeftCommon")}}</p>&nbsp;&nbsp;{{translate.instant("musicSectionThirdOptionRight")}}</li>\n\n          </ul>\n\n          <ion-col col-12 text-left>\n\n            <p class="first-txt">{{translate.instant("musicSectionBottomText")}}</p>\n\n          </ion-col>\n\n          <ion-col text-center>\n\n            <div class="next_bta" (click)="goToSchedulingWeek()"><button>{{translate.instant("commonNext")}}</button></div>\n\n          </ion-col>\n\n        </ion-col>\n\n        <ion-col col-3></ion-col>\n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n  </ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-section/music-section.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */]])
+    ], MusicSectionPage);
+    return MusicSectionPage;
+}());
+
+//# sourceMappingURL=music-section.js.map
+
+/***/ }),
+
+/***/ 167:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SchedulingWeekPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__congratulations_congratulations__ = __webpack_require__(366);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the SchedulingWeekPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var SchedulingWeekPage = /** @class */ (function () {
+    function SchedulingWeekPage(navCtrl, navParams, translate, translateModule) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.translate = translate;
+        this.translateModule = translateModule;
+        this.translate.setDefaultLang('en');
+    }
+    SchedulingWeekPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad SchedulingWeekPage');
+    };
+    SchedulingWeekPage.prototype.closeModal = function () {
+        this.navCtrl.pop();
+    };
+    SchedulingWeekPage.prototype.goToCongratulation = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__congratulations_congratulations__["a" /* CongratulationsPage */]);
+    };
+    SchedulingWeekPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-scheduling-week',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/scheduling-week/scheduling-week.html"*/'<!--\n\n  Generated template for the SchedulingWeekPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>schedulingWeek</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content>\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        <ion-col col-3></ion-col>\n\n        <ion-col text-center class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n          <h1 text-center ion-text>{{translate.instant("schedulingWeekTitle")}}</h1>\n\n          <ion-col col-12 text-left>\n\n            <p class="first-txt">{{translate.instant("schedulingWeekFirstText")}}</p>\n\n          </ion-col>\n\n          <ion-col col-12 text-left>\n\n            <p class="first-txt">{{translate.instant("schedulingWeekSecondText")}}</p>\n\n          </ion-col>\n\n          <ion-col col-12 text-left>\n\n            <p class="first-txt">{{translate.instant("schedulingWeekThirdText")}}</p>\n\n          </ion-col>\n\n          <ion-col text-center>\n\n            <div class="next_bta" (click)="goToCongratulation()" ><button>{{translate.instant("commonNext")}}</button></div>\n\n          </ion-col>\n\n        </ion-col>\n\n        <ion-col col-3></ion-col>\n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n  </ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/scheduling-week/scheduling-week.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */]])
+    ], SchedulingWeekPage);
+    return SchedulingWeekPage;
+}());
+
+//# sourceMappingURL=scheduling-week.js.map
+
+/***/ }),
+
 /***/ 168:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -655,11 +654,11 @@ webpackEmptyAsyncContext.id = 179;
 
 var map = {
 	"../pages/congratulations/congratulations.module": [
-		704,
+		703,
 		16
 	],
 	"../pages/getting-started/getting-started.module": [
-		703,
+		704,
 		15
 	],
 	"../pages/library/library.module": [
@@ -667,31 +666,31 @@ var map = {
 		14
 	],
 	"../pages/music-activity/music-activity.module": [
-		711,
+		707,
 		13
 	],
 	"../pages/music-benefit/music-benefit.module": [
-		712,
+		708,
 		12
 	],
 	"../pages/music-length/music-length.module": [
-		710,
+		706,
 		11
 	],
 	"../pages/music-profile/music-profile.module": [
-		706,
+		709,
 		10
 	],
 	"../pages/music-section-new/music-section-new.module": [
-		707,
+		710,
 		9
 	],
 	"../pages/music-section/music-section.module": [
-		708,
+		712,
 		8
 	],
 	"../pages/music-style/music-style.module": [
-		709,
+		711,
 		7
 	],
 	"../pages/play-list/play-list.module": [
@@ -707,11 +706,11 @@ var map = {
 		5
 	],
 	"../pages/setting-aim/setting-aim.module": [
-		716,
+		717,
 		4
 	],
 	"../pages/settings/settings.module": [
-		717,
+		716,
 		3
 	],
 	"../pages/tips/tips.module": [
@@ -793,7 +792,7 @@ var TabsPage = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__getting_started_getting_started__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__getting_started_getting_started__ = __webpack_require__(164);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__using_music_using_music__ = __webpack_require__(88);
@@ -957,19 +956,19 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__ = __webpack_require__(362);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_settings_settings__ = __webpack_require__(168);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_using_music_using_music__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_music_benefit_music_benefit__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_music_style_music_style__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_music_benefit_music_benefit__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_music_style_music_style__ = __webpack_require__(161);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_music_activity_music_activity__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_music_length_music_length__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_select_music_style_select_music_style__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_music_length_music_length__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_select_music_style_select_music_style__ = __webpack_require__(163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_music_profile_music_profile__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ngx_translate_core__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ngx_translate_http_loader__ = __webpack_require__(695);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__angular_common_http__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_getting_started_getting_started__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_setting_aim_setting_aim__ = __webpack_require__(161);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_music_section_music_section__ = __webpack_require__(162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_scheduling_week_scheduling_week__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_getting_started_getting_started__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_setting_aim_setting_aim__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_music_section_music_section__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_scheduling_week_scheduling_week__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_progress_bar_progress_bar__ = __webpack_require__(696);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_audio_audio__ = __webpack_require__(697);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__providers_smart_audio_smart_audio__ = __webpack_require__(698);
@@ -1056,21 +1055,21 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_30__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/getting-started/getting-started.module#GettingStartedPageModule', name: 'GettingStartedPage', segment: 'getting-started', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/congratulations/congratulations.module#CongratulationsPageModule', name: 'CongratulationsPage', segment: 'congratulations', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/getting-started/getting-started.module#GettingStartedPageModule', name: 'GettingStartedPage', segment: 'getting-started', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/library/library.module#LibraryPageModule', name: 'LibraryPage', segment: 'library', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/music-profile/music-profile.module#MusicProfilePageModule', name: 'MusicProfilePage', segment: 'music-profile', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/music-section-new/music-section-new.module#MusicSectionNewPageModule', name: 'MusicSectionNewPage', segment: 'music-section-new', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/music-section/music-section.module#MusicSectionPageModule', name: 'MusicSectionPage', segment: 'music-section', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/music-style/music-style.module#MusicStylePageModule', name: 'MusicStylePage', segment: 'music-style', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/music-length/music-length.module#MusicLengthPageModule', name: 'MusicLengthPage', segment: 'music-length', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/music-activity/music-activity.module#MusicActivityPageModule', name: 'MusicActivityPage', segment: 'music-activity', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/music-benefit/music-benefit.module#MusicBenefitPageModule', name: 'MusicBenefitPage', segment: 'music-benefit', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/music-profile/music-profile.module#MusicProfilePageModule', name: 'MusicProfilePage', segment: 'music-profile', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/music-section-new/music-section-new.module#MusicSectionNewPageModule', name: 'MusicSectionNewPage', segment: 'music-section-new', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/music-style/music-style.module#MusicStylePageModule', name: 'MusicStylePage', segment: 'music-style', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/music-section/music-section.module#MusicSectionPageModule', name: 'MusicSectionPage', segment: 'music-section', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/play-list/play-list.module#PlayListPageModule', name: 'PlayListPage', segment: 'play-list', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/select-music-style/select-music-style.module#SelectMusicStylePageModule', name: 'SelectMusicStylePage', segment: 'select-music-style', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/scheduling-week/scheduling-week.module#SchedulingWeekPageModule', name: 'SchedulingWeekPage', segment: 'scheduling-week', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/setting-aim/setting-aim.module#SettingAimPageModule', name: 'SettingAimPage', segment: 'setting-aim', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/settings/settings.module#SettingsPageModule', name: 'SettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/setting-aim/setting-aim.module#SettingAimPageModule', name: 'SettingAimPage', segment: 'setting-aim', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tips/tips.module#TipsPageModule', name: 'TipsPage', segment: 'tips', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/using-music/using-music.module#UsingMusicPageModule', name: 'UsingMusicPage', segment: 'using-music', priority: 'low', defaultHistory: [] }
                     ]
@@ -1459,7 +1458,7 @@ var TipsPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UsingMusicPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__music_benefit_music_benefit__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__music_benefit_music_benefit__ = __webpack_require__(160);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(17);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1693,7 +1692,7 @@ var MusicSectionNewPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MusicActivityPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__music_length_music_length__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__music_length_music_length__ = __webpack_require__(162);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(17);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;

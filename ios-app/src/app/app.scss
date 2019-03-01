@@ -220,6 +220,7 @@ audio_list_icon:#363b54,
              position: absolute;
             left: -135px;
              top: 10px;
+             z-index: 999;
          }
          .back_btn a {
             text-decoration: none;
@@ -235,6 +236,7 @@ audio_list_icon:#363b54,
              position: absolute;
              left: -135px;
             top: 10px;
+            
         }
         .back_btn a {
            text-decoration: none;
@@ -272,6 +274,7 @@ audio_list_icon:#363b54,
         .back_btn {
             left: -104px;
             top: 10px;
+            z-index: 999;
         }
         .step_one {
             max-width: 64%;
@@ -304,6 +307,7 @@ audio_list_icon:#363b54,
         .back_btn {
             left: -14px;
             top: 105%;
+            z-index: 999;
         }
         .step_one {
             width: 100%;
