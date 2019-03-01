@@ -85,10 +85,10 @@ body, html {
 }
 .step_one {
     background: #fff;
-    width: 400px;
+    width: 450px;
     margin: auto;
     border-radius: 4px;
-    padding: 40px 90px;
+    padding: 30px;
     position: relative;
 }
 .step_one h1 {
@@ -99,7 +99,7 @@ body, html {
 }
 .step_one ul li {
     list-style: none;
-    padding: 22px 0px;
+    padding: 16px 0px;
     text-align: left;
     font-size: 16px;
     font-weight: bold;
@@ -107,8 +107,7 @@ body, html {
     border-bottom: 2px solid #eee;
 }
 .next_bta {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 15px 0px;
 }
 .next_bta button {
     background: #ffa455;
@@ -136,7 +135,7 @@ cursor: pointer;
      position: relative;
      background-color: #f0f1f7;
      color: #fff;
-     top: 10px;
+     top: 0px;
      height: 24px;
      width: 24px;
      border: 1px solid #eee;
@@ -249,10 +248,7 @@ label
         display: block;
     }
     ion-list.home.list.list-ios {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        position: relative;
     }
     .step_one h1 {
         width: auto;
@@ -264,13 +260,13 @@ label
 
 @media(max-width: 768px){
     .step_one_heading .step_one {
-        padding: 40px;
+        padding: 30px;
     }
 }
 
 @media(max-width: 834px){
     .step_one_heading .step_one {
-        padding: 40px;
+        padding: 30px;
     }
 }
 
@@ -288,10 +284,7 @@ label
         display: block;
     }
     ion-list.home.list.list-ios {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        position: relative;
     }
 }
 @media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait) {
@@ -308,10 +301,8 @@ label
         display: block;
     }
     ion-list.home.list.list-ios {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        position: relative;
+       
     }
 }
 @media all and (device-width: 1366px) and (device-height: 1024px) and (orientation:landscape) {
@@ -328,11 +319,12 @@ label
         display: block;
     }
     ion-list.home.list.list-ios {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        position: relative;
     }
+}
+div.step_one p{
+    font-size: 1.3em;
+    margin-top: 40px;
 }
 
 }

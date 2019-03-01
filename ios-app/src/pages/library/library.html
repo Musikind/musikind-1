@@ -30,7 +30,7 @@
       </ion-row>
         <ion-row class="audio_listing">
           <ion-content fullscreen>
-            <ion-list no-lines>
+            <ion-list no-lines style="width: 100%">
                 <button detail-none ion-item *ngFor="let track of tracks; let i = index;" (click)="track.playing ? pauseTrack(track) : playTrack(track)" [ngClass]="{ 'alternate': i % 2, 'playing': track.playing }">
                     <ion-avatar item-left>
                     <button *ngIf="!track.playing" (click)="playTrack(currentTrack)"  class="play_list" ion-button icon-only><ion-icon name="play"></ion-icon></button>
@@ -70,17 +70,17 @@
           <ion-col col-1>
                 <span class="track_time">{{getLapsString()}}</span>
           </ion-col>
-          <ion-col col-7 col-md-6>
+          <ion-col col-5 col-md-5>
                 <progress-bar [progress]="currentTrack.progress"></progress-bar>
          </ion-col>
          <ion-col col-1>
            <span class="track_time">{{currentTrack.durationString}}</span>
          </ion-col>
 
-          <ion-col col-2 class="volume_icon">
+          <div col-2 class="volume_icon valume-right" float-right>
             <button><ion-icon name="ios-volume-up" class="ios_volume_icon"></ion-icon></button>
             <ion-range min="1" max="100" step="1" [(ngModel)]="knobValues"></ion-range>        
-          </ion-col>
+          </div>
 
       </ion-row>
 

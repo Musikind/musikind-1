@@ -18,9 +18,21 @@ import { MusicSectionNewPage } from '../music-section-new/music-section-new';
   templateUrl: 'music-style.html',
 })
 export class MusicStylePage {
-
+  commonMusicStyle: string; 
+  commonMusicStyles: any = ["0", "1", "2"]; 
+  musicStyle: any; 
+  items_one:any = [];
   constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule) {
     this.translate.setDefaultLang('en');
+    console.log('Music style navParams.data' + navParams.data);
+    if(navParams.data){
+      this.items_one = navParams.data.items_one;
+      this.musicStyle = navParams.data.MusicStyle; 
+    }else {
+      this.items_one = this.translate.instant('library.items.items_two');
+    }
+  
+    this.commonMusicStyle = "0"; 
   }
 
   ionViewDidLoad() {
@@ -30,6 +42,7 @@ export class MusicStylePage {
   closeModal() {
     this.navCtrl.pop();
   }
+
   // goToLibrary(){
   //   this.navCtrl.parent.select(1);
   //   this.navCtrl.push(LibraryPage, {

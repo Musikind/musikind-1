@@ -18,7 +18,7 @@ import { MusicActivityPage } from '../pages/music-activity/music-activity';
 import { MusicLengthPage } from '../pages/music-length/music-length';
 import { SelectMusicStylePage } from '../pages/select-music-style/select-music-style';
 import { MusicProfilePage } from '../pages/music-profile/music-profile';
-
+import { CongratulationsPage } from '../pages/congratulations/congratulations';
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { HttpClient, HttpClientModule } from "@angular/common/http"; 
@@ -30,9 +30,9 @@ import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
 import { AudioProvider } from '../providers/audio/audio';
 import { SmartAudioProvider } from '../providers/smart-audio/smart-audio';
 import { MusicSectionNewPage } from '../pages/music-section-new/music-section-new';
-
-
-
+import {TooltipsModule} from 'ionic-tooltips'; 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PopOverComponent } from '../components/pop-over/pop-over';
 
 
 
@@ -63,7 +63,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     SchedulingWeekPage,
     ProgressBarComponent,
     MusicSectionNewPage
-    
   ],
   imports: [
     BrowserModule,
@@ -75,7 +74,10 @@ export function HttpLoaderFactory(http: HttpClient) {
                 deps: [HttpClient]
             }
         }),
-    IonicModule.forRoot(MyApp)
+        BrowserAnimationsModule,
+        IonicModule.forRoot(MyApp),
+    TooltipsModule.forRoot(),
+    
   ],
   bootstrap: [IonicApp],
   entryComponents: [

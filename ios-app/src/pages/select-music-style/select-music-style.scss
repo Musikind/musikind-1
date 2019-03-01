@@ -61,7 +61,9 @@ body, html {
 .home_icons i {border-radius: 100%;padding:30px; margin-bottom: 20px; font-size: 46px; color:#fff;}
 .home_icons a{text-decoration: none;}
 .face_icon i {background:#C3618C;}
-.txt-bottom {color: #fff;}
+.txt-bottom {color: #fff;
+    font-size: 16px !important; 
+}
 .group_icon div {
     background: #FF8F98;
     border-radius: 100%;
@@ -88,7 +90,7 @@ body, html {
     width: 400px;
     margin: auto;
     border-radius: 4px;
-    padding: 40px 90px;
+    padding: 30px;
     position: relative;
 }
 .step_one h1 {
@@ -99,7 +101,7 @@ body, html {
 }
 .step_one ul li {
     list-style: none;
-    padding: 22px 0px;
+    padding: 16px 0px;
     text-align: left;
     font-size: 16px;
     font-weight: bold;
@@ -135,7 +137,7 @@ cursor: pointer;
      position: relative;
      background-color: #f0f1f7;
      color: #fff;
-     top: 10px;
+     top: 0px;
      height: 24px;
      width: 24px;
      border: 1px solid #eee;
@@ -211,22 +213,19 @@ label
         display: block;
     }
     ion-list.home.list.list-ios {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        position: relative;
     }
 }
 
 @media(max-width: 768px){
     .step_one_heading .step_one {
-        padding: 40px;
+        padding: 30px;
     }
 }
 
 @media(max-width: 834px){
     .step_one_heading .step_one {
-        padding: 40px;
+        padding: 30px;
     }
 }
 
@@ -244,10 +243,7 @@ label
         display: block;
     }
     ion-list.home.list.list-ios {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        position: relative;
     }
 }
 @media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait) {
@@ -264,10 +260,7 @@ label
         display: block;
     }
     ion-list.home.list.list-ios {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        position: relative;
     }
 }
 @media all and (device-width: 1366px) and (device-height: 1024px) and (orientation:landscape) {
@@ -284,10 +277,7 @@ label
         display: block;
     }
     ion-list.home.list.list-ios {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        position: relative;
     }
 }
 

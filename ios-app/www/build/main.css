@@ -43399,6 +43399,17 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+.icon-ios-primary {
+  color: #73B5EC;
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+
+.has-arrow {
+  border-radius: 8px;
+  padding: 15px;
+}
+
 .modal-wrapper {
   width: 100%;
   height: 100%;
@@ -43409,6 +43420,16 @@ ion-navbar.toolbar {
 .scroll-content {
   padding: 0px !important;
   overflow: hidden !important;
+}
+
+.popover-ios .popover-content {
+  border-radius: 10px;
+  width: 350px;
+  min-width: 0;
+  min-height: 0;
+  max-height: 90%;
+  color: #000;
+  background: #fff;
 }
 
 #tipsScroll .scroll-content {
@@ -43665,10 +43686,10 @@ page-congratulations .menu_icon ul li h5 {
 
 page-congratulations .step_one {
   background: #fff;
-  width: 400px;
+  width: 500px;
   margin: auto;
   border-radius: 4px;
-  padding: 40px 90px;
+  padding: 30px;
   position: relative;
 }
 
@@ -43681,7 +43702,7 @@ page-congratulations .step_one h1 {
 
 page-congratulations .step_one ul li {
   list-style: none;
-  padding: 22px 0px;
+  padding: 16px 0px;
   text-align: left;
   font-size: 16px;
   font-weight: bold;
@@ -43690,7 +43711,7 @@ page-congratulations .step_one ul li {
 }
 
 page-congratulations .next_bta {
-  margin-top: 40px;
+  margin: 15px 0px;
 }
 
 page-congratulations .next_bta button {
@@ -43718,7 +43739,7 @@ page-congratulations .form-radio {
   position: relative;
   background-color: #f0f1f7;
   color: #fff;
-  top: 10px;
+  top: 0px;
   height: 24px;
   width: 24px;
   border: 1px solid #eee;
@@ -43812,11 +43833,7 @@ page-congratulations .back_btn a img {
     top: 0;
   }
   page-congratulations ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -43834,11 +43851,7 @@ page-congratulations .back_btn a img {
     top: 0;
   }
   page-congratulations ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -43850,11 +43863,7 @@ page-congratulations .back_btn a img {
     top: 0;
   }
   page-congratulations ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -43866,12 +43875,12 @@ page-congratulations .back_btn a img {
     top: 0;
   }
   page-congratulations ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
+}
+
+page-congratulations .bottom-txt p {
+  cursor: pointer;
 }
 
 page-getting-started {
@@ -44104,10 +44113,10 @@ page-getting-started .menu_icon ul li h5 {
 
 page-getting-started .step_one {
   background: #fff;
-  width: 400px;
+  width: 450px;
   margin: auto;
   border-radius: 4px;
-  padding: 40px 90px;
+  padding: 30px;
   position: relative;
 }
 
@@ -44120,7 +44129,7 @@ page-getting-started .step_one h1 {
 
 page-getting-started .step_one ul li {
   list-style: none;
-  padding: 22px 0px;
+  padding: 16px 0px;
   text-align: left;
   font-size: 16px;
   font-weight: bold;
@@ -44129,8 +44138,7 @@ page-getting-started .step_one ul li {
 }
 
 page-getting-started .next_bta {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 15px 0px;
 }
 
 page-getting-started .next_bta button {
@@ -44158,7 +44166,7 @@ page-getting-started .form-radio {
   position: relative;
   background-color: #f0f1f7;
   color: #fff;
-  top: 10px;
+  top: 0px;
   height: 24px;
   width: 24px;
   border: 1px solid #eee;
@@ -44296,11 +44304,7 @@ page-getting-started .pagelink {
     display: block;
   }
   page-getting-started ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
   page-getting-started .step_one h1 {
     width: auto;
@@ -44312,13 +44316,13 @@ page-getting-started .pagelink {
 
 @media (max-width: 768px) {
   page-getting-started .step_one_heading .step_one {
-    padding: 40px;
+    padding: 30px;
   }
 }
 
 @media (max-width: 834px) {
   page-getting-started .step_one_heading .step_one {
-    padding: 40px;
+    padding: 30px;
   }
 }
 
@@ -44336,11 +44340,7 @@ page-getting-started .pagelink {
     display: block;
   }
   page-getting-started ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -44358,11 +44358,7 @@ page-getting-started .pagelink {
     display: block;
   }
   page-getting-started ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -44380,12 +44376,13 @@ page-getting-started .pagelink {
     display: block;
   }
   page-getting-started ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
+}
+
+page-getting-started div.step_one p {
+  font-size: 1.3em;
+  margin-top: 40px;
 }
 
 page-home {
@@ -44492,10 +44489,10 @@ page-home .home_heading {
 
 page-home .home_heading h1 {
   color: #fff;
-  font-size: 30px;
+  font-size: 34px;
   width: 40%;
   margin: auto;
-  font-weight: normal;
+  font-weight: bold;
   padding-bottom: 60px;
 }
 
@@ -45037,10 +45034,10 @@ page-library .menu_icon ul li h5 {
 
 page-library .step_one {
   background: #fff;
-  width: 400px;
+  width: 500px;
   margin: auto;
   border-radius: 4px;
-  padding: 40px 90px;
+  padding: 30px;
   position: relative;
 }
 
@@ -45053,7 +45050,7 @@ page-library .step_one h1 {
 
 page-library .step_one ul li {
   list-style: none;
-  padding: 22px 0px;
+  padding: 16px 0px;
   text-align: left;
   font-size: 16px;
   font-weight: bold;
@@ -45062,7 +45059,7 @@ page-library .step_one ul li {
 }
 
 page-library .next_bta {
-  margin-top: 40px;
+  margin: 15px 0px;
 }
 
 page-library .next_bta button {
@@ -45095,7 +45092,7 @@ page-library .form-radio {
   position: relative;
   background-color: #f0f1f7;
   color: #fff;
-  top: 10px;
+  top: 0px;
   height: 24px;
   width: 24px;
   border: 1px solid #eee;
@@ -45178,6 +45175,28 @@ page-library .listing ul.right_top_btns li {
   font-size: 16px;
 }
 
+page-library .listing ul.right_top_btns li:first-child {
+  padding: 1em 1.4em;
+  padding-right: 0px;
+  color: #234433;
+  font-size: 16px;
+}
+
+page-library .listing ul.right_top_btns li:second-child {
+  padding: 1em 1.4em;
+  padding-right: 0px;
+  color: #6a6231;
+  font-size: 16px;
+  border-bottom: 2px solid red;
+}
+
+page-library .listing ul.right_top_btns li:last-child {
+  padding: 1em 1.4em;
+  padding-right: 0px;
+  color: #6a6a6c;
+  font-size: 16px;
+}
+
 page-library .listing .audio_listing li, page-library .listing ul.left_btns li {
   padding: 1em 1.4em;
   padding-right: 0px;
@@ -45244,7 +45263,7 @@ page-library .audio_top [col-lg-12] {
   padding: 0px;
 }
 
-page-library .audio_top ul li:first-child {
+page-library .audio_top ul li {
   border-right: 1px solid #bfbfbf;
 }
 
@@ -45256,27 +45275,28 @@ page-library .audio_top ul li {
   text-align: center;
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid #bfbfbf;
-  border-right: 1px solid #bfbfbf;
 }
 
 page-library .audio_top ul li:last-child {
   display: inline;
   width: 34%;
   float: left;
-  border-bottom: 1px solid #bfbfbf;
 }
 
 page-library .audio_top ul li.active {
   border-bottom: 3px solid #ffa14e;
+  font-size: 16px;
   font-weight: bold;
+}
+
+page-library .audio_top ul li {
+  color: #ffa14e;
 }
 
 page-library .audio_listing ul li {
   list-style: none;
   width: 100%;
   float: left;
-  border-bottom: 1px solid #bfbfbf;
 }
 
 page-library .audio_listing ul li span {
@@ -45660,6 +45680,16 @@ page-library .range-ios .range-bar {
   }
 }
 
+page-library .valume-right {
+  position: absolute;
+  right: 15px;
+}
+
+page-library .valume-left {
+  position: absolute;
+  left: 15px;
+}
+
 page-musicactivity {
   /*ion-grid {
         height: 100%;
@@ -45890,10 +45920,10 @@ page-musicactivity .menu_icon ul li h5 {
 
 page-musicactivity .step_one {
   background: #fff;
-  width: 400px;
+  width: 500px;
   margin: auto;
   border-radius: 4px;
-  padding: 40px 90px;
+  padding: 30px;
   position: relative;
 }
 
@@ -45906,7 +45936,7 @@ page-musicactivity .step_one h1 {
 
 page-musicactivity .step_one ul li {
   list-style: none;
-  padding: 22px 0px;
+  padding: 16px 0px;
   text-align: left;
   font-size: 16px;
   font-weight: bold;
@@ -45915,7 +45945,7 @@ page-musicactivity .step_one ul li {
 }
 
 page-musicactivity .next_bta {
-  margin-top: 40px;
+  margin: 15px 0px;
 }
 
 page-musicactivity .next_bta button {
@@ -45943,7 +45973,7 @@ page-musicactivity .form-radio {
   position: relative;
   background-color: #f0f1f7;
   color: #fff;
-  top: 10px;
+  top: 0px;
   height: 24px;
   width: 24px;
   border: 1px solid #eee;
@@ -46052,11 +46082,7 @@ page-musicactivity .right-arrow-icon {
     display: block;
   }
   page-musicactivity ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -46086,11 +46112,7 @@ page-musicactivity .right-arrow-icon {
     display: block;
   }
   page-musicactivity ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -46108,11 +46130,7 @@ page-musicactivity .right-arrow-icon {
     display: block;
   }
   page-musicactivity ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -46130,11 +46148,7 @@ page-musicactivity .right-arrow-icon {
     display: block;
   }
   page-musicactivity ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -46363,10 +46377,10 @@ page-musicbenefit .menu_icon ul li h5 {
 
 page-musicbenefit .step_one {
   background: #fff;
-  width: 400px;
+  width: 500px;
   margin: auto;
   border-radius: 4px;
-  padding: 40px 90px;
+  padding: 30px;
   position: relative;
 }
 
@@ -46379,7 +46393,7 @@ page-musicbenefit .step_one h1 {
 
 page-musicbenefit .step_one ul li {
   list-style: none;
-  padding: 22px 0px;
+  padding: 16px 0px;
   text-align: left;
   font-size: 16px;
   font-weight: bold;
@@ -46388,7 +46402,7 @@ page-musicbenefit .step_one ul li {
 }
 
 page-musicbenefit .next_bta {
-  margin-top: 40px;
+  margin: 15px 0px;
 }
 
 page-musicbenefit .next_bta button {
@@ -46416,7 +46430,7 @@ page-musicbenefit .form-radio {
   position: relative;
   background-color: #f0f1f7;
   color: #fff;
-  top: 10px;
+  top: 0px;
   height: 24px;
   width: 24px;
   border: 1px solid #eee;
@@ -46582,7 +46596,7 @@ page-musicbenefit .form-radio:checked::before {
   }
   page-musicbenefit .step_one {
     width: 100%;
-    padding: 40px 7%;
+    padding: 30px;
     max-width: 61%;
     -webkit-box-flex: 100%;
     -webkit-flex: 100%;
@@ -46599,13 +46613,13 @@ page-musicbenefit .form-radio:checked::before {
     padding: 2% 0;
   }
   page-musicbenefit .step_one {
-    padding: 20px 7%;
+    padding: 30px;
   }
 }
 
 @media (max-width: 667px) {
   page-musicbenefit .step_one {
-    padding: 12px 7%;
+    padding: 30px;
     padding-bottom: 0px;
   }
   page-musicbenefit .back_btn {
@@ -46628,7 +46642,7 @@ page-musicbenefit .form-radio:checked::before {
   }
   page-musicbenefit .step_one {
     width: 100%;
-    padding: 40px 7%;
+    padding: 30px;
     max-width: 86%;
     -webkit-box-flex: 100%;
     -webkit-flex: 100%;
@@ -46647,7 +46661,7 @@ page-musicbenefit .form-radio:checked::before {
   }
   page-musicbenefit .step_one {
     width: 100%;
-    padding: 40px 7%;
+    padding: 30px;
     max-width: 86%;
     -webkit-box-flex: 100%;
     -webkit-flex: 100%;
@@ -46892,10 +46906,10 @@ page-musiclength .menu_icon ul li h5 {
 
 page-musiclength .step_one {
   background: #fff;
-  width: 400px;
+  width: 500px;
   margin: auto;
   border-radius: 4px;
-  padding: 40px 90px;
+  padding: 30px;
   position: relative;
 }
 
@@ -46908,7 +46922,7 @@ page-musiclength .step_one h1 {
 
 page-musiclength .step_one ul li {
   list-style: none;
-  padding: 22px 0px;
+  padding: 16px 0px;
   text-align: left;
   font-size: 16px;
   font-weight: bold;
@@ -46917,7 +46931,7 @@ page-musiclength .step_one ul li {
 }
 
 page-musiclength .next_bta {
-  margin-top: 40px;
+  margin: 15px 0px;
 }
 
 page-musiclength .next_bta button {
@@ -46945,7 +46959,7 @@ page-musiclength .form-radio {
   position: relative;
   background-color: #f0f1f7;
   color: #fff;
-  top: 10px;
+  top: 0px;
   height: 24px;
   width: 24px;
   border: 1px solid #eee;
@@ -47051,23 +47065,19 @@ page-musiclength .right-arrow-icon {
     display: block;
   }
   page-musiclength ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
 @media (max-width: 768px) {
   page-musiclength .step_one_heading .step_one {
-    padding: 40px;
+    padding: 30px;
   }
 }
 
 @media (max-width: 834px) {
   page-musiclength .step_one_heading .step_one {
-    padding: 40px;
+    padding: 30px;
   }
 }
 
@@ -47085,11 +47095,7 @@ page-musiclength .right-arrow-icon {
     display: block;
   }
   page-musiclength ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -47107,11 +47113,7 @@ page-musiclength .right-arrow-icon {
     display: block;
   }
   page-musiclength ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -47129,11 +47131,7 @@ page-musiclength .right-arrow-icon {
     display: block;
   }
   page-musiclength ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -47367,10 +47365,10 @@ page-musicprofile .menu_icon ul li h5 {
 
 page-musicprofile .step_one {
   background: #fff;
-  width: 400px;
+  width: 450px;
   margin: auto;
   border-radius: 4px;
-  padding: 40px 90px;
+  padding: 30px;
   position: relative;
 }
 
@@ -47383,7 +47381,7 @@ page-musicprofile .step_one h1 {
 
 page-musicprofile .step_one ul li {
   list-style: none;
-  padding: 22px 0px;
+  padding: 16px 0px;
   text-align: left;
   font-size: 16px;
   font-weight: bold;
@@ -47392,7 +47390,7 @@ page-musicprofile .step_one ul li {
 }
 
 page-musicprofile .next_bta {
-  margin-top: 40px;
+  margin: 15px 0px;
 }
 
 page-musicprofile .next_bta button {
@@ -47420,7 +47418,7 @@ page-musicprofile .form-radio {
   position: relative;
   background-color: #f0f1f7;
   color: #fff;
-  top: 10px;
+  top: 0px;
   height: 24px;
   width: 24px;
   border: 1px solid #eee;
@@ -47558,11 +47556,7 @@ page-musicprofile .pagelink {
     display: block;
   }
   page-musicprofile ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
   page-musicprofile .step_one h1 {
     width: auto;
@@ -47574,13 +47568,13 @@ page-musicprofile .pagelink {
 
 @media (max-width: 768px) {
   page-musicprofile .step_one_heading .step_one {
-    padding: 40px;
+    padding: 30px;
   }
 }
 
 @media (max-width: 834px) {
   page-musicprofile .step_one_heading .step_one {
-    padding: 40px;
+    padding: 30px;
   }
 }
 
@@ -47598,11 +47592,7 @@ page-musicprofile .pagelink {
     display: block;
   }
   page-musicprofile ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -47620,11 +47610,7 @@ page-musicprofile .pagelink {
     display: block;
   }
   page-musicprofile ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -47642,11 +47628,7 @@ page-musicprofile .pagelink {
     display: block;
   }
   page-musicprofile ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -47876,10 +47858,10 @@ page-music-section .menu_icon ul li h5 {
 
 page-music-section .step_one {
   background: #fff;
-  width: 400px;
+  width: 500px;
   margin: auto;
   border-radius: 4px;
-  padding: 40px 90px;
+  padding: 30px;
   position: relative;
 }
 
@@ -47906,7 +47888,7 @@ page-music-section .leftTextColor {
 }
 
 page-music-section .next_bta {
-  margin-top: 40px;
+  margin: 15px 0px;
 }
 
 page-music-section .next_bta button {
@@ -47934,7 +47916,7 @@ page-music-section .form-radio {
   position: relative;
   background-color: #f0f1f7;
   color: #fff;
-  top: 10px;
+  top: 0px;
   height: 24px;
   width: 24px;
   border: 1px solid #eee;
@@ -48028,11 +48010,7 @@ page-music-section .back_btn a img {
     top: 0;
   }
   page-music-section ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -48050,11 +48028,7 @@ page-music-section .back_btn a img {
     top: 0;
   }
   page-music-section ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -48066,11 +48040,7 @@ page-music-section .back_btn a img {
     top: 0;
   }
   page-music-section ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -48082,11 +48052,7 @@ page-music-section .back_btn a img {
     top: 0;
   }
   page-music-section ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -49239,6 +49205,7 @@ page-musicstyle .face_icon i {
 
 page-musicstyle .txt-bottom {
   color: #fff;
+  font-size: 16px !important;
 }
 
 page-musicstyle .group_icon div {
@@ -49288,10 +49255,10 @@ page-musicstyle .menu_icon ul li h5 {
 
 page-musicstyle .step_one {
   background: #fff;
-  width: 400px;
+  width: 500px;
   margin: auto;
   border-radius: 4px;
-  padding: 40px 90px;
+  padding: 30px;
   position: relative;
 }
 
@@ -49304,7 +49271,7 @@ page-musicstyle .step_one h1 {
 
 page-musicstyle .step_one ul li {
   list-style: none;
-  padding: 22px 0px;
+  padding: 16px 0px;
   text-align: left;
   font-size: 16px;
   font-weight: bold;
@@ -49313,7 +49280,7 @@ page-musicstyle .step_one ul li {
 }
 
 page-musicstyle .next_bta {
-  margin-top: 40px;
+  margin: 15px 0px;
 }
 
 page-musicstyle .next_bta button {
@@ -49341,7 +49308,7 @@ page-musicstyle .form-radio {
   position: relative;
   background-color: #f0f1f7;
   color: #fff;
-  top: 10px;
+  top: 0px;
   height: 24px;
   width: 24px;
   border: 1px solid #eee;
@@ -49496,7 +49463,7 @@ page-musicstyle .txt-bottom {
   }
   page-musicstyle .step_one {
     width: 100%;
-    padding: 9px 7%;
+    padding: 30px;
     max-width: 61%;
     -webkit-box-flex: 100%;
     -webkit-flex: 100%;
@@ -49531,7 +49498,7 @@ page-musicstyle .txt-bottom {
   }
   page-musicstyle .step_one {
     width: 100%;
-    padding: 40px 7%;
+    padding: 30px;
     max-width: 61%;
     -webkit-box-flex: 100%;
     -webkit-flex: 100%;
@@ -49588,7 +49555,7 @@ page-musicstyle .txt-bottom {
   }
   page-musicstyle .step_one {
     width: 100%;
-    padding: 40px 7%;
+    padding: 30px 7%;
     max-width: 86%;
     -webkit-box-flex: 100%;
     -webkit-flex: 100%;
@@ -49615,7 +49582,7 @@ page-musicstyle .txt-bottom {
   }
   page-musicstyle .step_one {
     width: 100%;
-    padding: 40px 7%;
+    padding: 30px 7%;
     max-width: 86%;
     -webkit-box-flex: 100%;
     -webkit-flex: 100%;
@@ -49631,6 +49598,628 @@ page-musicstyle .txt-bottom {
   page-musicstyle .txt-bottom {
     width: 64%;
   }
+}
+
+page-play-list * {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+page-play-list body {
+  font-family: "Open Sans", sans-serif;
+  color: #373C52;
+}
+
+@font-face {
+  page-play-list {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
+    src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+  }
+}
+
+page-play-list .material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  -webkit-font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
+}
+
+page-play-list body, page-play-list html {
+  height: 100%;
+}
+
+page-play-list .container {
+  width: 100%;
+  margin: 0px auto;
+  float: left;
+}
+
+page-play-list .app {
+  width: 100%;
+  float: left;
+}
+
+page-play-list .app.splash {
+  width: 100%;
+  float: left;
+  height: 100%;
+}
+
+page-play-list .container.splash {
+  width: 100%;
+  margin: 0px auto;
+  height: 100%;
+}
+
+page-play-list .splash_screen {
+  background-image: url("../assets/imgs/blue_bg.jpg");
+  background-repeat: repeat;
+  height: 100%;
+}
+
+page-play-list .splash_screen img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  margin: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+page-play-list .home_heading, page-play-list .step_one_heading {
+  background-image: url("../assets/imgs/blue_bg.jpg");
+  background-repeat: repeat;
+  text-align: center;
+  padding: 11% 0;
+  background-size: auto;
+  height: 100%;
+}
+
+page-play-list .home_heading h1 {
+  color: #fff;
+  font-size: 30px;
+  width: 40%;
+  margin: auto;
+  font-weight: normal;
+  padding-bottom: 60px;
+}
+
+page-play-list .white-btn {
+  border-radius: 31px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(90, 97, 117, 0.3);
+  box-shadow: 0 2px 4px 0 rgba(90, 97, 117, 0.3);
+  text-decoration: none;
+  color: #373C52;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px 50px;
+}
+
+page-play-list .home_four_icons, page-play-list .home_four_icons {
+  float: left;
+  width: 100%;
+}
+
+page-play-list .section_one {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding-top: 40px;
+}
+
+page-play-list .section_one h2 {
+  color: #373C52;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+page-play-list .section_one:nth-child(2) {
+  background: #f8f9fe;
+}
+
+page-play-list .home_icons {
+  float: left;
+  width: 50%;
+  margin-top: 46px;
+  margin-bottom: 61px;
+}
+
+page-play-list .home_icons h4 {
+  color: #373C52;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+page-play-list .home_icons i {
+  border-radius: 100%;
+  padding: 30px;
+  margin-bottom: 20px;
+  font-size: 46px;
+  color: #fff;
+}
+
+page-play-list .home_icons a {
+  text-decoration: none;
+}
+
+page-play-list .face_icon i {
+  background: #C3618C;
+}
+
+page-play-list .txt-bottom {
+  color: #fff;
+  font-size: 16px !important;
+}
+
+page-play-list .group_icon div {
+  background: #FF8F98;
+  border-radius: 100%;
+  width: 106px;
+  margin: auto;
+  height: 106px;
+  margin-bottom: 20px !important;
+}
+
+page-play-list .group_icon div img {
+  padding-top: 34px;
+  width: 75px;
+}
+
+page-play-list .music_profile_icon i {
+  background: #77E0C0;
+}
+
+page-play-list .music_plan_icon i {
+  background: #8693FF;
+}
+
+page-play-list .home_bottom_menu {
+  width: 100%;
+  float: left;
+  text-align: center;
+  -webkit-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+page-play-list .menu_icon ul li {
+  display: inline-block;
+  margin: 4px 30px;
+  color: #878a97;
+}
+
+page-play-list .menu_icon ul li.active {
+  color: #373C52;
+}
+
+page-play-list .menu_icon ul li h5 {
+  line-height: 1em;
+  font-size: 12px;
+}
+
+page-play-list .step_one {
+  background: #fff;
+  width: 500px;
+  margin: auto;
+  border-radius: 4px;
+  padding: 30px;
+  position: relative;
+}
+
+page-play-list .step_one h1 {
+  width: 300px;
+  margin: auto;
+  color: #373C52;
+  margin-bottom: 25px;
+}
+
+page-play-list .step_one ul li {
+  list-style: none;
+  padding: 16px 0px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  color: #5f6375;
+  border-bottom: 2px solid #eee;
+}
+
+page-play-list .button-md {
+  background: none !important;
+  color: #373C52;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin: 0px;
+}
+
+page-play-list .button-ios {
+  color: #373C52;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: none !important;
+  margin: 0px;
+}
+
+page-play-list .next_bta {
+  margin: 15px 0px;
+}
+
+page-play-list .next_bta button {
+  border: 0px;
+  padding: 13px 59px;
+  font-size: 18px;
+  color: #373C52;
+  border-radius: 29px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 10px 21px -12px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 10px 21px -12px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+
+page-play-list .step_one ul li span {
+  float: right;
+}
+
+page-play-list .form-radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  position: relative;
+  background-color: #f0f1f7;
+  color: #fff;
+  top: 0px;
+  height: 24px;
+  width: 24px;
+  border: 1px solid #eee;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-right: 7px;
+  outline: none;
+}
+
+page-play-list .form-radio:checked::before {
+  position: absolute;
+  font: 15px/1 'Open Sans', sans-serif;
+  left: 7px;
+  top: 1px;
+  content: '\02143';
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+page-play-list .form-radio:hover {
+  background-color: #ffa455;
+}
+
+page-play-list .form-radio:checked {
+  background-color: #ffa455;
+}
+
+page-play-list label {
+  font: 300 16px/1.7 'Open Sans', sans-serif;
+  color: #666;
+  cursor: pointer;
+}
+
+page-play-list .back_btn {
+  position: absolute;
+  left: -135px;
+  top: 10px;
+}
+
+page-play-list .back_btn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+}
+
+page-play-list .back_btn a img {
+  width: 25px;
+}
+
+page-play-list .back_btn {
+  position: absolute;
+  left: -135px;
+  top: 10px;
+}
+
+page-play-list .back_btn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+}
+
+page-play-list .back_btn a img {
+  width: 25px;
+}
+
+page-play-list .back_btn {
+  position: absolute;
+  left: -135px;
+  top: 10px;
+}
+
+page-play-list .back_btn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+}
+
+page-play-list .back_btn a img {
+  width: 25px;
+}
+
+page-play-list .step_one ul li {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0px;
+  width: 100%;
+  float: left;
+}
+
+page-play-list .form-radio {
+  top: -4px;
+}
+
+page-play-list .form-radio:checked::before {
+  left: 8px;
+  top: 3px;
+}
+
+page-play-list .txt-bottom {
+  color: #fff;
+  padding-top: 20px;
+  width: 100%;
+  float: left;
+}
+
+@media only screen and (device-width: 1366px) and (device-height: 1024px) and (orientation: landscape) {
+  page-play-list .step_one ul li {
+    border-bottom: 1px solid #eee;
+  }
+  page-play-list .step_one ul li span:last-child {
+    float: right !important;
+    width: 23px;
+  }
+  page-play-list .step_one ul li span {
+    width: 90%;
+    float: left !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  page-play-list .step_one ul li {
+    border-bottom: 1px solid #eee;
+  }
+  page-play-list .step_one ul li span:last-child {
+    float: right !important;
+    width: 23px;
+  }
+  page-play-list .step_one ul li span {
+    width: 90%;
+    float: left !important;
+  }
+}
+
+@media (max-width: 812px) {
+  page-play-list .step_one ul li {
+    border-bottom: 1px solid #eee;
+  }
+  page-play-list .step_one h1 {
+    width: 100%;
+    margin-bottom: 0px;
+    font-size: 19px;
+  }
+  page-play-list .step_one ul li span:last-child {
+    float: right !important;
+    width: 23px;
+  }
+  page-play-list .step_one ul li span {
+    width: 90%;
+    float: left !important;
+  }
+  page-play-list .step_one {
+    width: 100%;
+    padding: 30px;
+    max-width: 61%;
+    -webkit-box-flex: 100%;
+    -webkit-flex: 100%;
+    -ms-flex: 100%;
+    flex: 100%;
+  }
+  page-play-list .step_one_heading {
+    padding: 3% 0;
+  }
+  page-play-list .next_bta {
+    margin-top: 0px;
+  }
+  page-play-list .next_bta {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  page-play-list .step_one ul li {
+    border-bottom: 1px solid #eee;
+  }
+  page-play-list .step_one h1 {
+    width: 100%;
+  }
+  page-play-list .step_one ul li span:last-child {
+    float: right !important;
+    width: 23px;
+  }
+  page-play-list .step_one ul li span {
+    width: 90%;
+    float: left !important;
+  }
+  page-play-list .step_one {
+    width: 100%;
+    padding: 30px;
+    max-width: 61%;
+    -webkit-box-flex: 100%;
+    -webkit-flex: 100%;
+    -ms-flex: 100%;
+    flex: 100%;
+  }
+  page-play-list .step_one_heading {
+    padding: 18% 0;
+  }
+}
+
+@media (max-width: 736px) {
+  page-play-list .step_one_heading {
+    padding: 2% 0;
+  }
+  page-play-list .step_one {
+    padding: 20px 7%;
+  }
+  page-play-list .txt-bottom {
+    padding-top: 9px;
+  }
+}
+
+@media (max-width: 667px) {
+  page-play-list .step_one {
+    padding: 8px 7%;
+    padding-bottom: 0px;
+  }
+  page-play-list .back_btn {
+    left: -104px;
+    top: 10px;
+  }
+  page-play-list .step_one {
+    max-width: 64%;
+  }
+  page-play-list .step_one ul li {
+    padding: 11px 0px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 568px) {
+  page-play-list .txt-bottom {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 414px) {
+  page-play-list .back_btn {
+    left: -14px;
+    top: 105%;
+    position: absolute;
+    z-index: 999;
+  }
+  page-play-list .step_one {
+    width: 100%;
+    padding: 30px 7%;
+    max-width: 86%;
+    -webkit-box-flex: 100%;
+    -webkit-flex: 100%;
+    -ms-flex: 100%;
+    flex: 100%;
+  }
+  page-play-list .step_one_heading {
+    padding: 19% 0;
+  }
+  page-play-list .txt-bottom {
+    padding-top: 55px;
+    width: 100% !important;
+    float: left;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  page-play-list .back_btn {
+    left: -14px;
+    top: 105%;
+  }
+  page-play-list .step_one {
+    width: 100%;
+    padding: 30px 7%;
+    max-width: 86%;
+    -webkit-box-flex: 100%;
+    -webkit-flex: 100%;
+    -ms-flex: 100%;
+    flex: 100%;
+  }
+  page-play-list .step_one_heading {
+    padding: 18% 0;
+  }
+  page-play-list .step_one.col h1 {
+    font-size: 20px;
+  }
+  page-play-list .txt-bottom {
+    width: 64%;
+  }
+}
+
+page-play-list .audio_listing ul li {
+  list-style: none;
+  width: 100%;
+  float: left;
+}
+
+page-play-list .audio_listing ul li span {
+  width: 50%;
+  float: left;
+}
+
+page-play-list .audio_listing ul li:hover {
+  cursor: pointer;
+}
+
+page-play-list .audio_listing ul li span ion-icon {
+  float: left;
+  color: #373C52;
+}
+
+page-play-list .audio_listing ul li span:last-child {
+  width: 50%;
+  float: left;
+  text-align: right;
+  padding-right: 20px;
+}
+
+page-play-list .audio_listing ul .active .ion-md-play {
+  display: none;
+}
+
+page-play-list .audio_listing ul .active .ion-md-pause {
+  display: block;
+}
+
+page-play-list .audio_listing ul .ion-md-pause {
+  display: none;
 }
 
 page-scheduling-week {
@@ -49859,10 +50448,10 @@ page-scheduling-week .menu_icon ul li h5 {
 
 page-scheduling-week .step_one {
   background: #fff;
-  width: 400px;
+  width: 500px;
   margin: auto;
   border-radius: 4px;
-  padding: 40px 90px;
+  padding: 30px;
   position: relative;
 }
 
@@ -49875,7 +50464,7 @@ page-scheduling-week .step_one h1 {
 
 page-scheduling-week .step_one ul li {
   list-style: none;
-  padding: 22px 0px;
+  padding: 16px 0px;
   text-align: left;
   font-size: 16px;
   font-weight: bold;
@@ -49884,7 +50473,7 @@ page-scheduling-week .step_one ul li {
 }
 
 page-scheduling-week .next_bta {
-  margin-top: 40px;
+  margin: 15px 0px;
 }
 
 page-scheduling-week .next_bta button {
@@ -49912,7 +50501,7 @@ page-scheduling-week .form-radio {
   position: relative;
   background-color: #f0f1f7;
   color: #fff;
-  top: 10px;
+  top: 0px;
   height: 24px;
   width: 24px;
   border: 1px solid #eee;
@@ -50006,11 +50595,7 @@ page-scheduling-week .back_btn a img {
     top: 0;
   }
   page-scheduling-week ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -50028,11 +50613,7 @@ page-scheduling-week .back_btn a img {
     top: 0;
   }
   page-scheduling-week ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -50044,11 +50625,7 @@ page-scheduling-week .back_btn a img {
     top: 0;
   }
   page-scheduling-week ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -50060,11 +50637,7 @@ page-scheduling-week .back_btn a img {
     top: 0;
   }
   page-scheduling-week ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -50249,6 +50822,7 @@ page-selectmusicstyle .face_icon i {
 
 page-selectmusicstyle .txt-bottom {
   color: #fff;
+  font-size: 16px !important;
 }
 
 page-selectmusicstyle .group_icon div {
@@ -50301,7 +50875,7 @@ page-selectmusicstyle .step_one {
   width: 400px;
   margin: auto;
   border-radius: 4px;
-  padding: 40px 90px;
+  padding: 30px;
   position: relative;
 }
 
@@ -50314,7 +50888,7 @@ page-selectmusicstyle .step_one h1 {
 
 page-selectmusicstyle .step_one ul li {
   list-style: none;
-  padding: 22px 0px;
+  padding: 16px 0px;
   text-align: left;
   font-size: 16px;
   font-weight: bold;
@@ -50351,7 +50925,7 @@ page-selectmusicstyle .form-radio {
   position: relative;
   background-color: #f0f1f7;
   color: #fff;
-  top: 10px;
+  top: 0px;
   height: 24px;
   width: 24px;
   border: 1px solid #eee;
@@ -50451,23 +51025,19 @@ page-selectmusicstyle .back_btn a img {
     display: block;
   }
   page-selectmusicstyle ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
 @media (max-width: 768px) {
   page-selectmusicstyle .step_one_heading .step_one {
-    padding: 40px;
+    padding: 30px;
   }
 }
 
 @media (max-width: 834px) {
   page-selectmusicstyle .step_one_heading .step_one {
-    padding: 40px;
+    padding: 30px;
   }
 }
 
@@ -50485,11 +51055,7 @@ page-selectmusicstyle .back_btn a img {
     display: block;
   }
   page-selectmusicstyle ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -50507,11 +51073,7 @@ page-selectmusicstyle .back_btn a img {
     display: block;
   }
   page-selectmusicstyle ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -50529,11 +51091,7 @@ page-selectmusicstyle .back_btn a img {
     display: block;
   }
   page-selectmusicstyle ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -50763,10 +51321,10 @@ page-setting-aim .menu_icon ul li h5 {
 
 page-setting-aim .step_one {
   background: #fff;
-  width: 400px;
+  width: 500px;
   margin: auto;
   border-radius: 4px;
-  padding: 40px 90px;
+  padding: 30px;
   position: relative;
 }
 
@@ -50779,7 +51337,7 @@ page-setting-aim .step_one h1 {
 
 page-setting-aim .step_one ul li {
   list-style: none;
-  padding: 22px 0px;
+  padding: 16px 0px;
   text-align: left;
   font-size: 16px;
   font-weight: bold;
@@ -50788,7 +51346,7 @@ page-setting-aim .step_one ul li {
 }
 
 page-setting-aim .next_bta {
-  margin-top: 40px;
+  margin: 15px 0px;
 }
 
 page-setting-aim .next_bta button {
@@ -50816,7 +51374,7 @@ page-setting-aim .form-radio {
   position: relative;
   background-color: #f0f1f7;
   color: #fff;
-  top: 10px;
+  top: 0px;
   height: 24px;
   width: 24px;
   border: 1px solid #eee;
@@ -50910,11 +51468,7 @@ page-setting-aim .back_btn a img {
     top: 0;
   }
   page-setting-aim ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -50932,11 +51486,7 @@ page-setting-aim .back_btn a img {
     top: 0;
   }
   page-setting-aim ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -50948,11 +51498,7 @@ page-setting-aim .back_btn a img {
     top: 0;
   }
   page-setting-aim ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -50964,11 +51510,7 @@ page-setting-aim .back_btn a img {
     top: 0;
   }
   page-setting-aim ion-list.home.list.list-ios {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
   }
 }
 
@@ -51196,7 +51738,7 @@ page-tips .step_one {
   width: 400px;
   margin: auto;
   border-radius: 4px;
-  padding: 40px 90px;
+  padding: 30px;
   position: relative;
 }
 
@@ -51209,7 +51751,7 @@ page-tips .step_one h1 {
 
 page-tips .step_one ul li {
   list-style: none;
-  padding: 22px 0px;
+  padding: 16px 0px;
   text-align: left;
   font-size: 16px;
   font-weight: bold;
@@ -51218,7 +51760,7 @@ page-tips .step_one ul li {
 }
 
 page-tips .next_bta {
-  margin-top: 40px;
+  margin: 15px 0px;
 }
 
 page-tips .next_bta button {
@@ -51246,7 +51788,7 @@ page-tips .form-radio {
   position: relative;
   background-color: #f0f1f7;
   color: #fff;
-  top: 10px;
+  top: 0px;
   height: 24px;
   width: 24px;
   border: 1px solid #eee;
@@ -51341,6 +51883,7 @@ page-tips .tip_right ul li {
   list-style: none;
   line-height: 2em;
   padding-top: 10px;
+  cursor: pointer;
 }
 
 page-tips .tip_right ul li a {
@@ -51621,7 +52164,7 @@ page-usingmusic .step_one {
   width: 400px;
   margin: auto;
   border-radius: 4px;
-  padding: 40px;
+  padding: 30px;
   position: relative;
 }
 
@@ -51634,7 +52177,7 @@ page-usingmusic .step_one h1 {
 
 page-usingmusic .step_one ul li {
   list-style: none;
-  padding: 22px 0px;
+  padding: 16px 0px;
   text-align: left;
   font-size: 16px;
   font-weight: bold;
@@ -51643,7 +52186,7 @@ page-usingmusic .step_one ul li {
 }
 
 page-usingmusic .next_bta {
-  margin-top: 40px;
+  margin: 15px 0px;
 }
 
 page-usingmusic .next_bta button {
@@ -51671,7 +52214,7 @@ page-usingmusic .form-radio {
   position: relative;
   background-color: #f0f1f7;
   color: #fff;
-  top: 10px;
+  top: 0px;
   height: 24px;
   width: 24px;
   border: 1px solid #eee;
@@ -51838,7 +52381,7 @@ page-usingmusic .round .radio-md .radio-inner:before {
   }
   page-usingmusic .step_one {
     width: 100%;
-    padding: 40px 7%;
+    padding: 30px 7%;
     max-width: 61%;
     -webkit-box-flex: 100%;
     -webkit-flex: 100%;
@@ -51872,7 +52415,7 @@ page-usingmusic .round .radio-md .radio-inner:before {
     max-width: 64%;
   }
   page-usingmusic .step_one ul li {
-    padding: 15px 0px;
+    padding: 16px 0px;
     padding-bottom: 0px;
   }
   page-usingmusic i.step_one.col h1 {
@@ -51887,7 +52430,7 @@ page-usingmusic .round .radio-md .radio-inner:before {
   }
   page-usingmusic .step_one {
     width: 100%;
-    padding: 40px 7%;
+    padding: 30px 7%;
     max-width: 86%;
     -webkit-box-flex: 100%;
     -webkit-flex: 100%;
@@ -51906,7 +52449,7 @@ page-usingmusic .round .radio-md .radio-inner:before {
   }
   page-usingmusic .step_one {
     width: 100%;
-    padding: 40px 7%;
+    padding: 30px 7%;
     max-width: 86%;
     -webkit-box-flex: 100%;
     -webkit-flex: 100%;

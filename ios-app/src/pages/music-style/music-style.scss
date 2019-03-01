@@ -61,7 +61,8 @@ body, html {
 .home_icons i {border-radius: 100%;padding:30px; margin-bottom: 20px; font-size: 46px; color:#fff;}
 .home_icons a{text-decoration: none;}
 .face_icon i {background:#C3618C;}
-.txt-bottom {color: #fff;}
+.txt-bottom {color: #fff;
+font-size: 16px !important }
 .group_icon div {
     background: #FF8F98;
     border-radius: 100%;
@@ -85,10 +86,10 @@ body, html {
 }
 .step_one {
     background: #fff;
-    width: 400px;
+    width: 500px;
     margin: auto;
     border-radius: 4px;
-    padding: 40px 90px;
+    padding: 30px;
     position: relative;
 }
 .step_one h1 {
@@ -99,7 +100,7 @@ body, html {
 }
 .step_one ul li {
     list-style: none;
-    padding: 22px 0px;
+    padding: 16px 0px;
     text-align: left;
     font-size: 16px;
     font-weight: bold;
@@ -107,7 +108,7 @@ body, html {
     border-bottom: 2px solid #eee;
 }
 .next_bta {
-    margin-top: 40px;
+    margin: 15px 0px;
 }
 .next_bta button {
     background: #ffa455;
@@ -135,7 +136,7 @@ cursor: pointer;
      position: relative;
      background-color: #f0f1f7;
      color: #fff;
-     top: 10px;
+     top: 0px;
      height: 24px;
      width: 24px;
      border: 1px solid #eee;
@@ -282,7 +283,7 @@ label
         }
         .step_one {
             width: 100%;
-            padding: 9px 7%;
+            padding: 30px;
             max-width: 61%;
             flex: 100%;
         }
@@ -314,7 +315,7 @@ label
         }
         .step_one {
             width: 100%;
-            padding: 40px 7%;
+            padding: 30px;
             max-width: 61%;
             flex: 100%;
         }
@@ -364,7 +365,7 @@ label
         }
         .step_one {
             width: 100%;
-            padding: 40px 7%;
+            padding: 30px 7%;
             max-width: 86%;
             flex: 100%;
         }
@@ -387,7 +388,7 @@ label
         }
         .step_one {
             width: 100%;
-            padding: 40px 7%;
+            padding: 30px 7%;
             max-width: 86%;
             -webkit-box-flex: 100%;
             -webkit-flex: 100%;

@@ -84,10 +84,10 @@ body, html {
 }
 .step_one {
     background: #fff;
-    width: 400px;
+    width: 500px;
     margin: auto;
     border-radius: 4px;
-    padding: 40px 90px;
+    padding: 30px;
     position: relative;
 }
 .step_one h1 {
@@ -98,7 +98,7 @@ body, html {
 }
 .step_one ul li {
     list-style: none;
-    padding: 22px 0px;
+    padding: 16px 0px;
     text-align: left;
     font-size: 16px;
     font-weight: bold;
@@ -106,7 +106,7 @@ body, html {
     border-bottom: 2px solid #eee;
 }
 .next_bta {
-    margin-top: 40px;
+    margin: 15px 0px;
 }
 .next_bta button {
     background: #ffa455;
@@ -137,7 +137,7 @@ cursor: pointer;
      position: relative;
      background-color: #f0f1f7;
      color: #fff;
-     top: 10px;
+     top: 0px;
      height: 24px;
      width: 24px;
      border: 1px solid #eee;
@@ -212,6 +212,28 @@ label
     font-size: 16px;
     
 }
+.listing ul.right_top_btns li:first-child{
+    padding: 1em 1.4em;
+    padding-right: 0px;
+    color: #234433;
+    font-size: 16px;
+    
+}
+.listing ul.right_top_btns li:second-child{
+    padding: 1em 1.4em;
+    padding-right: 0px;
+    color: #6a6231;
+    font-size: 16px;
+    border-bottom: 2px solid red;
+    
+}
+.listing ul.right_top_btns li:last-child{
+    padding: 1em 1.4em;
+    padding-right: 0px;
+    color: #6a6a6c;
+    font-size: 16px;
+    
+}
 .listing .audio_listing li, .listing ul.left_btns li {
     padding: 1em 1.4em;
     padding-right: 0px;
@@ -271,7 +293,7 @@ ul.left_btns {
 .audio_top [col-lg-12] {
     padding: 0px;
 }
-.audio_top ul li:first-child{
+.audio_top ul li{
     border-right: 1px solid #bfbfbf;
 }
 .audio_top ul li {
@@ -283,25 +305,28 @@ ul.left_btns {
     -webkit-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.1);
     box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.1);
-    border-bottom: 1px solid #bfbfbf;
-    border-right: 1px solid #bfbfbf;
+    
 }
 .audio_top ul li:last-child {
  
     display: inline;
     width: 34%;
     float: left;
-    border-bottom: 1px solid #bfbfbf;
+   
 }
 .audio_top ul li.active{
-border-bottom: 3px solid #ffa14e;
-font-weight: bold;
+    border-bottom: 3px solid #ffa14e;
+    font-size: 16px;
+    font-weight: bold;
+}
+.audio_top ul li{
+    color: #ffa14e; 
 }
 .audio_listing ul li {
     list-style: none;
     width: 100%;
     float: left;
-    border-bottom: 1px solid #bfbfbf;
+   
 }
 .audio_listing ul li span {
     width: 50%;
@@ -596,8 +621,14 @@ ion-footer {
 .menu_icon ul li { margin: 4px 16px;}
 }
 
-
-
+.valume-right{
+    position: absolute;
+    right: 15px;
+}
+.valume-left{
+    position: absolute;
+    left: 15px;
+}
     
 
 

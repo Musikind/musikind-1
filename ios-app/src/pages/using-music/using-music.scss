@@ -87,7 +87,7 @@ body, html {
     width: 400px;
     margin: auto;
     border-radius: 4px;
-    padding: 40px;
+    padding: 30px;
     position: relative;
 }
 .step_one h1 {
@@ -98,7 +98,7 @@ body, html {
 }
 .step_one ul li {
     list-style: none;
-    padding: 22px 0px;
+    padding: 16px 0px;
     text-align: left;
     font-size: 16px;
     font-weight: bold;
@@ -106,7 +106,7 @@ body, html {
     border-bottom: 2px solid #eee;
 }
 .next_bta {
-    margin-top: 40px;
+    margin: 15px 0px;
 }
 .next_bta button {
     background: #ffa455;
@@ -134,7 +134,7 @@ cursor: pointer;
      position: relative;
      background-color: #f0f1f7;
      color: #fff;
-     top: 10px;
+     top: 0px;
      height: 24px;
      width: 24px;
      border: 1px solid #eee;
@@ -292,7 +292,7 @@ label
         }
         .step_one {
             width: 100%;
-            padding: 40px 7%;
+            padding: 30px 7%;
             max-width: 61%;
             flex: 100%;
         }
@@ -321,7 +321,7 @@ label
             max-width: 64%;
         }
         .step_one ul li {
-            padding: 15px 0px;
+            padding: 16px 0px;
             padding-bottom: 0px;
         }
         i.step_one.col h1 {
@@ -335,7 +335,7 @@ label
         }
         .step_one {
             width: 100%;
-            padding: 40px 7%;
+            padding: 30px 7%;
             max-width: 86%;
             flex: 100%;
         }
@@ -351,7 +351,7 @@ label
         }
         .step_one {
             width: 100%;
-            padding: 40px 7%;
+            padding: 30px 7%;
             max-width: 86%;
             -webkit-box-flex: 100%;
             -webkit-flex: 100%;

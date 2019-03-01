@@ -1,8 +1,8 @@
 import { Component, Injectable } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, PopoverController } from 'ionic-angular';
 import { MusicBenefitPage } from '../music-benefit/music-benefit';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
-import { ToastController } from 'ionic-angular';
+import { PopOverComponent } from '../../components/pop-over/pop-over';
 
 /**
  * Generated class for the UsingMusicPage page.
@@ -19,29 +19,14 @@ import { ToastController } from 'ionic-angular';
 })
 export class UsingMusicPage {
   startUsingMusicOption:number;
-  constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule, public toastCtrl: ToastController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule, public popOverCtrl: PopoverController) {
     this.startUsingMusicOption = 1; 
-    /*translate.addLangs(["en"]);
-      //translate.addLangs(["en", "pt"]);
-        translate.setDefaultLang('en');
-        let browserLang = translate.getBrowserLang();
-       // translate.use(browserLang.match(/en|pt/) ? browserLang : 'en');
-       translate.use(browserLang.match(/en/) ? browserLang : 'en');*/
       this.translate.setDefaultLang('en');
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad UsingMusicPage');
   }
-
-  presentToast() {
-    const toast = this.toastCtrl.create({
-      message: 'A default toast message',
-      duration: 3000
-    });
-    toast.present();
-  }
-
   closeModal() {
     this.navCtrl.pop();
   }
@@ -49,8 +34,12 @@ export class UsingMusicPage {
   goToMusicBenefit() {
     this.navCtrl.push(MusicBenefitPage);
   }
-  showMessage(){
-    this.presentToast();
+
+  presentPopover(myEvent) {
+    let popover = this.popOverCtrl.create(PopOverComponent);
+    popover.present({
+      ev: myEvent
+    });
   }
 
 }

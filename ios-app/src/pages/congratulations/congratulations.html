@@ -18,20 +18,20 @@
     <ion-list class="home">
       <ion-row>
         <ion-col col-3></ion-col>
-        <ion-col text-center col-6 class="step_one">
+        <ion-col text-center class="step_one">
           <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>
-          <h1 text-center ion-text>{{translate.instant("congratulationsTitle")}}</h1>
+          <h1 text-center ion-text>{{translate.instant("Congratulations.title")}}</h1>
           <ion-col col-12 text-left>
-            <p class="first-txt">{{translate.instant("congratulationsFirstText")}}</p>
+            <p class="first-txt">{{translate.instant("Congratulations.text1")}}</p>
           </ion-col>
           <ion-col col-12 text-left>
-            <p class="first-txt">{{translate.instant("congratulationsSecondText")}}</p>
+            <p class="first-txt">{{translate.instant("Congratulations.text2")}}</p>
           </ion-col>
           <ion-col text-center>
-            <div class="next_bta"><button>{{translate.instant("congratulationsButton")}}</button></div>
+            <div class="next_bta"><button (click)="goToCreateMusicProfilePage()">{{translate.instant("Congratulations.Buttons.CreateMusicProfile")}}</button></div>
           </ion-col>
           <ion-col col-12 class="bottom-txt">
-            <p (click)="goToHomePage()">{{translate.instant("congratulationsBottomText")}}.</p>
+            <p (click)="goToHomePage()">{{translate.instant("Congratulations.Buttons.BackHome")}}.</p>
           </ion-col>
         </ion-col>
         <ion-col col-3></ion-col>

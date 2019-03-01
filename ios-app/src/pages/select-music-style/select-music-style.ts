@@ -2,6 +2,7 @@ import { Component, Injectable } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import {LibraryPage} from '../library/library';
+import {MusicSectionNewPage} from '../music-section-new/music-section-new'
 
 /**
  * Generated class for the SelectMusicStylePage page.
@@ -17,9 +18,14 @@ import {LibraryPage} from '../library/library';
   templateUrl: 'select-music-style.html',
 })
 export class SelectMusicStylePage {
-
+  items_one:any = [];
   constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule) {
     this.translate.setDefaultLang('en');
+    if(navParams.data && navParams.data.items_one){
+      this.items_one = navParams.data.items_one;
+    }else {
+        this.items_one = this.translate.instant('MusicBenefit.MusicStyle.Items_one');
+    }
   }
 
   ionViewDidLoad() {
@@ -35,6 +41,12 @@ export class SelectMusicStylePage {
       audio : 'Calm'
     });
     this.navCtrl.popToRoot();
+  }
+  goToPlayer(){
+    this.navCtrl.push(MusicSectionNewPage, {
+      style : 'Classical', 
+      audio : 'Calm'
+    });
   }
 
 }
