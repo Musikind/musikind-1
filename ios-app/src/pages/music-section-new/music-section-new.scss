@@ -425,8 +425,7 @@ ul.left_btns li {
 }
 
 .listing{
-
-    height: 680px ;
+    height: 350px ;
     overflow: hidden;
 }
 .audio_player.row {
@@ -567,8 +566,9 @@ ion-item.item.item-block.item-md.item-range {
         padding: 5px;
     }
     .volume_icon .item.item-md{
-        width: 80%;
-        float: right;
+        width: 200px;
+        position: relative; 
+        right: 10px;
         padding-left: 0px;
         }
         .volume_icon .item.item-md .range-md{
@@ -615,16 +615,6 @@ ion-footer {
     margin-top: 5px
     }
 
-<<<<<<< HEAD
-    span.bottomTagline {
-        position: absolute;
-        color: #fff;
-        content: '';
-        bottom: 7%;
-        left: calc(50% - 50%);
-        width: 100%;
-    }
-=======
     .range-md .range-knob-handle {
         left: 0;
         top: 21px;
@@ -635,7 +625,6 @@ ion-footer {
         width: 42px;
         height: 42px;
         }
->>>>>>> master
 /*-----media--Query-----*/
 @media screen and (max-width: 1366px) and (min-width: 1024px) {
     .listing{
@@ -655,13 +644,11 @@ ion-footer {
 }
 .footer.footer-ios .grid {
     background-color: #f4f4fe;
-    width: 61%;
+    width: 80%;
     margin: 20px auto;
 }
 .volume_icon.col {
-    width: 50%;
     max-width: 50%;
-    margin-left: 14%;
     margin-top: 6px;
 }
 
@@ -689,13 +676,11 @@ ion-footer {
     }
     .footer.footer-ios .grid {
         background-color: #f4f4fe;
-        width: 61%;
+        width: 80%;
         margin: 20px auto;
     }
     .volume_icon.col {
-        width: 50%;
-        max-width: 50%;
-        margin-left: 14%;
+        max-width: 60%;
         margin-top: 6px;
     }
     span.bottomTagline {
@@ -728,13 +713,11 @@ ion-footer {
 }
 .footer.footer-ios .grid {
     background-color: #f4f4fe;
-    width: 61%;
+    width: 80%;
     margin: 20px auto;
 }
 .volume_icon.col {
-    width: 50%;
-    max-width: 50%;
-    margin-left: 14%;
+    max-width: 60%;
     margin-top: 6px;
 }
 }
@@ -751,7 +734,7 @@ ion-footer {
     bottom: -10px;
 }
 .listing {
-    height: 594px;
+    height: 500px;
     overflow: hidden;
     margin-bottom: 60px;
 }
@@ -765,9 +748,7 @@ ion-footer {
     margin: 20px auto !important;
 }
 .volume_icon.col {
-    width: 49% !important;
-    max-width: 49% !important;
-    margin-left: 14%;
+    max-width: 50% !important;
     margin-top: 6px;
     flex: inherit;
 }
@@ -799,8 +780,6 @@ span.bottomTagline {
 .menu_icon ul li { margin: 4px 16px;}
 }
 
-<<<<<<< HEAD
-=======
 span.bottomTagLine {
     position: relative;
     color: #fff;
@@ -853,5 +832,4 @@ span.bottomTagLine {
           }
     }
 
->>>>>>> master
 }
