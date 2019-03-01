@@ -19,6 +19,7 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
 export class MusicLengthPage {
   customMusicLength: boolean = false; 
   isGroup:boolean = false; 
+  selectedMusicLength:any = 1;
   constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule) {
     this.translate.setDefaultLang('en');
     this.customMusicLength = this.navParams.data.updateMusicStyle; 
@@ -41,6 +42,11 @@ export class MusicLengthPage {
         this.navCtrl.push(SelectMusicStylePage);  
     }
     
+  }
+
+  presentPopover(myEvent){
+    this.selectedMusicLength = myEvent;
+    console.log("selected music length = "+this.selectedMusicLength);
   }
 
 }

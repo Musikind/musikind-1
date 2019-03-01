@@ -47,7 +47,7 @@
 
         <ion-footer>
           <ion-grid>
-            <ion-row [class]="footerRowCls">
+            <ion-row class="footerRowCls">
               <ion-col col-1>
                 <button (click)="prevTrack()" class="rewind" ion-button icon-only>
                   <ion-icon name="rewind"></ion-icon>
@@ -80,13 +80,14 @@
               </ion-col>
 
             </ion-row>
-
+            <button class="back_btn1 bck_btn_mobile" (click)="closeModal()"><img src="assets/imgs/back_arrow.png">
+              {{translate.instant("commonBack")}}</button>
           </ion-grid>
 
         </ion-footer>
 
       </ion-col>
-      <ion-col text-center col-12>
+      <ion-col text-center col-12 class = "bottomTagLineCol">
               <span class="bottomTagLine">{{translate.instant("PlaylistPage.footer.str1")}}
                   <strong>{{translate.instant("PlaylistPage.footer.str2")}}</strong>
                   {{translate.instant("PlaylistPage.footer.str3")}}

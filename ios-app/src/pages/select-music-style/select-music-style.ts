@@ -19,6 +19,7 @@ import {MusicSectionNewPage} from '../music-section-new/music-section-new'
 })
 export class SelectMusicStylePage {
   items_one:any = [];
+  selectedMusicStyle:any = "1";
   constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule) {
     this.translate.setDefaultLang('en');
     if(navParams.data && navParams.data.items_one){
@@ -47,6 +48,11 @@ export class SelectMusicStylePage {
       style : 'Classical', 
       audio : 'Calm'
     });
+  }
+
+  changeChoice(val){
+    this.selectedMusicStyle = val;
+    console.log("selected music style = "+this.selectedMusicStyle);
   }
 
 }

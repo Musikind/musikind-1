@@ -1,5 +1,5 @@
 {
-    "homeTitle": "Using music in personal care?",
+    "homeTitle": "Using music in daily care?",
     "homeButton": "Start",
     "homeLeftTitle": "Music for Activities",
     "homeRightTitle": "Personalised",
@@ -141,7 +141,7 @@
         }
     }, 
     "PlaylistPage": {
-        "title": "music section",
+        "title": "Music Section",
         "footer" : 
         {
             "str1":"view tips on",
