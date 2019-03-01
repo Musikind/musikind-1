@@ -61,5 +61,9 @@ export class MusicStylePage {
          });
   }
 
+  changeStatus(val){
+    this.commonMusicStyle = val;
+  }
+
 
 }

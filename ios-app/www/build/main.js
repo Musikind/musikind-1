@@ -4,504 +4,8 @@ webpackJsonp([17],{
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-<<<<<<< HEAD
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MusicBenefitPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__music_style_music_style__ = __webpack_require__(161);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_pop_over_pop_over__ = __webpack_require__(320);
-=======
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CongratulationsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__music_profile_music_profile__ = __webpack_require__(86);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-/**
- * Generated class for the CongratulationsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var CongratulationsPage = /** @class */ (function () {
-    function CongratulationsPage(navCtrl, navParams, translate, translateModule) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.translate = translate;
-        this.translateModule = translateModule;
-        this.translate.setDefaultLang('en');
-    }
-    CongratulationsPage.prototype.closeModal = function () {
-        this.navCtrl.pop();
-    };
-    CongratulationsPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad CongratulationsPage');
-    };
-    CongratulationsPage.prototype.goToHomePage = function () {
-        this.navCtrl.popToRoot();
-        this.navCtrl.parent.select(0);
-    };
-    CongratulationsPage.prototype.goToCreateMusicProfilePage = function () {
-        // this.navCtrl.popToRoot();
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__music_profile_music_profile__["a" /* MusicProfilePage */]);
-    };
-    CongratulationsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-congratulations',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/congratulations/congratulations.html"*/'<!--\n\n  Generated template for the CongratulationsPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>congratulations</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content>\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        <ion-col col-3></ion-col>\n\n        <ion-col text-center class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n          <h1 text-center ion-text>{{translate.instant("Congratulations.title")}}</h1>\n\n          <ion-col col-12 text-left>\n\n            <p class="first-txt">{{translate.instant("Congratulations.text1")}}</p>\n\n          </ion-col>\n\n          <ion-col col-12 text-left>\n\n            <p class="first-txt">{{translate.instant("Congratulations.text2")}}</p>\n\n          </ion-col>\n\n          <ion-col text-center>\n\n            <div class="next_bta"><button (click)="goToCreateMusicProfilePage()">{{translate.instant("Congratulations.Buttons.CreateMusicProfile")}}</button></div>\n\n          </ion-col>\n\n          <ion-col col-12 class="bottom-txt">\n\n            <p (click)="goToHomePage()">{{translate.instant("Congratulations.Buttons.BackHome")}}.</p>\n\n          </ion-col>\n\n        </ion-col>\n\n        <ion-col col-3></ion-col>\n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n  </ion-content>'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/congratulations/congratulations.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */]])
-    ], CongratulationsPage);
-    return CongratulationsPage;
-}());
-
-//# sourceMappingURL=congratulations.js.map
-
-/***/ }),
-
-/***/ 161:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MusicBenefitPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__music_style_music_style__ = __webpack_require__(162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_pop_over_pop_over__ = __webpack_require__(321);
->>>>>>> master
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-/**
- * Generated class for the MusicBenefitPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var MusicBenefitPage = /** @class */ (function () {
-    function MusicBenefitPage(navCtrl, navParams, translate, translateModule, popoverCtrl) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.translate = translate;
-        this.translateModule = translateModule;
-        this.popoverCtrl = popoverCtrl;
-        this.selected = 0;
-        this.items_one = this.translate.instant('library.items.items_two');
-        this.translate.setDefaultLang('en');
-        this.items_one = this.translate.instant('library.items.items_two');
-<<<<<<< HEAD
-=======
-        this.musicStyle = 0;
->>>>>>> master
-    }
-    MusicBenefitPage.prototype.ionViewWillEnter = function () {
-        console.log('ionViewWillEnter' + this.selected);
-    };
-    MusicBenefitPage.prototype.closeModal = function () {
-        this.navCtrl.pop();
-    };
-    MusicBenefitPage.prototype.goToMusicStyle = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__music_style_music_style__["a" /* MusicStylePage */], {
-            "items_one": this.translate.instant('MusicBenefit.MusicStyle.Items_one'),
-            "MusicStyle": this.getSelectedMusicStyle()
-        });
-    };
-    MusicBenefitPage.prototype.presentPopover = function (myEvent) {
-        var popover = this.popoverCtrl.create(__WEBPACK_IMPORTED_MODULE_4__components_pop_over_pop_over__["a" /* PopOverComponent */]);
-        popover.present({
-            ev: myEvent
-        });
-    };
-    MusicBenefitPage.prototype.changeStatus = function (newValue) {
-        this.musicStyle = newValue;
-        this.updateSelected(newValue);
-    };
-    MusicBenefitPage.prototype.getFromLocal = function (key) {
-        return localStorage.getItem(key);
-    };
-    MusicBenefitPage.prototype.getSelectedMusicStyle = function () {
-        var selected = {};
-        for (var i = 0; i < this.items_one.length; i++) {
-            var item = this.items_one[i];
-            if (item.active) {
-                selected = item;
-            }
-        }
-        return selected;
-    };
-    MusicBenefitPage.prototype.updateSelected = function (newValue) {
-        for (var i = 0; i < this.items_one.length; i++) {
-            var item = this.items_one[i];
-            if ((item.id - 1) === newValue) {
-                item.active = true;
-            }
-            else {
-                item.active = false;
-            }
-        }
-    };
-    MusicBenefitPage.prototype.setToLocal = function (key, value) {
-        localStorage.setItem(key, value);
-    };
-    MusicBenefitPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-<<<<<<< HEAD
-            selector: 'page-musicbenefit',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-benefit/music-benefit.html"*/'<!--\n\n  Generated template for the MusicBenefitPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>usingmusicbenefit</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content id="myModel">\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        <ion-col text-center col-6 class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n            <h1 text-center ion-text>{{translate.instant("startMusicBenefitTitle")}}</h1>\n\n            <!-- <ul>\n\n                <li *ngFor="let item of items_one; let i = index">\n\n                  {{ item.name }} &nbsp;  <ion-icon name="ios-help-circle-outline" (click)="presentPopover($event)" ></ion-icon> \n\n                    <span class="round"> \n\n                      <input type="radio" name="demo" (click)="changeStatus(i)" value="{{ i }}" id="radio-one" class="form-radio" [checked]=" (item.active)"  /></span>\n\n                </li>\n\n            </ul> -->\n\n            <ion-list radio-group [(ngModel)]="musicStyle">\n\n                  \n\n              <ion-item *ngFor="let item of items_one; let i = index">              \n\n                    <ion-label style="color:black;">{{ item.name }} &nbsp;  \n\n                        <ion-icon name="ios-help-circle-outline" tooltip="Help" positionV="top" [attr.duration]="10000"></ion-icon></ion-label> \n\n                    <ion-radio value="{{i}}" class="form-radio"(ionSelect)="changeStatus(i)" [checked]=" (item.active)" ></ion-radio>\n\n               </ion-item>\n\n               </ion-list>\n\n            <ion-col text-center>\n\n              <div class="next_bta" ><button (click)="goToMusicStyle()">{{translate.instant("commonNext")}} </button></div>\n\n            </ion-col>\n\n        </ion-col>\n\n        \n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-benefit/music-benefit.html"*/,
-=======
-<<<<<<< HEAD
-            selector: 'page-musicbenefit',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-benefit/music-benefit.html"*/'<!--\n\n  Generated template for the MusicBenefitPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>usingmusicbenefit</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content>\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        <ion-col text-center col-6 class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n            <h1 text-center ion-text>{{translate.instant("startMusicBenefitTitle")}}</h1>\n\n            <ul>\n\n                <li *ngFor="let item of items_one; let i = index">\n\n                  {{ item.name }} &nbsp;  <ion-icon name="ios-help-circle-outline" (click)="presentPopover($event)" ></ion-icon> \n\n                    <span class="round"> \n\n                      <input type="radio" name="demo" (click)="changeStatus(i)" value="{{ i }}" id="radio-one" class="form-radio" [checked]=" (item.active)"  /></span>\n\n                </li>\n\n            </ul>\n\n            <ion-col text-center>\n\n              <div class="next_bta" (click)="goToMusicStyle()"><button>{{translate.instant("commonNext")}} </button></div>\n\n            </ion-col>\n\n        </ion-col>\n\n        \n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-benefit/music-benefit.html"*/,
-=======
-            selector: 'page-musicbenefit',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-benefit/music-benefit.html"*/'<!--\n\n  Generated template for the MusicBenefitPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>usingmusicbenefit</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content id="myModel">\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        <ion-col text-center col-6 class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n            <h1 text-center ion-text>{{translate.instant("startMusicBenefitTitle")}}</h1>\n\n            <!-- <ul>\n\n                <li *ngFor="let item of items_one; let i = index">\n\n                  {{ item.name }}\n\n                    <span class="round"> \n\n                      <input type="radio" name="demo" (click)="changeStatus(i)" value="{{ i }}" id="radio-one" class="form-radio" [checked]=" (item.active)"  /></span>\n\n                </li>\n\n            </ul> -->\n\n            <ion-list radio-group [(ngModel)]="musicStyle">\n\n                  \n\n              <ion-item *ngFor="let item of items_one; let i = index">              \n\n                    <ion-label style="color:black;">{{ item.name }} &nbsp;  \n\n                        <ion-icon name="ios-help-circle-outline" tooltip="Help" positionV="top" [attr.duration]="10000"></ion-icon></ion-label> \n\n                    <ion-radio value="{{i}}" class="form-radio"(ionSelect)="changeStatus(i)" [checked]=" (item.active)" ></ion-radio>\n\n               </ion-item>\n\n               </ion-list>\n\n            <ion-col text-center>\n\n              <div class="next_bta" ><button (click)="goToMusicStyle()">{{translate.instant("commonNext")}} </button></div>\n\n            </ion-col>\n\n        </ion-col>\n\n        \n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-benefit/music-benefit.html"*/,
->>>>>>> master
->>>>>>> 9654fedbf2797b6b51e038408ebc143c77032681
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* PopoverController */]])
-    ], MusicBenefitPage);
-    return MusicBenefitPage;
-}());
-
-//# sourceMappingURL=music-benefit.js.map
-
-/***/ }),
-
-<<<<<<< HEAD
-/***/ 161:
-=======
-/***/ 162:
->>>>>>> master
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MusicStylePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__music_section_new_music_section_new__ = __webpack_require__(89);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-// import {LibraryPage} from '../library/library';
-
-/**
- * Generated class for the MusicStylePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var MusicStylePage = /** @class */ (function () {
-    function MusicStylePage(navCtrl, navParams, translate, translateModule) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.translate = translate;
-        this.translateModule = translateModule;
-        this.commonMusicStyles = ["0", "1", "2"];
-        this.items_one = [];
-        this.translate.setDefaultLang('en');
-        console.log('Music style navParams.data' + navParams.data);
-        if (navParams.data) {
-<<<<<<< HEAD
-            this.items_one = navParams.data.items_one;
-=======
-            console.log("item one = " + JSON.stringify(navParams.data.items_one));
-            this.items_one = navParams.data.items_one;
-            console.log("music style = " + JSON.stringify(navParams.data.MusicStyle));
->>>>>>> master
-            this.musicStyle = navParams.data.MusicStyle;
-        }
-        else {
-            this.items_one = this.translate.instant('library.items.items_two');
-        }
-        this.commonMusicStyle = "0";
-    }
-    MusicStylePage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad MusicStylePage');
-    };
-    MusicStylePage.prototype.closeModal = function () {
-        this.navCtrl.pop();
-    };
-<<<<<<< HEAD
-    // goToLibrary(){
-    //   this.navCtrl.parent.select(1);
-    //   this.navCtrl.push(LibraryPage, {
-    //     style : 'Classical', 
-    //     audio : 'Calm'
-    //   });
-    //   this.navCtrl.popToRoot();
-    // }
-    MusicStylePage.prototype.goToMusicSectionNewPage = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__music_section_new_music_section_new__["a" /* MusicSectionNewPage */], {
-            style: 'Classical',
-            audio: 'Calm'
-        });
-    };
-    MusicStylePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-musicstyle',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-style/music-style.html"*/'\n\n\n\n\n\n<ion-content>\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        \n\n        <ion-col text-center col-6 class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n          <h1 text-center ion-text>{{translate.instant("commonMusicStyleTitle")}}</h1>\n\n          <ul>\n\n              <li *ngFor="let item of items_one; let i = index" >{{ item.name }}\n\n                  <span class="round">  <input type="radio" name="demo" (click)="changeStatus(i)" value="{{ i }}" id="radio-one" class="form-radio" [checked]=" (item.active)"  /> <label for="radio-one" ></label> </span>\n\n              </li>\n\n          </ul>\n\n          <ion-col text-center>\n\n            <div class="next_bta"><button (click)="goToMusicSectionNewPage()"><ion-icon ios="ios-play" md="md-play"></ion-icon>&nbsp;&nbsp;{{translate.instant("commonMusicPlay")}}</button></div>\n\n          </ion-col>\n\n        </ion-col>\n\n        \n\n          <ion-col text-center col-12>\n\n              <span class="txt-bottom"><b><i>{{translate.instant("startMusicStyleBottomTextOne")}}</i></b> {{translate.instant("startMusicStyleBottomTextTwo")}}\n\n               {{translate.instant("startMusicStyleBottomTextThree")}} {{translate.instant("startMusicStyleBottomTextFour")}}\n\n              </span>\n\n          </ion-col>\n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n  </ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-style/music-style.html"*/,
-=======
-    MusicStylePage.prototype.goToMusicSectionNewPage = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__music_section_new_music_section_new__["a" /* MusicSectionNewPage */], {
-            style: this.items_one[this.commonMusicStyle],
-            audio: this.musicStyle
-        });
-    };
-    MusicStylePage.prototype.changeStatus = function (newValue) {
-        this.commonMusicStyle = newValue;
-    };
-    MusicStylePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-musicstyle',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-style/music-style.html"*/'\n\n\n\n\n\n<ion-content id="myModel">\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        \n\n        <ion-col text-center col-6 class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n          <h1 text-center ion-text>{{translate.instant("commonMusicStyleTitle")}}</h1>\n\n          <!-- <ul>\n\n              <li *ngFor="let item of items_one; let i = index" >{{ item.name }}\n\n                  <span class="round">  <input type="radio" name="demo" (click)="changeStatus(i)" value="{{ i }}" id="radio-one" class="form-radio" [checked]=" (item.active)"  /> <label for="radio-one" ></label> </span>\n\n              </li>\n\n          </ul> -->\n\n          <ion-list radio-group [(ngModel)]="commonMusicStyle">\n\n                  \n\n              <ion-item *ngFor="let item of items_one; let i = index">              \n\n                    <ion-label style="color:rgb(27, 27, 27);">{{ item.name }}</ion-label> \n\n                    <ion-radio value="{{i}}" class="form-radio"(ionSelect)="changeStatus(i)" [checked]=" (item.active)" ></ion-radio>\n\n               </ion-item>\n\n               </ion-list>\n\n          <ion-col text-center>\n\n            <div class="next_bta"><button (click)="goToMusicSectionNewPage()"><ion-icon ios="ios-play" md="md-play"></ion-icon>&nbsp;&nbsp;{{translate.instant("commonMusicPlay")}}</button></div>\n\n          </ion-col>\n\n        </ion-col>\n\n        \n\n          <ion-col text-center col-12 id="musicStyle">\n\n              <span class="txt-bottom"><b><i>{{translate.instant("startMusicStyleBottomTextOne")}}</i></b> {{translate.instant("startMusicStyleBottomTextTwo")}}\n\n               {{translate.instant("startMusicStyleBottomTextThree")}} {{translate.instant("startMusicStyleBottomTextFour")}}\n\n              </span>\n\n          </ion-col>\n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n  </ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-style/music-style.html"*/,
->>>>>>> master
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */]])
-    ], MusicStylePage);
-    return MusicStylePage;
-}());
-
-//# sourceMappingURL=music-style.js.map
-
-/***/ }),
-
-<<<<<<< HEAD
-/***/ 162:
-=======
-/***/ 163:
->>>>>>> master
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MusicLengthPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-<<<<<<< HEAD
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select_music_style_select_music_style__ = __webpack_require__(163);
-=======
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select_music_style_select_music_style__ = __webpack_require__(164);
->>>>>>> master
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(17);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-/**
- * Generated class for the MusicLengthPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var MusicLengthPage = /** @class */ (function () {
-    function MusicLengthPage(navCtrl, navParams, translate, translateModule) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.translate = translate;
-        this.translateModule = translateModule;
-        this.customMusicLength = false;
-        this.isGroup = false;
-<<<<<<< HEAD
-=======
-        this.selectedMusicLength = 1;
->>>>>>> master
-        this.translate.setDefaultLang('en');
-        this.customMusicLength = this.navParams.data.updateMusicStyle;
-        this.isGroup = this.navParams.data.isGroup;
-    }
-    MusicLengthPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad MusicLengthPage');
-    };
-    MusicLengthPage.prototype.closeModal = function () {
-        this.navCtrl.pop();
-    };
-    MusicLengthPage.prototype.goToSelectMusicStyle = function () {
-        if (this.customMusicLength) {
-            this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__select_music_style_select_music_style__["a" /* SelectMusicStylePage */], {
-                "items_one": this.isGroup ? this.translate.instant('MusicLength.MusicStyleGroup.Items_one') : this.translate.instant('MusicLength.MusicStyle.Items_one')
-            });
-        }
-        else {
-            this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__select_music_style_select_music_style__["a" /* SelectMusicStylePage */]);
-        }
-    };
-<<<<<<< HEAD
-    MusicLengthPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-musiclength',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-length/music-length.html"*/'<!--\n\n  Generated template for the MusicLengthPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>musiclength</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content>\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        <ion-col col-3></ion-col>\n\n      <ion-col text-center  class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n          <h1 text-center ion-text>{{translate.instant("commonActivityLengthTitle")}}</h1>\n\n          <ul>\n\n            <li>{{translate.instant("commonActivityLengthFirstOption")}} <span class="round">\n\n              <input type="radio" name="demo" value="1" id="radio-one" class="form-radio" checked />\n\n              <label for="radio-one"></label>\n\n</span></li>\n\n            <li>{{translate.instant("commonActivityLengthSecondOption")}} <span class="round">\n\n              <input type="radio" name="demo" value="2" id="radio-two" class="form-radio" />\n\n              <label for="radio-two"></label>\n\n</span></li>\n\n          </ul>\n\n          <ion-col text-center>\n\n              <div class="next_bta" (click)="goToSelectMusicStyle()"><button>{{translate.instant("commonNext")}}</button></div>\n\n          </ion-col>\n\n        </ion-col>\n\n        <ion-col col-3></ion-col>\n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n  </ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-length/music-length.html"*/,
-=======
-    MusicLengthPage.prototype.presentPopover = function (myEvent) {
-        this.selectedMusicLength = myEvent;
-        console.log("selected music length = " + this.selectedMusicLength);
-    };
-    MusicLengthPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-musiclength',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-length/music-length.html"*/'<!--\n\n  Generated template for the MusicLengthPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>musiclength</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content id="myMusicActivity"> \n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        <ion-col col-3></ion-col>\n\n      <ion-col text-center  class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n          <h1 text-center ion-text>{{translate.instant("commonActivityLengthTitle")}}</h1>\n\n          <!-- <ul>\n\n            <li>{{translate.instant("commonActivityLengthFirstOption")}} <span class="round">\n\n              <input type="radio" name="demo" value="1" id="radio-one" class="form-radio" checked />\n\n              <label for="radio-one"></label>\n\n</span></li>\n\n            <li>{{translate.instant("commonActivityLengthSecondOption")}} <span class="round">\n\n              <input type="radio" name="demo" value="2" id="radio-two" class="form-radio" />\n\n              <label for="radio-two"></label>\n\n</span></li>\n\n          </ul> -->\n\n          <ion-list radio-group [(ngModel)]="selectedMusicLength">\n\n                           \n\n            <ion-item>\n\n                 <ion-label style="color:black;">{{translate.instant("commonActivityLengthFirstOption")}}</ion-label>\n\n                  <ion-radio value="1" class="form-radio" (ionSelect)="presentPopover($event)"></ion-radio>\n\n             </ion-item>\n\n              <ion-item>\n\n                  <ion-label style="color:black;">{{translate.instant("commonActivityLengthSecondOption")}} </ion-label>  \n\n                  <ion-radio value="2" class="form-radio"(ionSelect)="presentPopover($event)"></ion-radio>\n\n                  </ion-item>\n\n            \n\n          </ion-list>\n\n          <ion-col text-center>\n\n              <div class="next_bta" ><button (click)="goToSelectMusicStyle()">{{translate.instant("commonNext")}}</button></div>\n\n          </ion-col>\n\n          <div class="back_btn1 bck_btn_mobile"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n\n\n        </ion-col>\n\n        <ion-col col-3></ion-col>\n\n      </ion-row>\n\n\n\n    </ion-list>\n\n  </div>\n\n  </ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-length/music-length.html"*/,
->>>>>>> master
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */]])
-    ], MusicLengthPage);
-    return MusicLengthPage;
-}());
-
-//# sourceMappingURL=music-length.js.map
-
-/***/ }),
-
-<<<<<<< HEAD
-/***/ 163:
-=======
-/***/ 164:
->>>>>>> master
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectMusicStylePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__library_library__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__music_section_new_music_section_new__ = __webpack_require__(89);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-/**
- * Generated class for the SelectMusicStylePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var SelectMusicStylePage = /** @class */ (function () {
-    function SelectMusicStylePage(navCtrl, navParams, translate, translateModule) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.translate = translate;
-        this.translateModule = translateModule;
-        this.items_one = [];
-<<<<<<< HEAD
-=======
-        this.selectedMusicStyle = "1";
->>>>>>> master
-        this.translate.setDefaultLang('en');
-        if (navParams.data && navParams.data.items_one) {
-            this.items_one = navParams.data.items_one;
-        }
-        else {
-            this.items_one = this.translate.instant('MusicBenefit.MusicStyle.Items_one');
-        }
-    }
-    SelectMusicStylePage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad SelectMusicStylePage');
-    };
-    SelectMusicStylePage.prototype.closeModal = function () {
-        this.navCtrl.pop();
-    };
-    SelectMusicStylePage.prototype.goToLibrary = function () {
-        this.navCtrl.parent.select(1);
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__library_library__["a" /* LibraryPage */], {
-            style: 'Classical',
-            audio: 'Calm'
-        });
-        this.navCtrl.popToRoot();
-    };
-    SelectMusicStylePage.prototype.goToPlayer = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__music_section_new_music_section_new__["a" /* MusicSectionNewPage */], {
-            style: 'Classical',
-            audio: 'Calm'
-        });
-    };
-<<<<<<< HEAD
-    SelectMusicStylePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-selectmusicstyle',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/select-music-style/select-music-style.html"*/'<!--\n\n  Generated template for the SelectMusicStylePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>selectmusicstyle</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content>\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        <ion-col col-3></ion-col>\n\n        <ion-col text-center class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n          <h1 text-center ion-text>{{translate.instant("commonMusicStyleTitle")}}</h1>\n\n          <ul>\n\n              <li *ngFor="let item of items_one; let i = index" >{{ item.name }}\n\n                  <span class="round">  <input type="radio" name="demo" value="{{i}}" id="radio-one" class="form-radio" [checked]="(item.active)" /> <label for="radio-one" ></label> </span>\n\n              </li>\n\n          </ul>\n\n          <ion-col text-center>\n\n            <div class="next_bta"><button (click)="goToPlayer()"><ion-icon ios="ios-play" md="md-play"></ion-icon>&nbsp;&nbsp;{{translate.instant("commonMusicPlay")}}</button></div>\n\n          </ion-col>\n\n        </ion-col>\n\n        <ion-col col-3></ion-col>\n\n          <ion-col text-center col-12>\n\n              <span class="txt-bottom"><b><i>{{translate.instant("startMusicStyleBottomTextOne")}}</i></b> {{translate.instant("commonMusicStylebottomText")}}</span>\n\n          </ion-col>\n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n  </ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/select-music-style/select-music-style.html"*/,
-=======
-    SelectMusicStylePage.prototype.changeChoice = function (val) {
-        this.selectedMusicStyle = val;
-        console.log("selected music style = " + this.selectedMusicStyle);
-    };
-    SelectMusicStylePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-selectmusicstyle',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/select-music-style/select-music-style.html"*/'<!--\n\n  Generated template for the SelectMusicStylePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>selectmusicstyle</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content id="myMusicActivity">\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        <ion-col col-3></ion-col>\n\n        <ion-col text-center class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n          <h1 text-center ion-text>{{translate.instant("commonMusicStyleTitle")}}</h1>\n\n          <!-- <ul>\n\n              <li *ngFor="let item of items_one; let i = index" >{{ item.name }}\n\n                  <span class="round">  <input type="radio" name="demo" value="{{i}}" id="radio-one" class="form-radio" [checked]="(item.active)" /> <label for="radio-one" ></label> </span>\n\n              </li>\n\n          </ul> -->\n\n          <ion-list radio-group [(ngModel)]="selectedMusicStyle">\n\n                  \n\n              <ion-item *ngFor="let item of items_one; let i = index">              \n\n                    <ion-label style="color:black;">{{ item.name }} </ion-label> \n\n                    <ion-radio value="{{i}}" class="form-radio" (ionSelect)="changeChoice(i)" [checked]="(item.active)"></ion-radio>\n\n               </ion-item>\n\n          </ion-list>\n\n          <ion-col text-center>\n\n            <div class="next_bta"><button (click)="goToPlayer()"><ion-icon ios="ios-play" md="md-play"></ion-icon>&nbsp;&nbsp;{{translate.instant("commonMusicPlay")}}</button></div>\n\n          </ion-col>\n\n        </ion-col>\n\n        <ion-col col-3></ion-col>\n\n          <ion-col text-center col-12>\n\n              <span class="txt-bottom"><b><i>{{translate.instant("startMusicStyleBottomTextOne")}}</i></b> {{translate.instant("commonMusicStylebottomText")}}</span>\n\n          </ion-col>\n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n  </ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/select-music-style/select-music-style.html"*/,
->>>>>>> master
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */]])
-    ], SelectMusicStylePage);
-    return SelectMusicStylePage;
-}());
-
-//# sourceMappingURL=select-music-style.js.map
-
-/***/ }),
-
-<<<<<<< HEAD
-/***/ 164:
-=======
-/***/ 165:
->>>>>>> master
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GettingStartedPage; });
-<<<<<<< HEAD
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__setting_aim_setting_aim__ = __webpack_require__(165);
-=======
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__setting_aim_setting_aim__ = __webpack_require__(166);
->>>>>>> master
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__setting_aim_setting_aim__ = __webpack_require__(161);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(17);
@@ -555,20 +59,12 @@ var GettingStartedPage = /** @class */ (function () {
 
 /***/ }),
 
-<<<<<<< HEAD
-/***/ 165:
-=======
-/***/ 166:
->>>>>>> master
+/***/ 161:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingAimPage; });
-<<<<<<< HEAD
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__music_section_music_section__ = __webpack_require__(166);
-=======
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__music_section_music_section__ = __webpack_require__(167);
->>>>>>> master
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__music_section_music_section__ = __webpack_require__(162);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(17);
@@ -622,20 +118,12 @@ var SettingAimPage = /** @class */ (function () {
 
 /***/ }),
 
-<<<<<<< HEAD
-/***/ 166:
-=======
-/***/ 167:
->>>>>>> master
+/***/ 162:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MusicSectionPage; });
-<<<<<<< HEAD
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scheduling_week_scheduling_week__ = __webpack_require__(167);
-=======
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scheduling_week_scheduling_week__ = __webpack_require__(168);
->>>>>>> master
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scheduling_week_scheduling_week__ = __webpack_require__(163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(17);
@@ -689,11 +177,7 @@ var MusicSectionPage = /** @class */ (function () {
 
 /***/ }),
 
-<<<<<<< HEAD
-/***/ 167:
-=======
-/***/ 168:
->>>>>>> master
+/***/ 163:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -701,11 +185,7 @@ var MusicSectionPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(17);
-<<<<<<< HEAD
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__congratulations_congratulations__ = __webpack_require__(367);
-=======
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__congratulations_congratulations__ = __webpack_require__(160);
->>>>>>> master
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__congratulations_congratulations__ = __webpack_require__(366);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -755,11 +235,360 @@ var SchedulingWeekPage = /** @class */ (function () {
 
 /***/ }),
 
-<<<<<<< HEAD
+/***/ 164:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MusicBenefitPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__music_style_music_style__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_pop_over_pop_over__ = __webpack_require__(673);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+/**
+ * Generated class for the MusicBenefitPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var MusicBenefitPage = /** @class */ (function () {
+    function MusicBenefitPage(navCtrl, navParams, translate, translateModule, popoverCtrl) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.translate = translate;
+        this.translateModule = translateModule;
+        this.popoverCtrl = popoverCtrl;
+        this.selected = 0;
+        this.items_one = this.translate.instant('library.items.items_two');
+        this.translate.setDefaultLang('en');
+        this.items_one = this.translate.instant('library.items.items_two');
+        this.musicStyle = 0;
+    }
+    MusicBenefitPage.prototype.ionViewWillEnter = function () {
+        console.log('ionViewWillEnter' + this.selected);
+    };
+    MusicBenefitPage.prototype.closeModal = function () {
+        this.navCtrl.pop();
+    };
+    MusicBenefitPage.prototype.goToMusicStyle = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__music_style_music_style__["a" /* MusicStylePage */], {
+            "items_one": this.translate.instant('MusicBenefit.MusicStyle.Items_one'),
+            "MusicStyle": this.getSelectedMusicStyle()
+        });
+    };
+    MusicBenefitPage.prototype.presentPopover = function (myEvent) {
+        var popover = this.popoverCtrl.create(__WEBPACK_IMPORTED_MODULE_4__components_pop_over_pop_over__["a" /* PopOverComponent */]);
+        popover.present({
+            ev: myEvent
+        });
+    };
+    MusicBenefitPage.prototype.changeStatus = function (newValue) {
+        this.musicStyle = newValue;
+        this.updateSelected(newValue);
+    };
+    MusicBenefitPage.prototype.getFromLocal = function (key) {
+        return localStorage.getItem(key);
+    };
+    MusicBenefitPage.prototype.getSelectedMusicStyle = function () {
+        var selected = {};
+        for (var i = 0; i < this.items_one.length; i++) {
+            var item = this.items_one[i];
+            if (item.active) {
+                selected = item;
+            }
+        }
+        return selected;
+    };
+    MusicBenefitPage.prototype.updateSelected = function (newValue) {
+        for (var i = 0; i < this.items_one.length; i++) {
+            var item = this.items_one[i];
+            if ((item.id - 1) === newValue) {
+                item.active = true;
+            }
+            else {
+                item.active = false;
+            }
+        }
+    };
+    MusicBenefitPage.prototype.setToLocal = function (key, value) {
+        localStorage.setItem(key, value);
+    };
+    MusicBenefitPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-musicbenefit',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-benefit/music-benefit.html"*/'<!--\n\n  Generated template for the MusicBenefitPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>usingmusicbenefit</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content id="myModel">\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        <ion-col text-center col-6 class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n            <h1 text-center ion-text>{{translate.instant("startMusicBenefitTitle")}}</h1>\n\n            <!-- <ul>\n\n                <li *ngFor="let item of items_one; let i = index">\n\n                  {{ item.name }} &nbsp;  <ion-icon name="ios-help-circle-outline" (click)="presentPopover($event)" ></ion-icon> \n\n                    <span class="round"> \n\n                      <input type="radio" name="demo" (click)="changeStatus(i)" value="{{ i }}" id="radio-one" class="form-radio" [checked]=" (item.active)"  /></span>\n\n                </li>\n\n            </ul> -->\n\n            <ion-list radio-group [(ngModel)]="musicStyle">\n\n                  \n\n              <ion-item *ngFor="let item of items_one; let i = index">              \n\n                    <ion-label style="color:black;">{{ item.name }} &nbsp;  \n\n                        <ion-icon name="ios-help-circle-outline" tooltip="Help" positionV="top" [attr.duration]="10000"></ion-icon></ion-label> \n\n                    <ion-radio value="{{i}}" class="form-radio"(ionSelect)="changeStatus(i)" [checked]=" (item.active)" ></ion-radio>\n\n               </ion-item>\n\n               </ion-list>\n\n            <ion-col text-center>\n\n              <div class="next_bta" ><button (click)="goToMusicStyle()">{{translate.instant("commonNext")}} </button></div>\n\n            </ion-col>\n\n        </ion-col>\n\n        \n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-benefit/music-benefit.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* PopoverController */]])
+    ], MusicBenefitPage);
+    return MusicBenefitPage;
+}());
+
+//# sourceMappingURL=music-benefit.js.map
+
+/***/ }),
+
+/***/ 165:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MusicStylePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__music_section_new_music_section_new__ = __webpack_require__(89);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+// import {LibraryPage} from '../library/library';
+
+/**
+ * Generated class for the MusicStylePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var MusicStylePage = /** @class */ (function () {
+    function MusicStylePage(navCtrl, navParams, translate, translateModule) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.translate = translate;
+        this.translateModule = translateModule;
+        this.commonMusicStyles = ["0", "1", "2"];
+        this.items_one = [];
+        this.translate.setDefaultLang('en');
+        console.log('Music style navParams.data' + navParams.data);
+        if (navParams.data) {
+            console.log("item one = " + JSON.stringify(navParams.data.items_one));
+            this.items_one = navParams.data.items_one;
+            console.log("music style = " + JSON.stringify(navParams.data.MusicStyle));
+            this.musicStyle = navParams.data.MusicStyle;
+        }
+        else {
+            this.items_one = this.translate.instant('library.items.items_two');
+        }
+        this.commonMusicStyle = "0";
+    }
+    MusicStylePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad MusicStylePage');
+    };
+    MusicStylePage.prototype.closeModal = function () {
+        this.navCtrl.pop();
+    };
+    // goToLibrary(){
+    //   this.navCtrl.parent.select(1);
+    //   this.navCtrl.push(LibraryPage, {
+    //     style : 'Classical', 
+    //     audio : 'Calm'
+    //   });
+    //   this.navCtrl.popToRoot();
+    // }
+    MusicStylePage.prototype.goToMusicSectionNewPage = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__music_section_new_music_section_new__["a" /* MusicSectionNewPage */], {
+            style: 'Classical',
+            audio: 'Calm'
+        });
+    };
+    MusicStylePage.prototype.changeStatus = function (val) {
+        this.commonMusicStyle = val;
+    };
+    MusicStylePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-musicstyle',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-style/music-style.html"*/'\n\n\n\n\n\n<ion-content id="myModel">\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        \n\n        <ion-col text-center col-6 class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n          <h1 text-center ion-text>{{translate.instant("commonMusicStyleTitle")}}</h1>\n\n          <!-- <ul>\n\n              <li *ngFor="let item of items_one; let i = index" >{{ item.name }}\n\n                  <span class="round">  <input type="radio" name="demo" (click)="changeStatus(i)" value="{{ i }}" id="radio-one" class="form-radio" [checked]=" (item.active)"  /> <label for="radio-one" ></label> </span>\n\n              </li>\n\n          </ul> -->\n\n          <ion-list radio-group [(ngModel)]="commonMusicStyle">\n\n                  \n\n              <ion-item *ngFor="let item of items_one; let i = index">              \n\n                    <ion-label style="color:rgb(27, 27, 27);">{{ item.name }}</ion-label> \n\n                    <ion-radio value="{{i}}" class="form-radio"(ionSelect)="changeStatus(i)" [checked]=" (item.active)" ></ion-radio>\n\n               </ion-item>\n\n               </ion-list>\n\n          <ion-col text-center>\n\n            <div class="next_bta"><button (click)="goToMusicSectionNewPage()"><ion-icon ios="ios-play" md="md-play"></ion-icon>&nbsp;&nbsp;{{translate.instant("commonMusicPlay")}}</button></div>\n\n          </ion-col>\n\n        </ion-col>\n\n        \n\n          <ion-col text-center col-12 id="musicStyle">\n\n              <span class="txt-bottom"><b><i>{{translate.instant("startMusicStyleBottomTextOne")}}</i></b> {{translate.instant("startMusicStyleBottomTextTwo")}}\n\n               {{translate.instant("startMusicStyleBottomTextThree")}} {{translate.instant("startMusicStyleBottomTextFour")}}\n\n              </span>\n\n          </ion-col>\n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n  </ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-style/music-style.html"*/,
+        }),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */]) === "function" && _d || Object])
+    ], MusicStylePage);
+    return MusicStylePage;
+    var _a, _b, _c, _d;
+}());
+
+//# sourceMappingURL=music-style.js.map
+
+/***/ }),
+
+/***/ 166:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MusicLengthPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select_music_style_select_music_style__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(17);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the MusicLengthPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var MusicLengthPage = /** @class */ (function () {
+    function MusicLengthPage(navCtrl, navParams, translate, translateModule) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.translate = translate;
+        this.translateModule = translateModule;
+        this.customMusicLength = false;
+        this.isGroup = false;
+        this.selectedMusicLength = 1;
+        this.translate.setDefaultLang('en');
+        this.customMusicLength = this.navParams.data.updateMusicStyle;
+        this.isGroup = this.navParams.data.isGroup;
+    }
+    MusicLengthPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad MusicLengthPage');
+    };
+    MusicLengthPage.prototype.closeModal = function () {
+        this.navCtrl.pop();
+    };
+    MusicLengthPage.prototype.goToSelectMusicStyle = function () {
+        if (this.customMusicLength) {
+            this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__select_music_style_select_music_style__["a" /* SelectMusicStylePage */], {
+                "items_one": this.isGroup ? this.translate.instant('MusicLength.MusicStyleGroup.Items_one') : this.translate.instant('MusicLength.MusicStyle.Items_one')
+            });
+        }
+        else {
+            this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__select_music_style_select_music_style__["a" /* SelectMusicStylePage */]);
+        }
+    };
+    MusicLengthPage.prototype.presentPopover = function (myEvent) {
+        this.selectedMusicLength = myEvent;
+        console.log("selected music length = " + this.selectedMusicLength);
+    };
+    MusicLengthPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-musiclength',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-length/music-length.html"*/'<!--\n\n  Generated template for the MusicLengthPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>musiclength</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content id="myMusicActivity"> \n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        <ion-col col-3></ion-col>\n\n      <ion-col text-center  class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n          <h1 text-center ion-text>{{translate.instant("commonActivityLengthTitle")}}</h1>\n\n          <!-- <ul>\n\n            <li>{{translate.instant("commonActivityLengthFirstOption")}} <span class="round">\n\n              <input type="radio" name="demo" value="1" id="radio-one" class="form-radio" checked />\n\n              <label for="radio-one"></label>\n\n</span></li>\n\n            <li>{{translate.instant("commonActivityLengthSecondOption")}} <span class="round">\n\n              <input type="radio" name="demo" value="2" id="radio-two" class="form-radio" />\n\n              <label for="radio-two"></label>\n\n</span></li>\n\n          </ul> -->\n\n          <ion-list radio-group [(ngModel)]="selectedMusicLength">\n\n                           \n\n            <ion-item>\n\n                 <ion-label style="color:black;">{{translate.instant("commonActivityLengthFirstOption")}}</ion-label>\n\n                  <ion-radio value="1" class="form-radio" (ionSelect)="presentPopover($event)"></ion-radio>\n\n             </ion-item>\n\n              <ion-item>\n\n                  <ion-label style="color:black;">{{translate.instant("commonActivityLengthSecondOption")}} </ion-label>  \n\n                  <ion-radio value="2" class="form-radio"(ionSelect)="presentPopover($event)"></ion-radio>\n\n                  </ion-item>\n\n            \n\n          </ion-list>\n\n          <ion-col text-center>\n\n              <div class="next_bta" ><button (click)="goToSelectMusicStyle()">{{translate.instant("commonNext")}}</button></div>\n\n          </ion-col>\n\n          <div class="back_btn1 bck_btn_mobile"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n\n\n        </ion-col>\n\n        <ion-col col-3></ion-col>\n\n      </ion-row>\n\n\n\n    </ion-list>\n\n  </div>\n\n  </ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-length/music-length.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */]])
+    ], MusicLengthPage);
+    return MusicLengthPage;
+}());
+
+//# sourceMappingURL=music-length.js.map
+
+/***/ }),
+
+/***/ 167:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectMusicStylePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__library_library__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__music_section_new_music_section_new__ = __webpack_require__(89);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+/**
+ * Generated class for the SelectMusicStylePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var SelectMusicStylePage = /** @class */ (function () {
+    function SelectMusicStylePage(navCtrl, navParams, translate, translateModule) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.translate = translate;
+        this.translateModule = translateModule;
+        this.items_one = [];
+        this.selectedMusicStyle = "1";
+        this.translate.setDefaultLang('en');
+        if (navParams.data && navParams.data.items_one) {
+            this.items_one = navParams.data.items_one;
+        }
+        else {
+            this.items_one = this.translate.instant('MusicBenefit.MusicStyle.Items_one');
+        }
+    }
+    SelectMusicStylePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad SelectMusicStylePage');
+    };
+    SelectMusicStylePage.prototype.closeModal = function () {
+        this.navCtrl.pop();
+    };
+    SelectMusicStylePage.prototype.goToLibrary = function () {
+        this.navCtrl.parent.select(1);
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__library_library__["a" /* LibraryPage */], {
+            style: 'Classical',
+            audio: 'Calm'
+        });
+        this.navCtrl.popToRoot();
+    };
+    SelectMusicStylePage.prototype.goToPlayer = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__music_section_new_music_section_new__["a" /* MusicSectionNewPage */], {
+            style: 'Classical',
+            audio: 'Calm'
+        });
+    };
+    SelectMusicStylePage.prototype.changeChoice = function (val) {
+        this.selectedMusicStyle = val;
+        console.log("selected music style = " + this.selectedMusicStyle);
+    };
+    SelectMusicStylePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-selectmusicstyle',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/select-music-style/select-music-style.html"*/'<!--\n\n  Generated template for the SelectMusicStylePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>selectmusicstyle</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content id="myMusicActivity">\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        <ion-col col-3></ion-col>\n\n        <ion-col text-center class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n          <h1 text-center ion-text>{{translate.instant("commonMusicStyleTitle")}}</h1>\n\n          <!-- <ul>\n\n              <li *ngFor="let item of items_one; let i = index" >{{ item.name }}\n\n                  <span class="round">  <input type="radio" name="demo" value="{{i}}" id="radio-one" class="form-radio" [checked]="(item.active)" /> <label for="radio-one" ></label> </span>\n\n              </li>\n\n          </ul> -->\n\n          <ion-list radio-group [(ngModel)]="selectedMusicStyle">\n\n                  \n\n              <ion-item *ngFor="let item of items_one; let i = index">              \n\n                    <ion-label style="color:black;">{{ item.name }} </ion-label> \n\n                    <ion-radio value="{{i}}" class="form-radio" (ionSelect)="changeChoice(i)" [checked]="(item.active)"></ion-radio>\n\n               </ion-item>\n\n          </ion-list>\n\n          <ion-col text-center>\n\n            <div class="next_bta"><button (click)="goToPlayer()"><ion-icon ios="ios-play" md="md-play"></ion-icon>&nbsp;&nbsp;{{translate.instant("commonMusicPlay")}}</button></div>\n\n          </ion-col>\n\n        </ion-col>\n\n        <ion-col col-3></ion-col>\n\n          <ion-col text-center col-12>\n\n              <span class="txt-bottom"><b><i>{{translate.instant("startMusicStyleBottomTextOne")}}</i></b> {{translate.instant("commonMusicStylebottomText")}}</span>\n\n          </ion-col>\n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n  </ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/select-music-style/select-music-style.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */]])
+    ], SelectMusicStylePage);
+    return SelectMusicStylePage;
+}());
+
+//# sourceMappingURL=select-music-style.js.map
+
+/***/ }),
+
 /***/ 168:
-=======
-/***/ 169:
->>>>>>> master
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -804,11 +633,7 @@ var SettingsPage = /** @class */ (function () {
 
 /***/ }),
 
-<<<<<<< HEAD
 /***/ 179:
-=======
-/***/ 180:
->>>>>>> master
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -821,28 +646,20 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-<<<<<<< HEAD
 webpackEmptyAsyncContext.id = 179;
 
 /***/ }),
 
 /***/ 223:
-=======
-webpackEmptyAsyncContext.id = 180;
-
-/***/ }),
-
-/***/ 224:
->>>>>>> master
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/congratulations/congratulations.module": [
-		703,
+		704,
 		16
 	],
 	"../pages/getting-started/getting-started.module": [
-		704,
+		703,
 		15
 	],
 	"../pages/library/library.module": [
@@ -850,31 +667,31 @@ var map = {
 		14
 	],
 	"../pages/music-activity/music-activity.module": [
-		706,
+		711,
 		13
 	],
 	"../pages/music-benefit/music-benefit.module": [
-		707,
+		712,
 		12
 	],
 	"../pages/music-length/music-length.module": [
-		708,
+		710,
 		11
 	],
 	"../pages/music-profile/music-profile.module": [
-		709,
+		706,
 		10
 	],
 	"../pages/music-section-new/music-section-new.module": [
-		710,
+		707,
 		9
 	],
 	"../pages/music-section/music-section.module": [
-		711,
+		708,
 		8
 	],
 	"../pages/music-style/music-style.module": [
-		712,
+		709,
 		7
 	],
 	"../pages/play-list/play-list.module": [
@@ -882,27 +699,11 @@ var map = {
 		0
 	],
 	"../pages/scheduling-week/scheduling-week.module": [
-<<<<<<< HEAD
-		714,
-		6
-	],
-	"../pages/select-music-style/select-music-style.module": [
-		715,
-=======
-<<<<<<< HEAD
-		714,
-		6
-	],
-	"../pages/select-music-style/select-music-style.module": [
-		715,
-=======
 		715,
 		6
 	],
 	"../pages/select-music-style/select-music-style.module": [
 		714,
->>>>>>> master
->>>>>>> 9654fedbf2797b6b51e038408ebc143c77032681
 		5
 	],
 	"../pages/setting-aim/setting-aim.module": [
@@ -933,86 +734,21 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-<<<<<<< HEAD
 webpackAsyncContext.id = 223;
-=======
-webpackAsyncContext.id = 224;
->>>>>>> master
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-<<<<<<< HEAD
-/***/ 320:
-=======
-/***/ 321:
->>>>>>> master
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PopOverComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the PopOverComponent component.
- *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
- */
-var PopOverComponent = /** @class */ (function () {
-    function PopOverComponent(viewCtrl) {
-        this.viewCtrl = viewCtrl;
-        this.title = "A popover title";
-        this.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique neque at erat pretium, a laoreet metus sodales. Maecenas consectetur, libero sed porttitor imperdiet, est nisi mattis massa, id posuere neque libero vel tortor. Cras non pellentesque tellus. Fusce semper elit in arcu venenatis, eget porttitor velit sodales. Nulla gravida.";
-    }
-    PopOverComponent.prototype.close = function () {
-        this.viewCtrl.dismiss();
-    };
-    PopOverComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'pop-over',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/components/pop-over/pop-over.html"*/'<!-- Generated template for the PopOverComponent component -->\n<div padding>\n  <h1>{{title}}</h1>\n  <p>{{description}}</p>\n</div>\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/components/pop-over/pop-over.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */]])
-    ], PopOverComponent);
-    return PopOverComponent;
-}());
-
-//# sourceMappingURL=pop-over.js.map
-
-/***/ }),
-
-<<<<<<< HEAD
-/***/ 364:
-=======
-/***/ 365:
->>>>>>> master
+/***/ 363:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-<<<<<<< HEAD
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home__ = __webpack_require__(365);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home__ = __webpack_require__(364);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__library_library__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tips_tips__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__settings_settings__ = __webpack_require__(168);
-=======
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home__ = __webpack_require__(366);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__library_library__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tips_tips__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__settings_settings__ = __webpack_require__(169);
->>>>>>> master
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(17);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1052,20 +788,12 @@ var TabsPage = /** @class */ (function () {
 
 /***/ }),
 
-<<<<<<< HEAD
-/***/ 365:
-=======
-/***/ 366:
->>>>>>> master
+/***/ 364:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
-<<<<<<< HEAD
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__getting_started_getting_started__ = __webpack_require__(164);
-=======
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__getting_started_getting_started__ = __webpack_require__(165);
->>>>>>> master
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__getting_started_getting_started__ = __webpack_require__(160);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__using_music_using_music__ = __webpack_require__(88);
@@ -1122,11 +850,7 @@ var HomePage = /** @class */ (function () {
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-<<<<<<< HEAD
-            selector: 'page-home',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/home/home.html"*/'<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">\n\n<ion-content no-bounce>\n\n	<ion-list>\n\n		<ion-row class="home_heading">\n\n			<ion-col text-center col-12>\n\n					<h1>{{translate.instant("homeTitle")}}</h1>\n\n					<a href="#" class="white-btn" (click)="goToMusicPage()">{{translate.instant("homeButton")}}</a>\n\n			</ion-col>\n\n		</ion-row>\n\n		<ion-row class="home_four_icons">\n\n			<ion-col class="section_one" col-6>\n\n				<h2>{{translate.instant("homeLeftTitle")}}</h2>\n\n				<ion-col class="home_icons">\n\n					<a class="face_icon" href="#" (click)="goToMusicActivity()">\n\n						<i class="material-icons md-48">face</i><h4> {{translate.instant("homeFirstIcon")}}</h4>\n\n					</a>\n\n				</ion-col>\n\n				<ion-col class="home_icons">\n\n					<a class="group_icon" href="#" (click)="goToMusicActivity(true)">\n\n						<div><img src="assets/imgs/gourp_icon.png" width="100%"></div>\n\n						<h4>{{translate.instant("homeSecondIcon")}}</h4>\n\n					</a>\n\n				</ion-col>\n\n			</ion-col>\n\n			<ion-col class="section_one" col-6>\n\n				<h2> {{translate.instant("homeRightTitle")}} </h2>\n\n				<ion-col class="home_icons">\n\n					<a class="music_profile_icon" href="#" (click)="goToMusicProfile()">\n\n						<i class="material-icons md-48">music_note</i><h4> {{translate.instant("musicProfileTitle")}}</h4>\n\n					</a>\n\n				</ion-col>\n\n				<ion-col class="home_icons">\n\n					<a class="music_plan_icon" href="#" (click)="goToGettingStarted()">\n\n						<i class="material-icons md-48">calendar_today</i><h4> {{translate.instant("homeFourthIcon")}}</h4>\n\n					</a>\n\n				</ion-col>\n\n			</ion-col>\n\n		</ion-row>\n\n	</ion-list>\n\n</ion-content>'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/home/home.html"*/
-=======
             selector: 'page-home',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/home/home.html"*/'<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">\n\n<ion-content no-bounce>\n\n	<ion-list>\n\n		<ion-row class="home_heading">\n\n			<ion-col text-center col-12>\n\n					<h1><b>{{translate.instant("homeTitle")}}</b></h1>\n\n					<a href="#" class="white-btn" (click)="goToMusicPage()">{{translate.instant("homeButton")}}</a>\n\n			</ion-col>\n\n		</ion-row>\n\n		<ion-row class="home_four_icons">\n\n			<ion-col class="section_one" col-6>\n\n				<h2>{{translate.instant("homeLeftTitle")}}</h2>\n\n				<ion-col class="home_icons">\n\n					<a class="face_icon" href="#" (click)="goToMusicActivity()">\n\n						<i class="material-icons md-48">face</i><h4> {{translate.instant("homeFirstIcon")}}</h4>\n\n					</a>\n\n				</ion-col>\n\n				<ion-col class="home_icons">\n\n					<a class="group_icon" href="#" (click)="goToMusicActivity(true)">\n\n						<div><img src="assets/imgs/gourp_icon.png" width="100%"></div>\n\n						<h4>{{translate.instant("homeSecondIcon")}}</h4>\n\n					</a>\n\n				</ion-col>\n\n			</ion-col>\n\n			<ion-col class="section_one" col-6>\n\n				<h2> {{translate.instant("homeRightTitle")}} </h2>\n\n				<ion-col class="home_icons">\n\n					<a class="music_profile_icon" href="#" (click)="goToMusicProfile()">\n\n						<i class="material-icons md-48">music_note</i><h4> {{translate.instant("musicProfileTitle")}}</h4>\n\n					</a>\n\n				</ion-col>\n\n				<ion-col class="home_icons">\n\n					<a class="music_plan_icon" href="#" (click)="goToGettingStarted()">\n\n						<i class="material-icons md-48">calendar_today</i><h4> {{translate.instant("homeFourthIcon")}}</h4>\n\n					</a>\n\n				</ion-col>\n\n			</ion-col>\n\n		</ion-row>\n\n	</ion-list>\n\n</ion-content>'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/home/home.html"*/
->>>>>>> master
             // template: `${home.title}`,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__["b" /* TranslateModule */]])
@@ -1138,8 +862,7 @@ var HomePage = /** @class */ (function () {
 
 /***/ }),
 
-<<<<<<< HEAD
-/***/ 367:
+/***/ 366:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1202,15 +925,13 @@ var CongratulationsPage = /** @class */ (function () {
 
 /***/ }),
 
-=======
->>>>>>> master
-/***/ 368:
+/***/ 367:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(369);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(373);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(368);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(372);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -1218,7 +939,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 373:
+/***/ 372:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1229,63 +950,32 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(691);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_library_library__ = __webpack_require__(91);
-<<<<<<< HEAD
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(365);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_tabs_tabs__ = __webpack_require__(364);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(364);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_tabs_tabs__ = __webpack_require__(363);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_tips_tips__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__ = __webpack_require__(360);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__ = __webpack_require__(363);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__ = __webpack_require__(359);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__ = __webpack_require__(362);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_settings_settings__ = __webpack_require__(168);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_using_music_using_music__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_music_benefit_music_benefit__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_music_style_music_style__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_music_benefit_music_benefit__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_music_style_music_style__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_music_activity_music_activity__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_music_length_music_length__ = __webpack_require__(162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_select_music_style_select_music_style__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_music_length_music_length__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_select_music_style_select_music_style__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_music_profile_music_profile__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ngx_translate_core__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ngx_translate_http_loader__ = __webpack_require__(695);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__angular_common_http__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_getting_started_getting_started__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_setting_aim_setting_aim__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_music_section_music_section__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_scheduling_week_scheduling_week__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_getting_started_getting_started__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_setting_aim_setting_aim__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_music_section_music_section__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_scheduling_week_scheduling_week__ = __webpack_require__(163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_progress_bar_progress_bar__ = __webpack_require__(696);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_audio_audio__ = __webpack_require__(697);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__providers_smart_audio_smart_audio__ = __webpack_require__(698);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_music_section_new_music_section_new__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29_ionic_tooltips__ = __webpack_require__(699);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__angular_platform_browser_animations__ = __webpack_require__(701);
-=======
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(366);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_tabs_tabs__ = __webpack_require__(365);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_tips_tips__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__ = __webpack_require__(361);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__ = __webpack_require__(364);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_settings_settings__ = __webpack_require__(169);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_using_music_using_music__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_music_benefit_music_benefit__ = __webpack_require__(161);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_music_style_music_style__ = __webpack_require__(162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_music_activity_music_activity__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_music_length_music_length__ = __webpack_require__(163);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_select_music_style_select_music_style__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_music_profile_music_profile__ = __webpack_require__(86);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_congratulations_congratulations__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ngx_translate_core__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ngx_translate_http_loader__ = __webpack_require__(695);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__angular_common_http__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_getting_started_getting_started__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_setting_aim_setting_aim__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_music_section_music_section__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_scheduling_week_scheduling_week__ = __webpack_require__(168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_progress_bar_progress_bar__ = __webpack_require__(696);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__providers_audio_audio__ = __webpack_require__(697);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__providers_smart_audio_smart_audio__ = __webpack_require__(698);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29_ionic_tooltips__ = __webpack_require__(699);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__angular_platform_browser_animations__ = __webpack_require__(701);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__components_pop_over_pop_over__ = __webpack_require__(321);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__pages_music_section_new_music_section_new__ = __webpack_require__(89);
->>>>>>> master
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1323,17 +1013,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-<<<<<<< HEAD
 // AoT requires an exported function for factories
 function HttpLoaderFactory(http) {
     return new __WEBPACK_IMPORTED_MODULE_19__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](http, "../assets/i18n/", ".json");
-=======
-
-
-// AoT requires an exported function for factories
-function HttpLoaderFactory(http) {
-    return new __WEBPACK_IMPORTED_MODULE_20__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](http, "../assets/i18n/", ".json");
->>>>>>> master
 }
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -1354,7 +1036,6 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_15__pages_music_length_music_length__["a" /* MusicLengthPage */],
                 __WEBPACK_IMPORTED_MODULE_16__pages_select_music_style_select_music_style__["a" /* SelectMusicStylePage */],
                 __WEBPACK_IMPORTED_MODULE_17__pages_music_profile_music_profile__["a" /* MusicProfilePage */],
-<<<<<<< HEAD
                 __WEBPACK_IMPORTED_MODULE_21__pages_getting_started_getting_started__["a" /* GettingStartedPage */],
                 __WEBPACK_IMPORTED_MODULE_22__pages_setting_aim_setting_aim__["a" /* SettingAimPage */],
                 __WEBPACK_IMPORTED_MODULE_23__pages_music_section_music_section__["a" /* MusicSectionPage */],
@@ -1370,53 +1051,24 @@ var AppModule = /** @class */ (function () {
                         provide: __WEBPACK_IMPORTED_MODULE_18__ngx_translate_core__["a" /* TranslateLoader */],
                         useFactory: HttpLoaderFactory,
                         deps: [__WEBPACK_IMPORTED_MODULE_20__angular_common_http__["a" /* HttpClient */]]
-=======
-                __WEBPACK_IMPORTED_MODULE_22__pages_getting_started_getting_started__["a" /* GettingStartedPage */],
-                __WEBPACK_IMPORTED_MODULE_23__pages_setting_aim_setting_aim__["a" /* SettingAimPage */],
-                __WEBPACK_IMPORTED_MODULE_24__pages_music_section_music_section__["a" /* MusicSectionPage */],
-                __WEBPACK_IMPORTED_MODULE_25__pages_scheduling_week_scheduling_week__["a" /* SchedulingWeekPage */],
-                __WEBPACK_IMPORTED_MODULE_26__components_progress_bar_progress_bar__["a" /* ProgressBarComponent */],
-                __WEBPACK_IMPORTED_MODULE_18__pages_congratulations_congratulations__["a" /* CongratulationsPage */],
-                __WEBPACK_IMPORTED_MODULE_31__components_pop_over_pop_over__["a" /* PopOverComponent */],
-                __WEBPACK_IMPORTED_MODULE_32__pages_music_section_new_music_section_new__["a" /* MusicSectionNewPage */]
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_21__angular_common_http__["b" /* HttpClientModule */],
-                __WEBPACK_IMPORTED_MODULE_19__ngx_translate_core__["b" /* TranslateModule */].forRoot({
-                    loader: {
-                        provide: __WEBPACK_IMPORTED_MODULE_19__ngx_translate_core__["a" /* TranslateLoader */],
-                        useFactory: HttpLoaderFactory,
-                        deps: [__WEBPACK_IMPORTED_MODULE_21__angular_common_http__["a" /* HttpClient */]]
->>>>>>> master
                     }
                 }),
                 __WEBPACK_IMPORTED_MODULE_30__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/congratulations/congratulations.module#CongratulationsPageModule', name: 'CongratulationsPage', segment: 'congratulations', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/getting-started/getting-started.module#GettingStartedPageModule', name: 'GettingStartedPage', segment: 'getting-started', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/congratulations/congratulations.module#CongratulationsPageModule', name: 'CongratulationsPage', segment: 'congratulations', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/library/library.module#LibraryPageModule', name: 'LibraryPage', segment: 'library', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/music-activity/music-activity.module#MusicActivityPageModule', name: 'MusicActivityPage', segment: 'music-activity', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/music-benefit/music-benefit.module#MusicBenefitPageModule', name: 'MusicBenefitPage', segment: 'music-benefit', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/music-length/music-length.module#MusicLengthPageModule', name: 'MusicLengthPage', segment: 'music-length', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/music-profile/music-profile.module#MusicProfilePageModule', name: 'MusicProfilePage', segment: 'music-profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/music-section-new/music-section-new.module#MusicSectionNewPageModule', name: 'MusicSectionNewPage', segment: 'music-section-new', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/music-section/music-section.module#MusicSectionPageModule', name: 'MusicSectionPage', segment: 'music-section', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/music-style/music-style.module#MusicStylePageModule', name: 'MusicStylePage', segment: 'music-style', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/music-length/music-length.module#MusicLengthPageModule', name: 'MusicLengthPage', segment: 'music-length', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/music-activity/music-activity.module#MusicActivityPageModule', name: 'MusicActivityPage', segment: 'music-activity', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/music-benefit/music-benefit.module#MusicBenefitPageModule', name: 'MusicBenefitPage', segment: 'music-benefit', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/play-list/play-list.module#PlayListPageModule', name: 'PlayListPage', segment: 'play-list', priority: 'low', defaultHistory: [] },
-<<<<<<< HEAD
-                        { loadChildren: '../pages/scheduling-week/scheduling-week.module#SchedulingWeekPageModule', name: 'SchedulingWeekPage', segment: 'scheduling-week', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/select-music-style/select-music-style.module#SelectMusicStylePageModule', name: 'SelectMusicStylePage', segment: 'select-music-style', priority: 'low', defaultHistory: [] },
-=======
-<<<<<<< HEAD
-                        { loadChildren: '../pages/scheduling-week/scheduling-week.module#SchedulingWeekPageModule', name: 'SchedulingWeekPage', segment: 'scheduling-week', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/select-music-style/select-music-style.module#SelectMusicStylePageModule', name: 'SelectMusicStylePage', segment: 'select-music-style', priority: 'low', defaultHistory: [] },
-=======
                         { loadChildren: '../pages/select-music-style/select-music-style.module#SelectMusicStylePageModule', name: 'SelectMusicStylePage', segment: 'select-music-style', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/scheduling-week/scheduling-week.module#SchedulingWeekPageModule', name: 'SchedulingWeekPage', segment: 'scheduling-week', priority: 'low', defaultHistory: [] },
->>>>>>> master
->>>>>>> 9654fedbf2797b6b51e038408ebc143c77032681
                         { loadChildren: '../pages/setting-aim/setting-aim.module#SettingAimPageModule', name: 'SettingAimPage', segment: 'setting-aim', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/settings/settings.module#SettingsPageModule', name: 'SettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tips/tips.module#TipsPageModule', name: 'TipsPage', segment: 'tips', priority: 'low', defaultHistory: [] },
@@ -1440,33 +1092,18 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_15__pages_music_length_music_length__["a" /* MusicLengthPage */],
                 __WEBPACK_IMPORTED_MODULE_16__pages_select_music_style_select_music_style__["a" /* SelectMusicStylePage */],
                 __WEBPACK_IMPORTED_MODULE_17__pages_music_profile_music_profile__["a" /* MusicProfilePage */],
-<<<<<<< HEAD
                 __WEBPACK_IMPORTED_MODULE_21__pages_getting_started_getting_started__["a" /* GettingStartedPage */],
                 __WEBPACK_IMPORTED_MODULE_22__pages_setting_aim_setting_aim__["a" /* SettingAimPage */],
                 __WEBPACK_IMPORTED_MODULE_23__pages_music_section_music_section__["a" /* MusicSectionPage */],
                 __WEBPACK_IMPORTED_MODULE_24__pages_scheduling_week_scheduling_week__["a" /* SchedulingWeekPage */],
                 __WEBPACK_IMPORTED_MODULE_28__pages_music_section_new_music_section_new__["a" /* MusicSectionNewPage */]
-=======
-                __WEBPACK_IMPORTED_MODULE_22__pages_getting_started_getting_started__["a" /* GettingStartedPage */],
-                __WEBPACK_IMPORTED_MODULE_23__pages_setting_aim_setting_aim__["a" /* SettingAimPage */],
-                __WEBPACK_IMPORTED_MODULE_24__pages_music_section_music_section__["a" /* MusicSectionPage */],
-                __WEBPACK_IMPORTED_MODULE_25__pages_scheduling_week_scheduling_week__["a" /* SchedulingWeekPage */],
-                __WEBPACK_IMPORTED_MODULE_18__pages_congratulations_congratulations__["a" /* CongratulationsPage */],
-                __WEBPACK_IMPORTED_MODULE_31__components_pop_over_pop_over__["a" /* PopOverComponent */],
-                __WEBPACK_IMPORTED_MODULE_32__pages_music_section_new_music_section_new__["a" /* MusicSectionNewPage */]
->>>>>>> master
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__["a" /* StatusBar */],
                 __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__["a" /* SplashScreen */],
                 { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] },
-<<<<<<< HEAD
                 __WEBPACK_IMPORTED_MODULE_26__providers_audio_audio__["a" /* AudioProvider */],
                 __WEBPACK_IMPORTED_MODULE_27__providers_smart_audio_smart_audio__["a" /* SmartAudioProvider */]
-=======
-                __WEBPACK_IMPORTED_MODULE_27__providers_audio_audio__["a" /* AudioProvider */],
-                __WEBPACK_IMPORTED_MODULE_28__providers_smart_audio_smart_audio__["a" /* SmartAudioProvider */]
->>>>>>> master
             ]
         })
     ], AppModule);
@@ -1477,6 +1114,52 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 673:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PopOverComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the PopOverComponent component.
+ *
+ * See https://angular.io/api/core/Component for more info on Angular
+ * Components.
+ */
+var PopOverComponent = /** @class */ (function () {
+    function PopOverComponent(viewCtrl) {
+        this.viewCtrl = viewCtrl;
+        this.title = "A popover title";
+        this.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique neque at erat pretium, a laoreet metus sodales. Maecenas consectetur, libero sed porttitor imperdiet, est nisi mattis massa, id posuere neque libero vel tortor. Cras non pellentesque tellus. Fusce semper elit in arcu venenatis, eget porttitor velit sodales. Nulla gravida.";
+    }
+    PopOverComponent.prototype.close = function () {
+        this.viewCtrl.dismiss();
+    };
+    PopOverComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'pop-over',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/components/pop-over/pop-over.html"*/'<!-- Generated template for the PopOverComponent component -->\n<div padding>\n  <h1>{{title}}</h1>\n  <p>{{description}}</p>\n</div>\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/components/pop-over/pop-over.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */]])
+    ], PopOverComponent);
+    return PopOverComponent;
+}());
+
+//# sourceMappingURL=pop-over.js.map
+
+/***/ }),
+
 /***/ 691:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1484,15 +1167,9 @@ var AppModule = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-<<<<<<< HEAD
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(360);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(363);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(364);
-=======
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(361);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(364);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(365);
->>>>>>> master
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(359);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(362);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(363);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1579,11 +1256,7 @@ var ProgressBarComponent = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AudioProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(264);
-=======
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(265);
->>>>>>> master
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1786,14 +1459,8 @@ var TipsPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UsingMusicPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-<<<<<<< HEAD
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__music_benefit_music_benefit__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__music_benefit_music_benefit__ = __webpack_require__(164);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_pop_over_pop_over__ = __webpack_require__(320);
-=======
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__music_benefit_music_benefit__ = __webpack_require__(161);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(17);
->>>>>>> master
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1807,10 +1474,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 /**
  * Generated class for the UsingMusicPage page.
  *
@@ -1824,11 +1487,7 @@ var UsingMusicPage = /** @class */ (function () {
         this.translate = translate;
         this.translateModule = translateModule;
         this.popOverCtrl = popOverCtrl;
-<<<<<<< HEAD
-        this.startUsingMusicOption = 1;
-=======
         this.startUsingMusicOption = 2;
->>>>>>> master
         this.translate.setDefaultLang('en');
     }
     UsingMusicPage.prototype.ionViewDidLoad = function () {
@@ -1841,12 +1500,6 @@ var UsingMusicPage = /** @class */ (function () {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__music_benefit_music_benefit__["a" /* MusicBenefitPage */]);
     };
     UsingMusicPage.prototype.presentPopover = function (myEvent) {
-<<<<<<< HEAD
-        var popover = this.popOverCtrl.create(__WEBPACK_IMPORTED_MODULE_4__components_pop_over_pop_over__["a" /* PopOverComponent */]);
-        popover.present({
-            ev: myEvent
-        });
-=======
         // let popover = this.popOverCtrl.create(PopOverComponent);
         // popover.present({
         //   ev: myEvent
@@ -1856,21 +1509,14 @@ var UsingMusicPage = /** @class */ (function () {
     };
     UsingMusicPage.prototype.selectedValue = function (val) {
         console.log("selected radio button value = " + val);
->>>>>>> master
     };
     UsingMusicPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-<<<<<<< HEAD
-            selector: 'page-usingmusic',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/using-music/using-music.html"*/'<!--\n\n  Generated template for the UsingMusicPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>usingmusic</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content>\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n\n\n        <ion-col text-center col-6 class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png">\n\n              {{translate.instant("commonBack")}}</a></div>\n\n          <h1 text-center ion-text>{{translate.instant("startUsingMusictitle")}}</h1>\n\n          <ion-list radio-group [(ngModel)]="startUsingMusicOption" value="1">\n\n            <ul>\n\n              <li>\n\n                {{translate.instant("startUsingMusicFirstOption")}}  &nbsp;  <ion-icon name="ios-help-circle-outline" (click)="presentPopover($event)" ></ion-icon>   <span class="round">\n\n                  <input type="radio" name="demo" value="1" id="radio-one" class="form-radio" />\n\n                  <label for="radio-one"></label>\n\n                </span>\n\n              </li>\n\n              <li>\n\n                {{translate.instant("startUsingMusicSecondOption")}}   &nbsp; <ion-icon name="ios-help-circle-outline" (click)="presentPopover($event)" ></ion-icon>   <span class="round">\n\n                  <input type="radio" name="demo" value="2" id="radio-two" class="form-radio" checked />\n\n                  <label for="radio-two"></label>\n\n                </span>\n\n              </li>\n\n              <li>\n\n                {{translate.instant("startUsingMusicThirdOption")}}  &nbsp; <ion-icon name="ios-help-circle-outline" (click)="presentPopover($event)" ></ion-icon>  <span class="round">\n\n                  <input type="radio" name="demo" value="3" id="radio-three" class="form-radio" />\n\n                  <label for="radio-three"></label>\n\n                </span>\n\n              </li>\n\n            </ul>\n\n          </ion-list>\n\n          <ion-col text-center>\n\n            <div class="next_bta" (click)="goToMusicBenefit()"><button>{{translate.instant("commonNext")}}</button></div>\n\n          </ion-col>\n\n        </ion-col>\n\n\n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n</ion-content>'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/using-music/using-music.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* PopoverController */]])
-=======
             selector: 'page-usingmusic',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/using-music/using-music.html"*/'<!--\n\n  Generated template for the UsingMusicPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>usingmusic</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content id="myModel">\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n\n\n        <ion-col text-center col-6 class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png">\n\n              {{translate.instant("commonBack")}}</a></div>\n\n          <h1 text-center ion-text>{{translate.instant("startUsingMusictitle")}}</h1>\n\n          <ion-list radio-group [(ngModel)]="startUsingMusicOption">\n\n              <!-- <ion-list radio-group [(ngModel)]="startUsingMusicOption" value="1"> -->\n\n                \n\n            <ion-item>\n\n                \n\n                      <ion-label style="color:black;">{{translate.instant("startUsingMusicFirstOption")}} &nbsp;  \n\n                        <ion-icon name="ios-help-circle-outline" tooltip="Help" positionV="top" [attr.duration]="10000"></ion-icon>  </ion-label> \n\n                 <!-- <span class="round"> -->\n\n                  <ion-radio value="1" class="form-radio"(ionSelect)="presentPopover($event)"></ion-radio>\n\n                  <!-- <input type="radio" name="demo" value="1" id="radio-one" class="form-radio" (ionChange)="selectedValue(1)"/>\n\n                  <label for="radio-one"></label> \n\n                  \n\n                </span> -->\n\n             </ion-item>\n\n              <ion-item>\n\n                  <ion-label style="color:black;">{{translate.instant("startUsingMusicSecondOption")}}  &nbsp;  \n\n                    <ion-icon name="ios-help-circle-outline" tooltip="Help" positionV="top" [attr.duration]="10000"></ion-icon> </ion-label>  \n\n                  <ion-radio value="2" class="form-radio"(ionSelect)="presentPopover($event)"></ion-radio>\n\n                   <!-- <span class="round">\n\n                  <input type="radio" name="demo" value="2" id="radio-two" class="form-radio" checked />\n\n                  <label for="radio-two"></label>\n\n                </span> -->\n\n              </ion-item>\n\n              <ion-item>\n\n                  <ion-label style="color:black;">{{translate.instant("startUsingMusicThirdOption")}}  &nbsp;  \n\n                    <ion-icon name="ios-help-circle-outline" tooltip="Help" positionV="top" [attr.duration]="10000"></ion-icon> </ion-label>\n\n                  <ion-radio value="3" class="form-radio"(ionSelect)="presentPopover($event)"></ion-radio>\n\n                  <!-- <span class="round">\n\n                  <input type="radio" name="demo" value="3" id="radio-three" class="form-radio" />\n\n                  <label for="radio-three"></label>\n\n                </span> -->\n\n              </ion-item>\n\n            \n\n          </ion-list>\n\n          <ion-col text-center>\n\n            <div class="next_bta" ><button (click)="goToMusicBenefit()">{{translate.instant("commonNext")}}</button></div>\n\n          </ion-col>\n\n        </ion-col>\n\n\n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n</ion-content>'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/using-music/using-music.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */],
             __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* PopoverController */]])
->>>>>>> master
     ], UsingMusicPage);
     return UsingMusicPage;
 }());
@@ -2029,11 +1675,7 @@ var MusicSectionNewPage = /** @class */ (function () {
     MusicSectionNewPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-<<<<<<< HEAD
-            selector: 'page-MusicSectionNewPage',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-section-new/music-section-new.html"*/'<!--\n  Generated template for the LibraryPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n    <ion-content>\n\n            <div class="step_one_heading">\n\n            <ion-row>\n                    <ion-col col-3 col-md-2></ion-col>\n                    <ion-col text-center col-6 col-md-8 class="step_one">\n                            <button class="back_btn"  (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</button>\n                            <h1 text-center ion-text>Music Secation</h1>\n      <ion-row class="listing">\n\n        <ion-col col-lg-12>\n\n            <ion-row class="audio_listing">\n              <ion-content fullscreen>\n                <ion-list no-lines>\n                    <button detail-none ion-item *ngFor="let track of tracks; let i = index;" (click)="track.playing ? pauseTrack(track) : playTrack(track)" [ngClass]="{ \'alternate\': i % 2, \'playing\': track.playing }">\n                        <ion-avatar item-left>\n                        <button *ngIf="!track.playing" (click)="playTrack(currentTrack)"  class="play_list" ion-button icon-only><ion-icon name="play"></ion-icon></button>\n                        <button *ngIf="track.playing" (click)="pauseTrack(currentTrack)"  class="play_list" ion-button icon-only><ion-icon name="pause"></ion-icon></button>\n                        </ion-avatar>\n                          <div float-left>{{track.title}}</div> <div float-right>{{track.durationString}}</div>\n                    </button>\n                </ion-list>\n              \n              </ion-content>\n            </ion-row>\n    \n    \n        </ion-col>\n     </ion-row>\n    \n    \n    \n    <ion-footer>\n    \n      <ion-grid>\n    \n          <ion-row>\n    \n              <ion-col col-1>\n                  <button (click)="prevTrack()"  class="rewind" ion-button icon-only><ion-icon name="rewind"></ion-icon></button>\n              </ion-col>\n    \n              <ion-col col-1>\n                  <button *ngIf="!currentTrack.playing" (click)="playTrack(currentTrack)"  class="play" ion-button icon-only><ion-icon name="play"></ion-icon></button>\n                  <button *ngIf="currentTrack.playing" (click)="pauseTrack(currentTrack)"  class="play" ion-button icon-only><ion-icon name="pause"></ion-icon></button>\n              </ion-col>\n    \n              <ion-col col-1>\n                  <button (click)="nextTrack()" class="fastforward" ion-button icon-only><ion-icon name="fastforward"></ion-icon></button>\n              </ion-col>\n   \n    \n              <ion-col col-2 class="volume_icon">\n                <button><ion-icon name="ios-volume-up" class="ios_volume_icon"></ion-icon></button>\n                <ion-range min="1" max="100" step="1" [(ngModel)]="knobValues"></ion-range>        \n              </ion-col>\n    \n          </ion-row>\n    \n      </ion-grid>\n    \n    </ion-footer>\n \n    </ion-col>\n\n    <ion-col col-3 col-md-2></ion-col>\n    <span class="bottomTagline">View tips on <strong> group activities</strong> for <strong>relaxation?</strong></span>\n    </ion-row>\n\n    </div>\n    </ion-content>\n    \n    \n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-section-new/music-section-new.html"*/,
-=======
             selector: 'page-MusicSectionNewPage',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-section-new/music-section-new.html"*/'<!--\n  Generated template for the LibraryPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-content>\n\n  <div class="step_one_heading" [class]="musicSectionCls">\n\n    <ion-row>\n      <ion-col text-center col-6 col-md-6 class="step_one">\n        <button class="back_btn" (click)="closeModal()"><img src="assets/imgs/back_arrow.png">\n          {{translate.instant("commonBack")}}</button>\n        <h1 text-center ion-text>{{translate.instant("PlaylistPage.title")}}</h1>\n        <ion-row class="listing">\n\n          <ion-col>\n            <ion-row class="audio_listing">\n              <ion-content fullscreen>\n                <ion-list no-lines>\n                  <button detail-none ion-item *ngFor="let track of tracks; let i = index;"\n                    (click)="track.playing ? pauseTrack(track) : playTrack(track)"\n                    [ngClass]="{ \'alternate\': i % 2, \'playing\': track.playing }">\n                    <ion-avatar item-left>\n                      <button *ngIf="!track.playing" (click)="playTrack(currentTrack)" class="play_list" ion-button\n                        icon-only>\n                        <ion-icon name="play"></ion-icon>\n                      </button>\n                      <button *ngIf="track.playing" (click)="pauseTrack(currentTrack)" class="play_list" ion-button\n                        icon-only>\n                        <ion-icon name="pause"></ion-icon>\n                      </button>\n                    </ion-avatar>\n                    <div float-left>{{track.title}}</div>\n                    <div float-right>{{track.durationString}}</div>\n                  </button>\n                </ion-list>\n\n              </ion-content>\n            </ion-row>\n          </ion-col>\n        </ion-row>\n\n\n\n        <ion-footer>\n          <ion-grid>\n            <ion-row class="footerRowCls">\n              <ion-col col-1>\n                <button (click)="prevTrack()" class="rewind" ion-button icon-only>\n                  <ion-icon name="rewind"></ion-icon>\n                </button>\n              </ion-col>\n\n              <ion-col col-2>\n                <button *ngIf="!currentTrack.playing" (click)="playTrack(currentTrack)" class="play" ion-button\n                  icon-only>\n                  <ion-icon name="play"></ion-icon>\n                </button>\n                <button *ngIf="currentTrack.playing" (click)="pauseTrack(currentTrack)" class="play" ion-button\n                  icon-only>\n                  <ion-icon name="pause"></ion-icon>\n                </button>\n              </ion-col>\n\n              <ion-col col-1>\n                <button (click)="nextTrack()" class="fastforward" ion-button icon-only>\n                  <ion-icon name="fastforward"></ion-icon>\n                </button>\n              </ion-col>\n\n\n              <ion-col class="volume_icon">\n                <button>\n                  <ion-icon name="ios-volume-up" class="ios_volume_icon"></ion-icon>\n                </button>\n                <ion-range min="1" max="100" step="1" [(ngModel)]="knobValues"></ion-range>\n              </ion-col>\n\n            </ion-row>\n            <button class="back_btn1 bck_btn_mobile" (click)="closeModal()"><img src="assets/imgs/back_arrow.png">\n              {{translate.instant("commonBack")}}</button>\n          </ion-grid>\n\n        </ion-footer>\n\n      </ion-col>\n      <ion-col text-center col-12 class = "bottomTagLineCol">\n              <span class="bottomTagLine">{{translate.instant("PlaylistPage.footer.str1")}}\n                  <strong>{{translate.instant("PlaylistPage.footer.str2")}}</strong>\n                  {{translate.instant("PlaylistPage.footer.str3")}}\n                 <strong> {{translate.instant("PlaylistPage.footer.str4")}}</strong>\n              </span>\n          </ion-col>\n    </ion-row>\n\n  </div>\n</ion-content>'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-section-new/music-section-new.html"*/,
->>>>>>> master
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */]])
     ], MusicSectionNewPage);
@@ -2051,11 +1693,7 @@ var MusicSectionNewPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MusicActivityPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-<<<<<<< HEAD
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__music_length_music_length__ = __webpack_require__(162);
-=======
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__music_length_music_length__ = __webpack_require__(163);
->>>>>>> master
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__music_length_music_length__ = __webpack_require__(166);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(17);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2097,11 +1735,7 @@ var MusicActivityPage = /** @class */ (function () {
     };
     MusicActivityPage.prototype.goToMusicLength = function () {
         var showCustomMusicStyle = false;
-<<<<<<< HEAD
-        if (this.selectedChoice === "Singing") {
-=======
         if (this.selectedChoice === "0") {
->>>>>>> master
             showCustomMusicStyle = true;
         }
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__music_length_music_length__["a" /* MusicLengthPage */], {
@@ -2109,12 +1743,6 @@ var MusicActivityPage = /** @class */ (function () {
             isGroup: this.isGroup
         });
     };
-<<<<<<< HEAD
-    MusicActivityPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-musicactivity',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-activity/music-activity.html"*/'<!--\n\n  Generated template for the MusicActivityPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>musicactivity</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content>\n\n    <div class="step_one_heading">\n\n      <ion-list class="home">\n\n        <ion-row>\n\n          <ion-col col-3></ion-col>\n\n          <ion-col text-center class="step_one">\n\n            <button class="back_btn"  (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</button>\n\n            <h1 text-center ion-text>{{translate.instant("CommonActivity.Title")}}</h1>\n\n            <ul>\n\n              <li *ngFor="let choice of choices" >{{ choice }}\n\n                <span class="round">\n\n                  <input  type="radio" name="demo" [(ngModel)]="selectedChoice"  [value]="choice" id="radio-one" class="form-radio" />\n\n                  <label for="radio-one"></label>\n\n                </span>\n\n            </li>\n\n            </ul>\n\n            <ul>\n\n              <li>{{translate.instant("commonActivityFourthOption")}} <span class="right-arrow-icon">\n\n                  <ion-icon name="arrow-forward" end></ion-icon>\n\n                  <label for="radio-four"></label>\n\n            </span></li>\n\n            </ul>\n\n            <ion-col text-center>\n\n                <div class="next_bta" (click)="goToMusicLength()"><button>{{translate.instant("commonNext")}}</button></div>\n\n            </ion-col>\n\n          </ion-col>\n\n          <ion-col col-3></ion-col>\n\n        </ion-row>\n\n      </ion-list>\n\n    </div>\n\n    </ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-activity/music-activity.html"*/,
-=======
     MusicActivityPage.prototype.changeChoice = function (val) {
         this.selectedChoice = val;
         console.log("selecetd choice = " + this.selectedChoice);
@@ -2123,7 +1751,6 @@ var MusicActivityPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-musicactivity',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-activity/music-activity.html"*/'<!--\n\n  Generated template for the MusicActivityPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>musicactivity</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content id="myMusicActivity"> \n\n    <div class="step_one_heading">\n\n      <ion-list class="home">\n\n        <ion-row>\n\n          <ion-col col-3></ion-col>\n\n          <ion-col text-center class="step_one">\n\n            <button class="back_btn"  (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</button>\n\n            <h1 text-center ion-text>{{translate.instant("CommonActivity.Title")}}</h1>\n\n            <!-- <ul>\n\n              <li *ngFor="let choice of choices" >{{ choice }}\n\n                <span class="round">\n\n                  <input  type="radio" name="demo" [(ngModel)]="selectedChoice"  [value]="choice" id="radio-one" class="form-radio" />\n\n                  <label for="radio-one"></label>\n\n                </span>\n\n            </li>\n\n            </ul> -->\n\n            <ion-list radio-group [(ngModel)]="selectedChoice">\n\n                  \n\n                <ion-item *ngFor="let choice of choices;let i = index">              \n\n                      <ion-label style="color:black;">{{ choice }} </ion-label> \n\n                      <ion-radio value="{{i}}" class="form-radio" (ionSelect)="changeChoice(i)"></ion-radio>\n\n                 </ion-item>\n\n\n\n                 <ion-item>\n\n                    <ion-label style="color:black;">{{translate.instant("commonActivityFourthOption")}} \n\n                      <ion-icon name="arrow-forward" class="arrowIcon"></ion-icon></ion-label>  \n\n                 </ion-item>\n\n                 </ion-list>\n\n            <!-- <ul>\n\n              <li>{{translate.instant("commonActivityFourthOption")}} <span class="right-arrow-icon">\n\n                  <ion-icon name="arrow-forward" end></ion-icon>\n\n                  <label for="radio-four"></label>\n\n            </span></li>\n\n            </ul> -->\n\n            <ion-col text-center>\n\n                <div class="next_bta" ><button (click)="goToMusicLength()">{{translate.instant("commonNext")}}</button></div>\n\n            </ion-col>\n\n            <div class="back_btn1 bck_btn_mobile"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n          </ion-col>\n\n          <ion-col col-3></ion-col>\n\n        </ion-row>\n\n      </ion-list>\n\n      \n\n    </div>\n\n    \n\n    </ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-activity/music-activity.html"*/,
->>>>>>> master
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */]])
     ], MusicActivityPage);
@@ -2295,5 +1922,5 @@ var LibraryPage = /** @class */ (function () {
 
 /***/ })
 
-},[368]);
+},[367]);
 //# sourceMappingURL=main.js.map
