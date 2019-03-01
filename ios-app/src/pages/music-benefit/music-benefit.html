@@ -22,7 +22,7 @@
             <h1 text-center ion-text>{{translate.instant("startMusicBenefitTitle")}}</h1>
             <!-- <ul>
                 <li *ngFor="let item of items_one; let i = index">
-                  {{ item.name }}
+                  {{ item.name }} &nbsp;  <ion-icon name="ios-help-circle-outline" (click)="presentPopover($event)" ></ion-icon> 
                     <span class="round"> 
                       <input type="radio" name="demo" (click)="changeStatus(i)" value="{{ i }}" id="radio-one" class="form-radio" [checked]=" (item.active)"  /></span>
                 </li>
