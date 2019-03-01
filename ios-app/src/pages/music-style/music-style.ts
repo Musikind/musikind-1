@@ -44,14 +44,22 @@ export class MusicStylePage {
   closeModal() {
     this.navCtrl.pop();
   }
-   goToMusicSectionNewPage(){
+
+  // goToLibrary(){
+  //   this.navCtrl.parent.select(1);
+  //   this.navCtrl.push(LibraryPage, {
+  //     style : 'Classical', 
+  //     audio : 'Calm'
+  //   });
+  //   this.navCtrl.popToRoot();
+  // }
+
+  goToMusicSectionNewPage(){
     this.navCtrl.push(MusicSectionNewPage, {
-          style : this.items_one[this.commonMusicStyle], 
-          audio : this.musicStyle
+          style : 'Classical', 
+          audio : 'Calm'
          });
   }
-  changeStatus(newValue){
-    this.commonMusicStyle = newValue; 
-  }
+
 
 }

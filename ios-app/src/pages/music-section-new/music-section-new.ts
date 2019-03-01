@@ -50,14 +50,17 @@ export class MusicSectionNewPage {
     footerRowCls: string = "row"; 
     musicSectionCls:any = "step_one_heading"; 
 
+
     constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule) {
         this.translate.setDefaultLang('en');
         this.tracks = this.generateTracks();
         this.currentTrack = this.tracks[0];
         this.item_two = this.items_two[0];
+
         let activeCls = (this.navParams.data && typeof this.navParams.data.audio === "object") ? this.navParams.data.audio.name.toLocaleLowerCase(): "";   
         this.musicSectionCls = activeCls === ""? "step_one_heading" : "step_one_heading " + activeCls;  //(this.navParams.data && typeof this.navParams.data.audio) ? this.navParams.data.audio.name.toLocaleLowerCase(): ""  
         this.footerRowCls = activeCls === ""? "row" : "row " + activeCls;  
+
     }
     generateTracks() {
         let tracks = [];
@@ -139,6 +142,7 @@ export class MusicSectionNewPage {
         this.playTrack(this.tracks[index]);
 
     }
+
     closeModal() {
         this.navCtrl.pop();
       }

@@ -29,10 +29,11 @@ import { SchedulingWeekPage } from '../pages/scheduling-week/scheduling-week';
 import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
 import { AudioProvider } from '../providers/audio/audio';
 import { SmartAudioProvider } from '../providers/smart-audio/smart-audio';
+import { MusicSectionNewPage } from '../pages/music-section-new/music-section-new';
 import {TooltipsModule} from 'ionic-tooltips'; 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PopOverComponent } from '../components/pop-over/pop-over';
-import {MusicSectionNewPage} from '../pages/music-section-new/music-section-new'; 
+
 
 
 // AoT requires an exported function for factories
@@ -61,8 +62,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     MusicSectionPage,
     SchedulingWeekPage,
     ProgressBarComponent,
-    CongratulationsPage,
-    PopOverComponent,
     MusicSectionNewPage
   ],
   imports: [
@@ -99,8 +98,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     SettingAimPage,
     MusicSectionPage,
     SchedulingWeekPage,
-    CongratulationsPage,
-    PopOverComponent,
     MusicSectionNewPage
   ],
   providers: [
