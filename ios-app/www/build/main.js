@@ -757,11 +757,11 @@ var map = {
 		6
 	],
 	"../pages/select-music-style/select-music-style.module": [
-		716,
+		715,
 		5
 	],
 	"../pages/setting-aim/setting-aim.module": [
-		715,
+		716,
 		4
 	],
 	"../pages/settings/settings.module": [
@@ -769,11 +769,11 @@ var map = {
 		3
 	],
 	"../pages/tips/tips.module": [
-		718,
+		719,
 		2
 	],
 	"../pages/using-music/using-music.module": [
-		719,
+		718,
 		1
 	]
 };
@@ -1111,11 +1111,11 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/music-style/music-style.module#MusicStylePageModule', name: 'MusicStylePage', segment: 'music-style', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/play-list/play-list.module#PlayListPageModule', name: 'PlayListPage', segment: 'play-list', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/scheduling-week/scheduling-week.module#SchedulingWeekPageModule', name: 'SchedulingWeekPage', segment: 'scheduling-week', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/setting-aim/setting-aim.module#SettingAimPageModule', name: 'SettingAimPage', segment: 'setting-aim', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/select-music-style/select-music-style.module#SelectMusicStylePageModule', name: 'SelectMusicStylePage', segment: 'select-music-style', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/setting-aim/setting-aim.module#SettingAimPageModule', name: 'SettingAimPage', segment: 'setting-aim', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/settings/settings.module#SettingsPageModule', name: 'SettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/tips/tips.module#TipsPageModule', name: 'TipsPage', segment: 'tips', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/using-music/using-music.module#UsingMusicPageModule', name: 'UsingMusicPage', segment: 'using-music', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/using-music/using-music.module#UsingMusicPageModule', name: 'UsingMusicPage', segment: 'using-music', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/tips/tips.module#TipsPageModule', name: 'TipsPage', segment: 'tips', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_29_ionic_tooltips__["a" /* TooltipsModule */].forRoot(),
