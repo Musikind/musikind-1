@@ -34,13 +34,18 @@ export class MusicActivityPage {
   }
   goToMusicLength() {
     let showCustomMusicStyle= false; 
-    if(this.selectedChoice === "Singing"){
+    if(this.selectedChoice === "0"){
       showCustomMusicStyle =true; 
     }
     this.navCtrl.push(MusicLengthPage, {
       updateMusicStyle : showCustomMusicStyle, 
       isGroup: this.isGroup 
     });
+  }
+
+  changeChoice(val){
+    this.selectedChoice = val;
+    console.log("selecetd choice = "+this.selectedChoice);
   }
 
 }

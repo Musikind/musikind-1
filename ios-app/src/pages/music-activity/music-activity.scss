@@ -175,6 +175,19 @@ label
     color: #FFFFFF;
     font-size: 20px;
   }
+
+  .back_btn1 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 20px;
+  }
+
+  .bck_btn_mobile{
+   display: none;
+  }
 .back_btn a {
     text-decoration: none;
     color: #fff;
@@ -287,5 +300,41 @@ label
         position: relative;
     }
 }
+
+@media (max-width: 767px) {
+    .back_btn1.bck_btn_mobile{
+        display: block;
+       }
+
+       .back_btn {
+       display: none;
+      }
+
+      .back_btn1.bck_btn_mobile {
+        position: absolute;
+        left: 0px;
+        bottom: -38px;
+        background-color: transparent;
+        color: #FFFFFF;
+        font-size: 20px;
+        }
+
+        .back_btn1 a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            padding: 10px;
+          }
+        .back_btn1 img {
+            width: 25px;
+          }
+}
+
+.arrowIcon{
+    width: 20px;
+float: right;
+    font-size: 1.4em;
+}
+
 
 }

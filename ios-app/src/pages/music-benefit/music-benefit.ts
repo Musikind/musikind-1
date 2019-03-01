@@ -23,6 +23,7 @@ export class MusicBenefitPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule,  public popoverCtrl: PopoverController) {
     this.translate.setDefaultLang('en');
     this.items_one = this.translate.instant('library.items.items_two');
+    this.musicStyle = 0;
    }
 
    ionViewWillEnter(){

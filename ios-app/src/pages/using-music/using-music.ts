@@ -19,8 +19,9 @@ import { PopOverComponent } from '../../components/pop-over/pop-over';
 })
 export class UsingMusicPage {
   startUsingMusicOption:number;
-  constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule, public popOverCtrl: PopoverController) {
-    this.startUsingMusicOption = 1; 
+  constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, 
+    public translateModule: TranslateModule, public popOverCtrl: PopoverController) {
+    this.startUsingMusicOption = 2; 
       this.translate.setDefaultLang('en');
   }
 
@@ -36,10 +37,16 @@ export class UsingMusicPage {
   }
 
   presentPopover(myEvent) {
-    let popover = this.popOverCtrl.create(PopOverComponent);
-    popover.present({
-      ev: myEvent
-    });
+    // let popover = this.popOverCtrl.create(PopOverComponent);
+    // popover.present({
+    //   ev: myEvent
+    // });
+    console.log("selected radio button value = "+myEvent);
+    this.startUsingMusicOption = myEvent;
+  }
+
+  selectedValue(val){
+    console.log("selected radio button value = "+val);
   }
 
 }

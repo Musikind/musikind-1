@@ -13,7 +13,7 @@
 </ion-header>-->
 
 
-<ion-content>
+<ion-content id="myMusicActivity">
   <div class="step_one_heading">
     <ion-list class="home">
       <ion-row>
@@ -21,11 +21,18 @@
         <ion-col text-center class="step_one">
           <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>
           <h1 text-center ion-text>{{translate.instant("commonMusicStyleTitle")}}</h1>
-          <ul>
+          <!-- <ul>
               <li *ngFor="let item of items_one; let i = index" >{{ item.name }}
                   <span class="round">  <input type="radio" name="demo" value="{{i}}" id="radio-one" class="form-radio" [checked]="(item.active)" /> <label for="radio-one" ></label> </span>
               </li>
-          </ul>
+          </ul> -->
+          <ion-list radio-group [(ngModel)]="selectedMusicStyle">
+                  
+              <ion-item *ngFor="let item of items_one; let i = index">              
+                    <ion-label style="color:black;">{{ item.name }} </ion-label> 
+                    <ion-radio value="{{i}}" class="form-radio" (ionSelect)="changeChoice(i)" [checked]="(item.active)"></ion-radio>
+               </ion-item>
+          </ion-list>
           <ion-col text-center>
             <div class="next_bta"><button (click)="goToPlayer()"><ion-icon ios="ios-play" md="md-play"></ion-icon>&nbsp;&nbsp;{{translate.instant("commonMusicPlay")}}</button></div>
           </ion-col>

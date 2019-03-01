@@ -32,6 +32,7 @@
               
               </ion-content>
             </ion-row>
+<<<<<<< HEAD
     
     
         </ion-col>
@@ -45,6 +46,16 @@
     
           <ion-row>
     
+=======
+          </ion-col>
+        </ion-row>
+
+
+
+        <ion-footer>
+          <ion-grid>
+            <ion-row class="footerRowCls">
+>>>>>>> master
               <ion-col col-1>
                   <button (click)="prevTrack()"  class="rewind" ion-button icon-only><ion-icon name="rewind"></ion-icon></button>
               </ion-col>
@@ -63,6 +74,7 @@
                 <button><ion-icon name="ios-volume-up" class="ios_volume_icon"></ion-icon></button>
                 <ion-range min="1" max="100" step="1" [(ngModel)]="knobValues"></ion-range>        
               </ion-col>
+<<<<<<< HEAD
     
           </ion-row>
     
@@ -74,6 +86,24 @@
 
     <ion-col col-3 col-md-2></ion-col>
     <span class="bottomTagline">View tips on <strong> group activities</strong> for <strong>relaxation?</strong></span>
+=======
+
+            </ion-row>
+            <button class="back_btn1 bck_btn_mobile" (click)="closeModal()"><img src="assets/imgs/back_arrow.png">
+              {{translate.instant("commonBack")}}</button>
+          </ion-grid>
+
+        </ion-footer>
+
+      </ion-col>
+      <ion-col text-center col-12 class = "bottomTagLineCol">
+              <span class="bottomTagLine">{{translate.instant("PlaylistPage.footer.str1")}}
+                  <strong>{{translate.instant("PlaylistPage.footer.str2")}}</strong>
+                  {{translate.instant("PlaylistPage.footer.str3")}}
+                 <strong> {{translate.instant("PlaylistPage.footer.str4")}}</strong>
+              </span>
+          </ion-col>
+>>>>>>> master
     </ion-row>
 
     </div>

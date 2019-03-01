@@ -95,12 +95,15 @@ body, html {
     border-radius: 4px;
     padding: 40px 0px;
     position: relative;
+    max-width: 100%;
 }
 .step_one h1 {
     width: 300px;
     margin: auto;
     color: #373C52;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
+    margin-bottom: 9px;
+    margin-top: -15px;
 }
 .step_one ul li {
     list-style: none;
@@ -126,9 +129,9 @@ body, html {
     border-radius: 29px;
     text-transform: uppercase;
     -webkit-box-shadow: 0px 10px 21px -12px rgba(0,0,0,0.35);
--moz-box-shadow: 0px 10px 21px -12px rgba(0,0,0,0.35);
-box-shadow: 0px 10px 21px -12px rgba(0,0,0,0.35);
-cursor: pointer;
+    -moz-box-shadow: 0px 10px 21px -12px rgba(0,0,0,0.35);
+    box-shadow: 0px 10px 21px -12px rgba(0,0,0,0.35);
+    cursor: pointer;
 }
 .listing {
     width: 100%;
@@ -180,11 +183,25 @@ label
 
 .back_btn {
     position: absolute;
-    left: -135px;
+    left: -191px;
     top: 10px;
     background-color: transparent;
     color: #FFFFFF;
     font-size: 20px;
+    margin-left: 70px;
+z-index: 999;
+  }
+  .back_btn1 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 20px;
+  }
+
+  .bck_btn_mobile{
+   display: none;
   }
 .back_btn a {
     text-decoration: none;
@@ -195,6 +212,36 @@ label
 .back_btn img {
     width: 25px;
   }
+
+  @media (max-width: 767px) {
+    .back_btn1.bck_btn_mobile{
+        display: block;
+       }
+
+       .back_btn {
+       display: none;
+      }
+
+      .back_btn1.bck_btn_mobile {
+        position: absolute;
+        left: 0px;
+        bottom: -29px;
+        background-color: transparent;
+        color: #FFFFFF;
+        font-size: 20px;
+        }
+
+        .back_btn1 a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            padding: 10px;
+          }
+        .back_btn1 img {
+            width: 25px;
+          }
+}
+
 
 .style_top{
     background-color:map-get($colors,library_style_top);
@@ -425,10 +472,12 @@ ion-footer.footer .play:hover:not(.disable-hover) {
 ion-footer.footer .rewind, ion-footer.footer .fastforward {
     background-color: transparent;
     box-shadow: unset;
+    margin: 0.8rem 0.2rem;
 }
 ion-footer.footer .rewind:hover:not(.disable-hover), ion-footer.footer .fastforward:hover:not(.disable-hover) {
     background-color: transparent;
     box-shadow: unset;
+    margin: 0.8rem 0.2rem;
 }
 ion-footer.footer button.play .icon{
     font-size: 15px;
@@ -437,6 +486,7 @@ ion-footer.footer button.play .icon{
 ion-footer.footer button.fastforward .icon, ion-footer.footer button.rewind .icon {
     font-size: 30px;
     padding: 0;
+    margin: 0.8rem 0.2rem;
 }
 ion-footer.footer [col-1] {
     text-align: center;
@@ -509,9 +559,12 @@ ion-item.item.item-block.item-md.item-range {
         background: #d8d8d8;
         pointer-events: none;
         border-radius: 10px;
+        margin-top: 5px;
+        margin-left: -10px;
     }
     .volume_icon button{
         background-color: transparent;
+        padding: 5px;
     }
     .volume_icon .item.item-md{
         width: 80%;
@@ -559,8 +612,10 @@ ion-footer {
     height: 8px;
     background: #d8d8da;
     pointer-events: none;
+    margin-top: 5px
     }
 
+<<<<<<< HEAD
     span.bottomTagline {
         position: absolute;
         color: #fff;
@@ -569,6 +624,18 @@ ion-footer {
         left: calc(50% - 50%);
         width: 100%;
     }
+=======
+    .range-md .range-knob-handle {
+        left: 0;
+        top: 21px;
+        margin-left: -21px;
+        margin-top: -17px;
+        text-align: center;
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        }
+>>>>>>> master
 /*-----media--Query-----*/
 @media screen and (max-width: 1366px) and (min-width: 1024px) {
     .listing{
@@ -581,6 +648,7 @@ ion-footer {
 }
 .volume_icon.col {
     flex: auto !important;
+    padding: 6px;
 }
 .footer-ios {
     background-color: #fff !important;
@@ -631,7 +699,8 @@ ion-footer {
         margin-top: 6px;
     }
     span.bottomTagline {
-        bottom: 25%;
+        margin-top: 30px;
+        bottom: 40%;
     }
      .listing{
             height:382px;
@@ -703,8 +772,13 @@ ion-footer {
     flex: inherit;
 }
 span.bottomTagline {
+    margin-top: 30px;
     bottom: 4%;
 }
+}
+
+.bottomTagLineCol{
+    padding: 30px;
 }
 
 @media(max-width: 768px){
@@ -725,4 +799,59 @@ span.bottomTagline {
 .menu_icon ul li { margin: 4px 16px;}
 }
 
+<<<<<<< HEAD
+=======
+span.bottomTagLine {
+    position: relative;
+    color: #fff;
+    content: '';
+    left: calc(50% - 50%);
+    width: 100%;
+    margin-top: 30px;
+}
+
+.calm{
+    background-color: #b5ec73;
+    background-image: none;
+}
+.stimulation{
+    background-color: #ffb732;
+    background-image: none;
+}
+.concentration{
+    background-color: #73b5ec;
+    background-image: none;
+}
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) and (orientation : landscape)  { 
+        .listing {
+            height: 165px;
+            overflow: hidden;
+          }
+    }
+
+    @media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) and (orientation : landscape)  { 
+        .listing {
+            height: 165px;
+            overflow: hidden;
+          }
+    }
+
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2)  and (orientation : landscape)  { 
+        .listing {
+            height: 165px;
+            overflow: hidden;
+          }
+    }
+
+>>>>>>> master
 }

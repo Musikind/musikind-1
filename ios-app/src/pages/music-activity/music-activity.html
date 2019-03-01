@@ -13,7 +13,7 @@
 </ion-header>-->
 
 
-<ion-content>
+<ion-content id="myMusicActivity"> 
     <div class="step_one_heading">
       <ion-list class="home">
         <ion-row>
@@ -21,26 +21,41 @@
           <ion-col text-center class="step_one">
             <button class="back_btn"  (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</button>
             <h1 text-center ion-text>{{translate.instant("CommonActivity.Title")}}</h1>
-            <ul>
+            <!-- <ul>
               <li *ngFor="let choice of choices" >{{ choice }}
                 <span class="round">
                   <input  type="radio" name="demo" [(ngModel)]="selectedChoice"  [value]="choice" id="radio-one" class="form-radio" />
                   <label for="radio-one"></label>
                 </span>
             </li>
-            </ul>
-            <ul>
+            </ul> -->
+            <ion-list radio-group [(ngModel)]="selectedChoice">
+                  
+                <ion-item *ngFor="let choice of choices;let i = index">              
+                      <ion-label style="color:black;">{{ choice }} </ion-label> 
+                      <ion-radio value="{{i}}" class="form-radio" (ionSelect)="changeChoice(i)"></ion-radio>
+                 </ion-item>
+
+                 <ion-item>
+                    <ion-label style="color:black;">{{translate.instant("commonActivityFourthOption")}} 
+                      <ion-icon name="arrow-forward" class="arrowIcon"></ion-icon></ion-label>  
+                 </ion-item>
+                 </ion-list>
+            <!-- <ul>
               <li>{{translate.instant("commonActivityFourthOption")}} <span class="right-arrow-icon">
                   <ion-icon name="arrow-forward" end></ion-icon>
                   <label for="radio-four"></label>
             </span></li>
-            </ul>
+            </ul> -->
             <ion-col text-center>
-                <div class="next_bta" (click)="goToMusicLength()"><button>{{translate.instant("commonNext")}}</button></div>
+                <div class="next_bta" ><button (click)="goToMusicLength()">{{translate.instant("commonNext")}}</button></div>
             </ion-col>
+            <div class="back_btn1 bck_btn_mobile"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>
           </ion-col>
           <ion-col col-3></ion-col>
         </ion-row>
       </ion-list>
+      
     </div>
+    
     </ion-content>

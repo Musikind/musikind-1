@@ -13,7 +13,7 @@
 </ion-header>-->
 
 
-<ion-content>
+<ion-content id="myMusicActivity"> 
   <div class="step_one_heading">
     <ion-list class="home">
       <ion-row>
@@ -21,7 +21,7 @@
       <ion-col text-center  class="step_one">
           <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>
           <h1 text-center ion-text>{{translate.instant("commonActivityLengthTitle")}}</h1>
-          <ul>
+          <!-- <ul>
             <li>{{translate.instant("commonActivityLengthFirstOption")}} <span class="round">
               <input type="radio" name="demo" value="1" id="radio-one" class="form-radio" checked />
               <label for="radio-one"></label>
@@ -30,13 +30,28 @@
               <input type="radio" name="demo" value="2" id="radio-two" class="form-radio" />
               <label for="radio-two"></label>
 </span></li>
-          </ul>
+          </ul> -->
+          <ion-list radio-group [(ngModel)]="selectedMusicLength">
+                           
+            <ion-item>
+                 <ion-label style="color:black;">{{translate.instant("commonActivityLengthFirstOption")}}</ion-label>
+                  <ion-radio value="1" class="form-radio" (ionSelect)="presentPopover($event)"></ion-radio>
+             </ion-item>
+              <ion-item>
+                  <ion-label style="color:black;">{{translate.instant("commonActivityLengthSecondOption")}} </ion-label>  
+                  <ion-radio value="2" class="form-radio"(ionSelect)="presentPopover($event)"></ion-radio>
+                  </ion-item>
+            
+          </ion-list>
           <ion-col text-center>
-              <div class="next_bta" (click)="goToSelectMusicStyle()"><button>{{translate.instant("commonNext")}}</button></div>
+              <div class="next_bta" ><button (click)="goToSelectMusicStyle()">{{translate.instant("commonNext")}}</button></div>
           </ion-col>
+          <div class="back_btn1 bck_btn_mobile"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>
+
         </ion-col>
         <ion-col col-3></ion-col>
       </ion-row>
+
     </ion-list>
   </div>
   </ion-content>

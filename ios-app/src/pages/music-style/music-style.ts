@@ -26,7 +26,9 @@ export class MusicStylePage {
     this.translate.setDefaultLang('en');
     console.log('Music style navParams.data' + navParams.data);
     if(navParams.data){
+      console.log("item one = "+JSON.stringify(navParams.data.items_one));
       this.items_one = navParams.data.items_one;
+      console.log("music style = "+JSON.stringify(navParams.data.MusicStyle));
       this.musicStyle = navParams.data.MusicStyle; 
     }else {
       this.items_one = this.translate.instant('library.items.items_two');
