@@ -19,9 +19,11 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
 export class MusicLengthPage {
   customMusicLength: boolean = false; 
   isGroup:boolean = false; 
+  //assisgn default radio button value to second
   selectedMusicLength:any = 1;
   constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule) {
     this.translate.setDefaultLang('en');
+    //get data from previus page parameters
     this.customMusicLength = this.navParams.data.updateMusicStyle; 
     this.isGroup = this.navParams.data.isGroup; 
   }
@@ -29,9 +31,13 @@ export class MusicLengthPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad MusicLengthPage');
   }
+
+  //go to previous page on back button click
   closeModal() {
     this.navCtrl.pop();
   }
+
+  //go to next pag on Next button click
   goToSelectMusicStyle() {
     if(this.customMusicLength){
         this.navCtrl.push(SelectMusicStylePage, { 
@@ -44,6 +50,7 @@ export class MusicLengthPage {
     
   }
 
+  //assign value of selected radio button
   presentPopover(myEvent){
     this.selectedMusicLength = myEvent;
     console.log("selected music length = "+this.selectedMusicLength);

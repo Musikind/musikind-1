@@ -48885,7 +48885,7 @@ page-MusicSectionNewPage span.track_time {
 
 page-MusicSectionNewPage .audio_listing .list {
   overflow: scroll;
-  height: 100%;
+  height: 93%;
   overflow-x: hidden;
 }
 

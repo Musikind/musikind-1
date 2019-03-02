@@ -31,7 +31,7 @@
                   
               <ion-item *ngFor="let item of items_one; let i = index">              
                     <ion-label style="color:black;">{{ item.name }} &nbsp;  
-                        <ion-icon name="ios-help-circle-outline" tooltip="Help" positionV="top" [attr.duration]="10000" arrow></ion-icon></ion-label> 
+                        <ion-icon name="ios-help-circle-outline" (click)="presentPopover($event)"></ion-icon></ion-label> 
                     <ion-radio value="{{i}}" class="form-radio"(ionSelect)="changeStatus(i)" [checked]=" (item.active)" ></ion-radio>
                </ion-item>
                </ion-list>

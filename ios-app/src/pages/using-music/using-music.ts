@@ -21,32 +21,38 @@ export class UsingMusicPage {
   startUsingMusicOption:number;
   constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, 
     public translateModule: TranslateModule, public popOverCtrl: PopoverController) {
-    this.startUsingMusicOption = 2; 
+      // set radio button default to second option
+        this.startUsingMusicOption = 2; 
       this.translate.setDefaultLang('en');
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad UsingMusicPage');
   }
+  
+  //Move to previous page on click of Back Button
   closeModal() {
     this.navCtrl.pop();
   }
 
+  //Move to Music Benefit Pafge on click og Next Button
   goToMusicBenefit() {
     this.navCtrl.push(MusicBenefitPage);
   }
 
-  presentPopover(myEvent) {
-    // let popover = this.popOverCtrl.create(PopOverComponent);
-    // popover.present({
-    //   ev: myEvent
-    // });
+  //Set Radio Button value in Radio Button parent variable
+  setModuleOption(myEvent){
     console.log("selected radio button value = "+myEvent);
     this.startUsingMusicOption = myEvent;
   }
 
-  selectedValue(val){
-    console.log("selected radio button value = "+val);
+  //Open popover on click of help/query icon
+  presentPopover(myEvent) {
+    let popover = this.popOverCtrl.create(PopOverComponent);
+    popover.present({
+      ev: myEvent
+    });
+    
   }
 
 }

@@ -25,9 +25,11 @@ export class MusicProfilePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad MusicProfilePage');
   }
+  
   closeModal() {
     this.navCtrl.pop();
   }
+
   goToTipsPage() {
     this.navCtrl.push(TipsPage)
   }

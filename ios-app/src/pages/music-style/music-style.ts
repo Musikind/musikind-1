@@ -25,6 +25,8 @@ export class MusicStylePage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule) {
     this.translate.setDefaultLang('en');
     console.log('Music style navParams.data' + navParams.data);
+    
+    //get parameters from previous page
     if(navParams.data){
       console.log("item one = "+JSON.stringify(navParams.data.items_one));
       this.items_one = navParams.data.items_one;
@@ -34,6 +36,7 @@ export class MusicStylePage {
       this.items_one = this.translate.instant('library.items.items_two');
     }
   
+    //set radio button default selection to first
     this.commonMusicStyle = "0"; 
   }
 
@@ -41,6 +44,7 @@ export class MusicStylePage {
     console.log('ionViewDidLoad MusicStylePage');
   }
 
+  //open previous page on click of back button
   closeModal() {
     this.navCtrl.pop();
   }
@@ -54,6 +58,7 @@ export class MusicStylePage {
   //   this.navCtrl.popToRoot();
   // }
 
+  //move to Music Section Page on click of Next Button with parameters
   goToMusicSectionNewPage(){
     this.navCtrl.push(MusicSectionNewPage, {
           style : 'Classical', 
@@ -61,6 +66,7 @@ export class MusicStylePage {
          });
   }
 
+  //set selection value of radio button to one variable
   changeStatus(val){
     this.commonMusicStyle = val;
   }

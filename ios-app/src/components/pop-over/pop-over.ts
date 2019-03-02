@@ -12,8 +12,8 @@ import { ViewController } from 'ionic-angular';
   templateUrl: 'pop-over.html'
 })
 export class PopOverComponent {
-  title: string = "A popover title";
-  description: any = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique neque at erat pretium, a laoreet metus sodales. Maecenas consectetur, libero sed porttitor imperdiet, est nisi mattis massa, id posuere neque libero vel tortor. Cras non pellentesque tellus. Fusce semper elit in arcu venenatis, eget porttitor velit sodales. Nulla gravida."; 
+  title: string = "Help";
+  description: any = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida."; 
   constructor(public viewCtrl: ViewController) {
   }
 

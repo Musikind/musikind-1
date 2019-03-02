@@ -33,6 +33,7 @@ import { MusicSectionNewPage } from '../pages/music-section-new/music-section-ne
 import {TooltipsModule} from 'ionic-tooltips'; 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PopOverComponent } from '../components/pop-over/pop-over';
+import { MusicSectionJsonProvider } from '../providers/music-section-json/music-section-json';
 
 
 
@@ -62,7 +63,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     MusicSectionPage,
     SchedulingWeekPage,
     ProgressBarComponent,
-    MusicSectionNewPage
+    MusicSectionNewPage,
+    PopOverComponent
   ],
   imports: [
     BrowserModule,
@@ -98,14 +100,16 @@ export function HttpLoaderFactory(http: HttpClient) {
     SettingAimPage,
     MusicSectionPage,
     SchedulingWeekPage,
-    MusicSectionNewPage
+    MusicSectionNewPage,
+    PopOverComponent
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AudioProvider,
-    SmartAudioProvider
+    SmartAudioProvider,
+    MusicSectionJsonProvider
 
   ]
 })
