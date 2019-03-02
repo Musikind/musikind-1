@@ -95,7 +95,7 @@ var MusicBenefitPage = /** @class */ (function () {
     MusicBenefitPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-musicbenefit',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-benefit/music-benefit.html"*/'<!--\n\n  Generated template for the MusicBenefitPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>usingmusicbenefit</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content id="myModel">\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        <ion-col text-center col-6 class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n            <h1 text-center ion-text>{{translate.instant("startMusicBenefitTitle")}}</h1>\n\n            <!-- <ul>\n\n                <li *ngFor="let item of items_one; let i = index">\n\n                  {{ item.name }} &nbsp;  <ion-icon name="ios-help-circle-outline" (click)="presentPopover($event)" ></ion-icon> \n\n                    <span class="round"> \n\n                      <input type="radio" name="demo" (click)="changeStatus(i)" value="{{ i }}" id="radio-one" class="form-radio" [checked]=" (item.active)"  /></span>\n\n                </li>\n\n            </ul> -->\n\n            <ion-list radio-group [(ngModel)]="musicStyle">\n\n                  \n\n              <ion-item *ngFor="let item of items_one; let i = index">              \n\n                    <ion-label style="color:black;">{{ item.name }} &nbsp;  \n\n                        <ion-icon name="ios-help-circle-outline" tooltip="Help" positionV="top" [attr.duration]="10000"></ion-icon></ion-label> \n\n                    <ion-radio value="{{i}}" class="form-radio"(ionSelect)="changeStatus(i)" [checked]=" (item.active)" ></ion-radio>\n\n               </ion-item>\n\n               </ion-list>\n\n            <ion-col text-center>\n\n              <div class="next_bta" ><button (click)="goToMusicStyle()">{{translate.instant("commonNext")}} </button></div>\n\n            </ion-col>\n\n        </ion-col>\n\n        \n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-benefit/music-benefit.html"*/,
+            selector: 'page-musicbenefit',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-benefit/music-benefit.html"*/'<!--\n\n  Generated template for the MusicBenefitPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>usingmusicbenefit</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content id="myModel">\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n        <ion-col text-center col-6 class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n\n            <h1 text-center ion-text>{{translate.instant("startMusicBenefitTitle")}}</h1>\n\n            <!-- <ul>\n\n                <li *ngFor="let item of items_one; let i = index">\n\n                  {{ item.name }} &nbsp;  <ion-icon name="ios-help-circle-outline" (click)="presentPopover($event)" ></ion-icon> \n\n                    <span class="round"> \n\n                      <input type="radio" name="demo" (click)="changeStatus(i)" value="{{ i }}" id="radio-one" class="form-radio" [checked]=" (item.active)"  /></span>\n\n                </li>\n\n            </ul> -->\n\n            <ion-list radio-group [(ngModel)]="musicStyle">\n\n                  \n\n              <ion-item *ngFor="let item of items_one; let i = index">              \n\n                    <ion-label style="color:black;">{{ item.name }} &nbsp;  \n\n                        <ion-icon name="ios-help-circle-outline" tooltip="Help" positionV="top" [attr.duration]="10000" arrow></ion-icon></ion-label> \n\n                    <ion-radio value="{{i}}" class="form-radio"(ionSelect)="changeStatus(i)" [checked]=" (item.active)" ></ion-radio>\n\n               </ion-item>\n\n               </ion-list>\n\n            <ion-col text-center>\n\n              <div class="next_bta" ><button (click)="goToMusicStyle()">{{translate.instant("commonNext")}} </button></div>\n\n            </ion-col>\n\n        </ion-col>\n\n        \n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/music-benefit/music-benefit.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* PopoverController */]])
     ], MusicBenefitPage);
@@ -666,47 +666,47 @@ var map = {
 		14
 	],
 	"../pages/music-activity/music-activity.module": [
-		707,
+		706,
 		13
 	],
 	"../pages/music-benefit/music-benefit.module": [
-		708,
+		709,
 		12
 	],
 	"../pages/music-length/music-length.module": [
-		706,
+		710,
 		11
 	],
 	"../pages/music-profile/music-profile.module": [
-		709,
+		707,
 		10
 	],
 	"../pages/music-section-new/music-section-new.module": [
-		710,
+		711,
 		9
 	],
 	"../pages/music-section/music-section.module": [
-		712,
+		708,
 		8
 	],
 	"../pages/music-style/music-style.module": [
-		711,
+		717,
 		7
 	],
 	"../pages/play-list/play-list.module": [
-		713,
+		712,
 		0
 	],
 	"../pages/scheduling-week/scheduling-week.module": [
-		715,
+		713,
 		6
 	],
 	"../pages/select-music-style/select-music-style.module": [
-		714,
+		715,
 		5
 	],
 	"../pages/setting-aim/setting-aim.module": [
-		717,
+		714,
 		4
 	],
 	"../pages/settings/settings.module": [
@@ -714,11 +714,11 @@ var map = {
 		3
 	],
 	"../pages/tips/tips.module": [
-		718,
+		719,
 		2
 	],
 	"../pages/using-music/using-music.module": [
-		719,
+		718,
 		1
 	]
 };
@@ -1058,20 +1058,20 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/congratulations/congratulations.module#CongratulationsPageModule', name: 'CongratulationsPage', segment: 'congratulations', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/getting-started/getting-started.module#GettingStartedPageModule', name: 'GettingStartedPage', segment: 'getting-started', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/library/library.module#LibraryPageModule', name: 'LibraryPage', segment: 'library', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/music-length/music-length.module#MusicLengthPageModule', name: 'MusicLengthPage', segment: 'music-length', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/music-activity/music-activity.module#MusicActivityPageModule', name: 'MusicActivityPage', segment: 'music-activity', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/music-benefit/music-benefit.module#MusicBenefitPageModule', name: 'MusicBenefitPage', segment: 'music-benefit', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/music-profile/music-profile.module#MusicProfilePageModule', name: 'MusicProfilePage', segment: 'music-profile', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/music-section-new/music-section-new.module#MusicSectionNewPageModule', name: 'MusicSectionNewPage', segment: 'music-section-new', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/music-style/music-style.module#MusicStylePageModule', name: 'MusicStylePage', segment: 'music-style', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/music-section/music-section.module#MusicSectionPageModule', name: 'MusicSectionPage', segment: 'music-section', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/music-benefit/music-benefit.module#MusicBenefitPageModule', name: 'MusicBenefitPage', segment: 'music-benefit', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/music-length/music-length.module#MusicLengthPageModule', name: 'MusicLengthPage', segment: 'music-length', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/music-section-new/music-section-new.module#MusicSectionNewPageModule', name: 'MusicSectionNewPage', segment: 'music-section-new', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/play-list/play-list.module#PlayListPageModule', name: 'PlayListPage', segment: 'play-list', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/select-music-style/select-music-style.module#SelectMusicStylePageModule', name: 'SelectMusicStylePage', segment: 'select-music-style', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/scheduling-week/scheduling-week.module#SchedulingWeekPageModule', name: 'SchedulingWeekPage', segment: 'scheduling-week', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/settings/settings.module#SettingsPageModule', name: 'SettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/setting-aim/setting-aim.module#SettingAimPageModule', name: 'SettingAimPage', segment: 'setting-aim', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/tips/tips.module#TipsPageModule', name: 'TipsPage', segment: 'tips', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/using-music/using-music.module#UsingMusicPageModule', name: 'UsingMusicPage', segment: 'using-music', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/select-music-style/select-music-style.module#SelectMusicStylePageModule', name: 'SelectMusicStylePage', segment: 'select-music-style', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/settings/settings.module#SettingsPageModule', name: 'SettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/music-style/music-style.module#MusicStylePageModule', name: 'MusicStylePage', segment: 'music-style', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/using-music/using-music.module#UsingMusicPageModule', name: 'UsingMusicPage', segment: 'using-music', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/tips/tips.module#TipsPageModule', name: 'TipsPage', segment: 'tips', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_29_ionic_tooltips__["a" /* TooltipsModule */].forRoot(),
@@ -1512,7 +1512,7 @@ var UsingMusicPage = /** @class */ (function () {
     UsingMusicPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-usingmusic',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/using-music/using-music.html"*/'<!--\n\n  Generated template for the UsingMusicPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>usingmusic</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content id="myModel">\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n\n\n        <ion-col text-center col-6 class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png">\n\n              {{translate.instant("commonBack")}}</a></div>\n\n          <h1 text-center ion-text>{{translate.instant("startUsingMusictitle")}}</h1>\n\n          <ion-list radio-group [(ngModel)]="startUsingMusicOption">\n\n              <!-- <ion-list radio-group [(ngModel)]="startUsingMusicOption" value="1"> -->\n\n                \n\n            <ion-item>\n\n                \n\n                      <ion-label style="color:black;">{{translate.instant("startUsingMusicFirstOption")}} &nbsp;  \n\n                        <ion-icon name="ios-help-circle-outline" tooltip="Help" positionV="top" [attr.duration]="10000"></ion-icon>  </ion-label> \n\n                 <!-- <span class="round"> -->\n\n                  <ion-radio value="1" class="form-radio"(ionSelect)="presentPopover($event)"></ion-radio>\n\n                  <!-- <input type="radio" name="demo" value="1" id="radio-one" class="form-radio" (ionChange)="selectedValue(1)"/>\n\n                  <label for="radio-one"></label> \n\n                  \n\n                </span> -->\n\n             </ion-item>\n\n              <ion-item>\n\n                  <ion-label style="color:black;">{{translate.instant("startUsingMusicSecondOption")}}  &nbsp;  \n\n                    <ion-icon name="ios-help-circle-outline" tooltip="Help" positionV="top" [attr.duration]="10000"></ion-icon> </ion-label>  \n\n                  <ion-radio value="2" class="form-radio"(ionSelect)="presentPopover($event)"></ion-radio>\n\n                   <!-- <span class="round">\n\n                  <input type="radio" name="demo" value="2" id="radio-two" class="form-radio" checked />\n\n                  <label for="radio-two"></label>\n\n                </span> -->\n\n              </ion-item>\n\n              <ion-item>\n\n                  <ion-label style="color:black;">{{translate.instant("startUsingMusicThirdOption")}}  &nbsp;  \n\n                    <ion-icon name="ios-help-circle-outline" tooltip="Help" positionV="top" [attr.duration]="10000"></ion-icon> </ion-label>\n\n                  <ion-radio value="3" class="form-radio"(ionSelect)="presentPopover($event)"></ion-radio>\n\n                  <!-- <span class="round">\n\n                  <input type="radio" name="demo" value="3" id="radio-three" class="form-radio" />\n\n                  <label for="radio-three"></label>\n\n                </span> -->\n\n              </ion-item>\n\n            \n\n          </ion-list>\n\n          <ion-col text-center>\n\n            <div class="next_bta" ><button (click)="goToMusicBenefit()">{{translate.instant("commonNext")}}</button></div>\n\n          </ion-col>\n\n        </ion-col>\n\n\n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n</ion-content>'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/using-music/using-music.html"*/,
+            selector: 'page-usingmusic',template:/*ion-inline-start:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/using-music/using-music.html"*/'<!--\n\n  Generated template for the UsingMusicPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>usingmusic</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>-->\n\n\n\n\n\n<ion-content id="myModel">\n\n  <div class="step_one_heading">\n\n    <ion-list class="home">\n\n      <ion-row>\n\n\n\n        <ion-col text-center col-6 class="step_one">\n\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png">\n\n              {{translate.instant("commonBack")}}</a></div>\n\n          <h1 text-center ion-text>{{translate.instant("startUsingMusictitle")}}</h1>\n\n          <ion-list radio-group [(ngModel)]="startUsingMusicOption">\n\n              <!-- <ion-list radio-group [(ngModel)]="startUsingMusicOption" value="1"> -->\n\n                \n\n            <ion-item>\n\n                \n\n                      <ion-label style="color:black;">{{translate.instant("startUsingMusicFirstOption")}} &nbsp;  \n\n                        <ion-icon name="ios-help-circle-outline" tooltip="Help" positionV="top" [attr.duration]="10000" arrow></ion-icon>  </ion-label> \n\n                 <!-- <span class="round"> -->\n\n                  <ion-radio value="1" class="form-radio"(ionSelect)="presentPopover($event)"></ion-radio>\n\n                  <!-- <input type="radio" name="demo" value="1" id="radio-one" class="form-radio" (ionChange)="selectedValue(1)"/>\n\n                  <label for="radio-one"></label> \n\n                  \n\n                </span> -->\n\n             </ion-item>\n\n              <ion-item>\n\n                  <ion-label style="color:black;">{{translate.instant("startUsingMusicSecondOption")}}  &nbsp;  \n\n                    <ion-icon name="ios-help-circle-outline" tooltip="Help" positionV="top" [attr.duration]="10000" arrow></ion-icon> </ion-label>  \n\n                  <ion-radio value="2" class="form-radio"(ionSelect)="presentPopover($event)"></ion-radio>\n\n                   <!-- <span class="round">\n\n                  <input type="radio" name="demo" value="2" id="radio-two" class="form-radio" checked />\n\n                  <label for="radio-two"></label>\n\n                </span> -->\n\n              </ion-item>\n\n              <ion-item>\n\n                  <ion-label style="color:black;">{{translate.instant("startUsingMusicThirdOption")}}  &nbsp;  \n\n                    <ion-icon name="ios-help-circle-outline" tooltip="Help" positionV="top" [attr.duration]="10000" arrow></ion-icon> </ion-label>\n\n                  <ion-radio value="3" class="form-radio"(ionSelect)="presentPopover($event)"></ion-radio>\n\n                  <!-- <span class="round">\n\n                  <input type="radio" name="demo" value="3" id="radio-three" class="form-radio" />\n\n                  <label for="radio-three"></label>\n\n                </span> -->\n\n              </ion-item>\n\n            \n\n          </ion-list>\n\n          <ion-col text-center>\n\n            <div class="next_bta" ><button (click)="goToMusicBenefit()">{{translate.instant("commonNext")}}</button></div>\n\n          </ion-col>\n\n        </ion-col>\n\n\n\n      </ion-row>\n\n    </ion-list>\n\n  </div>\n\n</ion-content>'/*ion-inline-end:"/Users/a/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/using-music/using-music.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */],
             __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* PopoverController */]])

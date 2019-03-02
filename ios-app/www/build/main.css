@@ -47741,7 +47741,7 @@ page-musicprofile .first-txt {
 page-musicprofile .txt-block-email {
   /*border: 2px solid #e2e2e2;*/
   margin-top: 50px;
-  margin-bottom: 20%;
+  margin-bottom: 7%;
 }
 
 page-musicprofile .btn-color {
@@ -47819,7 +47819,7 @@ page-musicprofile .pagelink {
     width: auto;
   }
   page-musicprofile .step_one {
-    padding: 30px;
+    padding: 25px;
   }
 }
 
