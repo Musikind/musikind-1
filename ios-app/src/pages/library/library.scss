@@ -234,15 +234,15 @@ label
     font-size: 16px;
     
 }
-.listing .audio_listing li, .listing ul.left_btns li {
-    padding: 1em 1.4em;
-    padding-right: 0px;
-    color: #6a6a6c;
-    font-size: 16px;
-    position: relative;
-    overflow: hidden;
+// .listing .audio_listing li, .listing ul.left_btns li {
+//     padding: 1em 1.4em;
+//     padding-right: 0px;
+//     color: #6a6a6c;
+//     font-size: 16px;
+//     position: relative;
+//     overflow: hidden;
     
-}
+// }
 
 .listing li ion-icon {
     float: right;
@@ -322,44 +322,44 @@ ul.left_btns {
 .audio_top ul li{
     color: #ffa14e; 
 }
-.audio_listing ul li {
-    list-style: none;
-    width: 100%;
-    float: left;
+// .audio_listing ul li {
+//     list-style: none;
+//     width: 100%;
+//     float: left;
    
-}
-.audio_listing ul li span {
-    width: 50%;
-    float: left;
-}
-.audio_listing ul li:hover {
-    cursor: pointer;
-}
-.audio_listing ul li span ion-icon {
-    float: left;
-    color: #373C52;
-}
-.audio_listing ul li span:last-child {
-    width: 50%;
-    float: left;
-    text-align: right;
-    padding-right: 20px;
-}
-.audio_listing ul .active .ion-md-play {
-    display: none;
-}
-.audio_listing ul .active .ion-md-pause {
-    display: block;
-}
-.audio_listing ul  .ion-md-pause{
-    display: none;
-}
-.audio_listing [col-lg-12] {
-    padding: 0px;
-}
-.audio_listing {
-    height: 100%;
-}
+// }
+// .audio_listing ul li span {
+//     width: 50%;
+//     float: left;
+// }
+// .audio_listing ul li:hover {
+//     cursor: pointer;
+// }
+// .audio_listing ul li span ion-icon {
+//     float: left;
+//     color: #373C52;
+// }
+// .audio_listing ul li span:last-child {
+//     width: 50%;
+//     float: left;
+//     text-align: right;
+//     padding-right: 20px;
+// }
+// .audio_listing ul .active .ion-md-play {
+//     display: none;
+// }
+// .audio_listing ul .active .ion-md-pause {
+//     display: block;
+// }
+// .audio_listing ul  .ion-md-pause{
+//     display: none;
+// }
+// .audio_listing [col-lg-12] {
+//     padding: 0px;
+// }
+// .audio_listing {
+//     height: 100%;
+// }
 span.track_time {
     padding-top: 12px;
     width: 100%;
@@ -367,7 +367,7 @@ span.track_time {
 }
 .audio_listing .list {
     overflow: scroll;
-    height: 100%;
+    height: 59%;
     overflow-x: hidden;
 }
 .audio_player audio {
@@ -381,9 +381,9 @@ span.track_time {
 ul.left_btns li {
     cursor: pointer;
 }
-.play_list.button-md:hover:not(.disable-hover) {
-    background-color: transparent;
-}
+// .play_list.button-md:hover:not(.disable-hover) {
+//     background-color: transparent;
+// }
 
 .toolbar-background-md, .toolbar-ios ion-title {
     background-color:map-get($colors, jordy-bluem);
@@ -403,70 +403,70 @@ ul.left_btns li {
     position: relative;
 }
 
-ion-footer.footer.footer-md {
-    background-color:map-get($colors, audio_player_bg);
+// ion-footer.footer.footer-md {
+//     background-color:map-get($colors, audio_player_bg);
     
-}
-ion-footer.footer-ios{
-    background-color:map-get($colors, audio_player_bg);
-}
-.footer .button-ios .icon.ion-ios-fastforward, .footer .button-ios .icon.ion-ios-rewind{
-    color:map-get($colors, audio_btn);
-}
-.footer button ion-icon.ion-md-fastforward, .footer button ion-icon.ion-md-rewind{
-    color:map-get($colors, audio_btn) !important;
-}
+// }
+// ion-footer.footer-ios{
+//     background-color:map-get($colors, audio_player_bg);
+// }
+// // .footer .button-ios .icon.ion-ios-fastforward, .footer .button-ios .icon.ion-ios-rewind{
+// //     color:map-get($colors, audio_btn);
+// // }
+// // .footer button ion-icon.ion-md-fastforward, .footer button ion-icon.ion-md-rewind{
+// //     color:map-get($colors, audio_btn) !important;
+// // }
 
-ion-footer.footer .play {
-        background-color:map-get($colors, audio_play_btn_bg);
-    border-radius: 100%;
-    box-shadow: none;
-    height: 36px;
-    margin-top: 8px;
-}
-ion-footer.footer .play:hover:not(.disable-hover) {
-    background-color: #5f6177;
-    border-radius: 100%;
-    box-shadow: none;
-}
-ion-footer.footer .rewind, ion-footer.footer .fastforward {
-    background-color: transparent;
-    box-shadow: unset;
-}
-ion-footer.footer .rewind:hover:not(.disable-hover), ion-footer.footer .fastforward:hover:not(.disable-hover) {
-    background-color: transparent;
-    box-shadow: unset;
-}
-ion-footer.footer button.play .icon{
-    font-size: 15px;
-    width: 36px;
-}
-ion-footer.footer button.fastforward .icon, ion-footer.footer button.rewind .icon {
-    font-size: 30px;
-    padding: 0;
-}
-ion-footer.footer [col-1] {
-    text-align: center;
-    width: 62px !important;
-    max-width: 62px !important;
-}
-ion-footer.footer progress-bar .progress-outer {
-    width: 100%;
-    padding: 0px;
-    text-align: center;
-    background-color: #d8d8da;
-    color: #fff;
-    border-radius: 10px;
-    margin-top: 17px;
-}
-ion-footer.footer progress-bar .progress-inner {
-    min-width: 1%;
-    white-space: nowrap;
-    overflow: hidden;
-    padding: 4px;
-    background-color: #73B5EC;
-    border-radius: 10px;
-}
+// ion-footer.footer .play {
+//     background-color:map-get($colors, audio_play_btn_bg);
+//     border-radius: 100%;
+//     box-shadow: none;
+//     height: 36px;
+//     margin-top: 8px;
+// }
+// ion-footer.footer .play:hover:not(.disable-hover) {
+//     background-color: #5f6177;
+//     border-radius: 100%;
+//     box-shadow: none;
+// }
+// // ion-footer.footer .rewind, ion-footer.footer .fastforward {
+// //     background-color: transparent;
+// //     box-shadow: unset;
+// // }
+// // ion-footer.footer .rewind:hover:not(.disable-hover), ion-footer.footer .fastforward:hover:not(.disable-hover) {
+// //     background-color: transparent;
+// //     box-shadow: unset;
+// // }
+// ion-footer.footer button.play .icon{
+//     font-size: 15px;
+//     width: 36px;
+// }
+// // ion-footer.footer button.fastforward .icon, ion-footer.footer button.rewind .icon {
+// //     font-size: 30px;
+// //     padding: 0;
+// // }
+// ion-footer.footer [col-1] {
+//     text-align: center;
+//     width: 62px !important;
+//     max-width: 62px !important;
+// }
+// ion-footer.footer progress-bar .progress-outer {
+//     width: 100%;
+//     padding: 0px;
+//     text-align: center;
+//     background-color: #d8d8da;
+//     color: #fff;
+//     border-radius: 10px;
+//     margin-top: 17px;
+// }
+// ion-footer.footer progress-bar .progress-inner {
+//     min-width: 1%;
+//     white-space: nowrap;
+//     overflow: hidden;
+//     padding: 4px;
+//     background-color: #73B5EC;
+//     border-radius: 10px;
+// }
 button.playing ion-avatar[item-left] {
     position: relative;
 }
@@ -479,15 +479,15 @@ button.playing ion-spinner.spinner {
 button.playing {
     background-color: #f8f8f8;
 }
-.list button.play_list {
-    background-color: transparent;
-    color:map-get($colors, audio_list_icon);
-    box-shadow: none;
-}
-.list button.play_list ion-icon {
-    padding: 0;
-    padding-left: 10px;
-}
+// .list button.play_list {
+//     background-color: transparent;
+//     color:map-get($colors, audio_list_icon);
+//     box-shadow: none;
+// }
+// .list button.play_list ion-icon {
+//     padding: 0;
+//     padding-left: 10px;
+// }
 
 button.item-block ion-avatar[item-left] {
     margin-right: 0px;
@@ -517,28 +517,28 @@ ion-item.item.item-block.item-md.item-range {
         pointer-events: none;
         border-radius: 10px;
     }
-    .volume_icon button{
-        background-color: transparent;
-    }
-    .volume_icon .item.item-md{
-        width: 80%;
-        float: right;
-        padding-left: 0px;
-        }
-        .volume_icon .item.item-md .range-md{
-            padding: 0px;
-        }
-    .volume_icon .ios_volume_icon {
-            font-size: 36px;
-            margin-top: 3px;
-            }
-     .volume_icon .ios_volume_icon:active {
-                color:#000;
-                }
-    .volume_icon button {
-                    float: left;
-                    width: 40px;
-                    }
+    // .volume_icon button{
+    //     background-color: transparent;
+    // }
+    // .volume_icon .item.item-md{
+    //     width: 80%;
+    //     float: right;
+    //     padding-left: 0px;
+    //     }
+    //     .volume_icon .item.item-md .range-md{
+    //         padding: 0px;
+    //     }
+    // .volume_icon .ios_volume_icon {
+    //         font-size: 36px;
+    //         margin-top: 3px;
+    //         }
+    //  .volume_icon .ios_volume_icon:active {
+    //             color:#000;
+    //             }
+    // .volume_icon button {
+    //                 float: left;
+    //                 width: 40px;
+    //                 }
  .scroll-content button span::last-child{
      float: right;
  }
@@ -621,14 +621,14 @@ ion-footer {
 .menu_icon ul li { margin: 4px 16px;}
 }
 
-.valume-right{
-    position: absolute;
-    right: 15px;
-}
-.valume-left{
-    position: absolute;
-    left: 15px;
-}
+// .valume-right{
+//     position: absolute;
+//     right: 15px;
+// }
+// .valume-left{
+//     position: absolute;
+//     left: 15px;
+// }
     
 
 

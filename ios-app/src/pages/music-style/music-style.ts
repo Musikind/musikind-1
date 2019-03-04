@@ -49,19 +49,10 @@ export class MusicStylePage {
     this.navCtrl.pop();
   }
 
-  // goToLibrary(){
-  //   this.navCtrl.parent.select(1);
-  //   this.navCtrl.push(LibraryPage, {
-  //     style : 'Classical', 
-  //     audio : 'Calm'
-  //   });
-  //   this.navCtrl.popToRoot();
-  // }
-
   //move to Music Section Page on click of Next Button with parameters
   goToMusicSectionNewPage(){
-    this.navCtrl.push(MusicSectionNewPage, {
-          style : 'Classical', 
+         this.navCtrl.push(MusicSectionNewPage, {
+          style : this.musicStyle, 
           audio : 'Calm'
          });
   }

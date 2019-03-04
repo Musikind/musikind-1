@@ -27,9 +27,11 @@ export class MusicSectionPage {
   }
 
   goToSchedulingWeek() {
+    //go to scheduling week page
     this.navCtrl.push(SchedulingWeekPage);
   }
   closeModal() {
+    //go to previous page on click of back button
     this.navCtrl.pop();
   }
 }

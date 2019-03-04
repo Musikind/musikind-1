@@ -39,15 +39,6 @@ export class SelectMusicStylePage {
     //go to previous page
     this.navCtrl.pop();
   }
-
-  // goToLibrary(){
-  //   this.navCtrl.parent.select(1);
-  //   this.navCtrl.push(LibraryPage, {
-  //     style : 'Classical', 
-  //     audio : 'Calm'
-  //   });
-  //   this.navCtrl.popToRoot();
-  // }
   
   goToPlayer(){
     //go to next page
@@ -57,6 +48,11 @@ export class SelectMusicStylePage {
     });
   }
 
+  /**
+ // Represents a change in radio button.
+ //@constructor
+ //@param {string} val - The index of selected value.
+ */
   changeChoice(val){
     //set selected radio button values
     this.selectedMusicStyle = val;

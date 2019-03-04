@@ -27,10 +27,12 @@ export class MusicProfilePage {
   }
   
   closeModal() {
+    //move to previous page on back button click
     this.navCtrl.pop();
   }
 
   goToTipsPage() {
+    //go to tips page on click of here hyperlink
     this.navCtrl.push(TipsPage)
   }
 

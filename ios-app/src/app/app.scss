@@ -641,7 +641,203 @@ audio_list_icon:#363b54,
                   }
         }
 
+       }
 
+       .footer .button-ios .icon.ion-ios-fastforward, .footer .button-ios .icon.ion-ios-rewind{
+        color:map-get($colors, audio_btn);
+    }
+    .footer button ion-icon.ion-md-fastforward, .footer button ion-icon.ion-md-rewind{
+        color:map-get($colors, audio_btn) !important;
+    }
 
-}
+    ion-footer.footer .rewind, ion-footer.footer .fastforward {
+        background-color: transparent;
+        box-shadow: unset;
+    }
+    ion-footer.footer .rewind:hover:not(.disable-hover), ion-footer.footer .fastforward:hover:not(.disable-hover) {
+        background-color: transparent;
+        box-shadow: unset;
+    }
+    ion-footer.footer button.fastforward .icon, ion-footer.footer button.rewind .icon {
+        font-size: 30px;
+        padding: 0;
+    }
 
+       
+        ion-footer.footer.footer-md {
+            background-color:map-get($colors, audio_player_bg);
+            
+        }
+        ion-footer.footer-ios{
+            background-color:map-get($colors, audio_player_bg);
+        }
+       
+        
+        ion-footer.footer .play {
+                background-color:map-get($colors, audio_play_btn_bg);
+            border-radius: 100%;
+            box-shadow: none;
+            height: 36px;
+            margin-top: 8px;
+        }
+        ion-footer.footer .play:hover:not(.disable-hover) {
+            background-color: #5f6177;
+            border-radius: 100%;
+            box-shadow: none;
+        }
+        
+        ion-footer.footer button.play .icon{
+            font-size: 15px;
+            width: 36px;
+        }
+        
+        ion-footer.footer [col-1] {
+            text-align: center;
+            width: 62px !important;
+            max-width: 62px !important;
+        }
+        ion-footer.footer progress-bar .progress-outer {
+            width: 100%;
+            padding: 0px;
+            text-align: center;
+            background-color: #d8d8da;
+            color: #fff;
+            border-radius: 10px;
+            margin-top: 17px;
+        }
+        ion-footer.footer progress-bar .progress-inner {
+            min-width: 1%;
+            white-space: nowrap;
+            overflow: hidden;
+            padding: 4px;
+            background-color: #73B5EC;
+            border-radius: 10px;
+        }
+        .volume_icon button{
+            background-color: transparent;
+        }
+        .volume_icon .item.item-md{
+            width: 80%;
+            float: right;
+            padding-left: 0px;
+            }
+            .volume_icon .item.item-md .range-md{
+                padding: 0px;
+            }
+        .volume_icon .ios_volume_icon {
+                font-size: 36px;
+                margin-top: 3px;
+                }
+         .volume_icon .ios_volume_icon:active {
+                    color:#000;
+                    }
+        .volume_icon button {
+                        float: left;
+                        width: 40px;
+                        }
+        .valume-right{
+            position: absolute;
+            right: 15px;
+        }
+        .valume-left{
+            position: absolute;
+            left: 15px;
+        }
+        @media screen and (max-width: 1366px) and (min-width: 1024px) {
+            .volume_icon.col {
+                flex: auto !important;
+                padding: 6px;
+            }
+            .volume_icon.col {
+                max-width: 50%;
+                margin-top: 6px;
+            }
+        }
+        @media screen and (max-width:1024px) and (min-width: 769px) and (orientation:portrait){
+            .volume_icon.col {
+                flex: auto !important;
+            }
+            .volume_icon.col {
+        max-width: 60%;
+        margin-top: 6px;
+    }
+        }
+
+        @media screen and (max-width:1024px) and (min-width: 769px) and (orientation:landscape){
+            .volume_icon.col {
+                max-width: 60%;
+                margin-top: 6px;
+            }
+        }
+
+        @media screen and (max-width: 768px) and (min-width: 767px){
+            .volume_icon.col {
+                max-width: 50% !important;
+                margin-top: 6px;
+                flex: inherit;
+            }
+        }
+
+        .listing .audio_listing li, .listing ul.left_btns li {
+            padding: 1em 1.4em;
+            padding-right: 0px;
+            color: #6a6a6c;
+            font-size: 16px;
+            position: relative;
+            overflow: hidden;   
+        }
+
+        .audio_listing ul li {
+            list-style: none;
+            width: 100%;
+            float: left;
+            border-bottom: 1px solid #bfbfbf;
+        }
+
+        .audio_listing ul li span {
+            width: 50%;
+            float: left;
+        }
+        .audio_listing ul li:hover {
+            cursor: pointer;
+        }
+        .audio_listing ul li span ion-icon {
+            float: left;
+            color: #373C52;
+        }
+        .audio_listing ul li span:last-child {
+            width: 50%;
+            float: left;
+            text-align: right;
+            padding-right: 20px;
+        }
+        .audio_listing ul .active .ion-md-play {
+            display: none;
+        }
+        .audio_listing ul .active .ion-md-pause {
+            display: block;
+        }
+        .audio_listing ul  .ion-md-pause{
+            display: none;
+        }
+        .audio_listing [col-lg-12] {
+            padding: 0px;
+        }
+        .audio_listing {
+            height: 100%;
+        }
+
+        .play_list.button-md:hover:not(.disable-hover) {
+            background-color: transparent;
+        }
+
+        .list button.play_list {
+            background-color: transparent;
+            color:map-get($colors, audio_list_icon);
+            box-shadow: none;
+        }
+        .list button.play_list ion-icon {
+            padding: 0;
+            padding-left: 10px;
+        }
+    

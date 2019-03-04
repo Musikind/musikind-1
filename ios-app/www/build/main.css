@@ -44175,6 +44175,241 @@ ion-navbar.toolbar {
   }
 }
 
+.footer .button-ios .icon.ion-ios-fastforward, .footer .button-ios .icon.ion-ios-rewind {
+  color: #81859a;
+}
+
+.footer button ion-icon.ion-md-fastforward, .footer button ion-icon.ion-md-rewind {
+  color: #81859a !important;
+}
+
+ion-footer.footer .rewind, ion-footer.footer .fastforward {
+  background-color: transparent;
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+}
+
+ion-footer.footer .rewind:hover:not(.disable-hover), ion-footer.footer .fastforward:hover:not(.disable-hover) {
+  background-color: transparent;
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+}
+
+ion-footer.footer button.fastforward .icon, ion-footer.footer button.rewind .icon {
+  font-size: 30px;
+  padding: 0;
+}
+
+ion-footer.footer.footer-md {
+  background-color: #f4f4fe;
+}
+
+ion-footer.footer-ios {
+  background-color: #f4f4fe;
+}
+
+ion-footer.footer .play {
+  background-color: #5f6177;
+  border-radius: 100%;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: 36px;
+  margin-top: 8px;
+}
+
+ion-footer.footer .play:hover:not(.disable-hover) {
+  background-color: #5f6177;
+  border-radius: 100%;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+ion-footer.footer button.play .icon {
+  font-size: 15px;
+  width: 36px;
+}
+
+ion-footer.footer [col-1] {
+  text-align: center;
+  width: 62px !important;
+  max-width: 62px !important;
+}
+
+ion-footer.footer progress-bar .progress-outer {
+  width: 100%;
+  padding: 0px;
+  text-align: center;
+  background-color: #d8d8da;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 17px;
+}
+
+ion-footer.footer progress-bar .progress-inner {
+  min-width: 1%;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 4px;
+  background-color: #73B5EC;
+  border-radius: 10px;
+}
+
+.volume_icon button {
+  background-color: transparent;
+}
+
+.volume_icon .item.item-md {
+  width: 80%;
+  float: right;
+  padding-left: 0px;
+}
+
+.volume_icon .item.item-md .range-md {
+  padding: 0px;
+}
+
+.volume_icon .ios_volume_icon {
+  font-size: 36px;
+  margin-top: 3px;
+}
+
+.volume_icon .ios_volume_icon:active {
+  color: #000;
+}
+
+.volume_icon button {
+  float: left;
+  width: 40px;
+}
+
+.valume-right {
+  position: absolute;
+  right: 15px;
+}
+
+.valume-left {
+  position: absolute;
+  left: 15px;
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+  .volume_icon.col {
+    -webkit-box-flex: 1 !important;
+    -webkit-flex: auto !important;
+    -ms-flex: auto !important;
+    flex: auto !important;
+    padding: 6px;
+  }
+  .volume_icon.col {
+    max-width: 50%;
+    margin-top: 6px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) and (orientation: portrait) {
+  .volume_icon.col {
+    -webkit-box-flex: 1 !important;
+    -webkit-flex: auto !important;
+    -ms-flex: auto !important;
+    flex: auto !important;
+  }
+  .volume_icon.col {
+    max-width: 60%;
+    margin-top: 6px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) and (orientation: landscape) {
+  .volume_icon.col {
+    max-width: 60%;
+    margin-top: 6px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 767px) {
+  .volume_icon.col {
+    max-width: 50% !important;
+    margin-top: 6px;
+    -webkit-box-flex: inherit;
+    -webkit-flex: inherit;
+    -ms-flex: inherit;
+    flex: inherit;
+  }
+}
+
+.listing .audio_listing li, .listing ul.left_btns li {
+  padding: 1em 1.4em;
+  padding-right: 0px;
+  color: #6a6a6c;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.audio_listing ul li {
+  list-style: none;
+  width: 100%;
+  float: left;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.audio_listing ul li span {
+  width: 50%;
+  float: left;
+}
+
+.audio_listing ul li:hover {
+  cursor: pointer;
+}
+
+.audio_listing ul li span ion-icon {
+  float: left;
+  color: #373C52;
+}
+
+.audio_listing ul li span:last-child {
+  width: 50%;
+  float: left;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.audio_listing ul .active .ion-md-play {
+  display: none;
+}
+
+.audio_listing ul .active .ion-md-pause {
+  display: block;
+}
+
+.audio_listing ul .ion-md-pause {
+  display: none;
+}
+
+.audio_listing [col-lg-12] {
+  padding: 0px;
+}
+
+.audio_listing {
+  height: 100%;
+}
+
+.play_list.button-md:hover:not(.disable-hover) {
+  background-color: transparent;
+}
+
+.list button.play_list {
+  background-color: transparent;
+  color: #363b54;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.list button.play_list ion-icon {
+  padding: 0;
+  padding-left: 10px;
+}
+
 progress-bar .progress-outer {
   width: 100%;
   padding: 1px;
@@ -45926,15 +46161,6 @@ page-library .listing ul.right_top_btns li:last-child {
   font-size: 16px;
 }
 
-page-library .listing .audio_listing li, page-library .listing ul.left_btns li {
-  padding: 1em 1.4em;
-  padding-right: 0px;
-  color: #6a6a6c;
-  font-size: 16px;
-  position: relative;
-  overflow: hidden;
-}
-
 page-library .listing li ion-icon {
   float: right;
   color: #bfbfbf;
@@ -46022,53 +46248,6 @@ page-library .audio_top ul li {
   color: #ffa14e;
 }
 
-page-library .audio_listing ul li {
-  list-style: none;
-  width: 100%;
-  float: left;
-}
-
-page-library .audio_listing ul li span {
-  width: 50%;
-  float: left;
-}
-
-page-library .audio_listing ul li:hover {
-  cursor: pointer;
-}
-
-page-library .audio_listing ul li span ion-icon {
-  float: left;
-  color: #373C52;
-}
-
-page-library .audio_listing ul li span:last-child {
-  width: 50%;
-  float: left;
-  text-align: right;
-  padding-right: 20px;
-}
-
-page-library .audio_listing ul .active .ion-md-play {
-  display: none;
-}
-
-page-library .audio_listing ul .active .ion-md-pause {
-  display: block;
-}
-
-page-library .audio_listing ul .ion-md-pause {
-  display: none;
-}
-
-page-library .audio_listing [col-lg-12] {
-  padding: 0px;
-}
-
-page-library .audio_listing {
-  height: 100%;
-}
-
 page-library span.track_time {
   padding-top: 12px;
   width: 100%;
@@ -46077,7 +46256,7 @@ page-library span.track_time {
 
 page-library .audio_listing .list {
   overflow: scroll;
-  height: 100%;
+  height: 59%;
   overflow-x: hidden;
 }
 
@@ -46093,10 +46272,6 @@ page-library .audio_player [col-lg-12] {
 
 page-library ul.left_btns li {
   cursor: pointer;
-}
-
-page-library .play_list.button-md:hover:not(.disable-hover) {
-  background-color: transparent;
 }
 
 page-library .toolbar-background-md, page-library .toolbar-ios ion-title {
@@ -46119,85 +46294,6 @@ page-library .ion-page.show-page {
   position: relative;
 }
 
-page-library ion-footer.footer.footer-md {
-  background-color: #f4f4fe;
-}
-
-page-library ion-footer.footer-ios {
-  background-color: #f4f4fe;
-}
-
-page-library .footer .button-ios .icon.ion-ios-fastforward, page-library .footer .button-ios .icon.ion-ios-rewind {
-  color: #81859a;
-}
-
-page-library .footer button ion-icon.ion-md-fastforward, page-library .footer button ion-icon.ion-md-rewind {
-  color: #81859a !important;
-}
-
-page-library ion-footer.footer .play {
-  background-color: #5f6177;
-  border-radius: 100%;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  height: 36px;
-  margin-top: 8px;
-}
-
-page-library ion-footer.footer .play:hover:not(.disable-hover) {
-  background-color: #5f6177;
-  border-radius: 100%;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-page-library ion-footer.footer .rewind, page-library ion-footer.footer .fastforward {
-  background-color: transparent;
-  -webkit-box-shadow: unset;
-  box-shadow: unset;
-}
-
-page-library ion-footer.footer .rewind:hover:not(.disable-hover), page-library ion-footer.footer .fastforward:hover:not(.disable-hover) {
-  background-color: transparent;
-  -webkit-box-shadow: unset;
-  box-shadow: unset;
-}
-
-page-library ion-footer.footer button.play .icon {
-  font-size: 15px;
-  width: 36px;
-}
-
-page-library ion-footer.footer button.fastforward .icon, page-library ion-footer.footer button.rewind .icon {
-  font-size: 30px;
-  padding: 0;
-}
-
-page-library ion-footer.footer [col-1] {
-  text-align: center;
-  width: 62px !important;
-  max-width: 62px !important;
-}
-
-page-library ion-footer.footer progress-bar .progress-outer {
-  width: 100%;
-  padding: 0px;
-  text-align: center;
-  background-color: #d8d8da;
-  color: #fff;
-  border-radius: 10px;
-  margin-top: 17px;
-}
-
-page-library ion-footer.footer progress-bar .progress-inner {
-  min-width: 1%;
-  white-space: nowrap;
-  overflow: hidden;
-  padding: 4px;
-  background-color: #73B5EC;
-  border-radius: 10px;
-}
-
 page-library button.playing ion-avatar[item-left] {
   position: relative;
 }
@@ -46211,18 +46307,6 @@ page-library button.playing ion-spinner.spinner {
 
 page-library button.playing {
   background-color: #f8f8f8;
-}
-
-page-library .list button.play_list {
-  background-color: transparent;
-  color: #363b54;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-page-library .list button.play_list ion-icon {
-  padding: 0;
-  padding-left: 10px;
 }
 
 page-library button.item-block ion-avatar[item-left] {
@@ -46255,34 +46339,6 @@ page-library .range-md .range-bar {
   background: #d8d8d8;
   pointer-events: none;
   border-radius: 10px;
-}
-
-page-library .volume_icon button {
-  background-color: transparent;
-}
-
-page-library .volume_icon .item.item-md {
-  width: 80%;
-  float: right;
-  padding-left: 0px;
-}
-
-page-library .volume_icon .item.item-md .range-md {
-  padding: 0px;
-}
-
-page-library .volume_icon .ios_volume_icon {
-  font-size: 36px;
-  margin-top: 3px;
-}
-
-page-library .volume_icon .ios_volume_icon:active {
-  color: #000;
-}
-
-page-library .volume_icon button {
-  float: left;
-  width: 40px;
 }
 
 page-library .scroll-content button span::last-child {
@@ -46407,16 +46463,6 @@ page-library .range-ios .range-bar {
   page-library .menu_icon ul li {
     margin: 4px 16px;
   }
-}
-
-page-library .valume-right {
-  position: absolute;
-  right: 15px;
-}
-
-page-library .valume-left {
-  position: absolute;
-  left: 15px;
 }
 
 page-musicactivity {
@@ -48410,8 +48456,8 @@ page-MusicSectionNewPage .splash_screen img {
   transform: translate(-50%, -50%);
 }
 
-page-MusicSectionNewPage .home_heading, page-MusicSectionNewPage .step_one_heading {
-  background-image: url("../assets/imgs/blue_bg.jpg");
+page-MusicSectionNewPage .home_heading,
+page-MusicSectionNewPage .step_one_heading {
   background-repeat: repeat;
   text-align: center;
   padding: 11% 0;
@@ -48735,15 +48781,6 @@ page-MusicSectionNewPage .listing ul.right_top_btns li {
   font-size: 16px;
 }
 
-page-MusicSectionNewPage .listing .audio_listing li, page-MusicSectionNewPage .listing ul.left_btns li {
-  padding: 1em 1.4em;
-  padding-right: 0px;
-  color: #6a6a6c;
-  font-size: 16px;
-  position: relative;
-  overflow: hidden;
-}
-
 page-MusicSectionNewPage .listing li ion-icon {
   float: right;
   color: #bfbfbf;
@@ -48829,54 +48866,6 @@ page-MusicSectionNewPage .audio_top ul li.active {
   font-weight: bold;
 }
 
-page-MusicSectionNewPage .audio_listing ul li {
-  list-style: none;
-  width: 100%;
-  float: left;
-  border-bottom: 1px solid #bfbfbf;
-}
-
-page-MusicSectionNewPage .audio_listing ul li span {
-  width: 50%;
-  float: left;
-}
-
-page-MusicSectionNewPage .audio_listing ul li:hover {
-  cursor: pointer;
-}
-
-page-MusicSectionNewPage .audio_listing ul li span ion-icon {
-  float: left;
-  color: #373C52;
-}
-
-page-MusicSectionNewPage .audio_listing ul li span:last-child {
-  width: 50%;
-  float: left;
-  text-align: right;
-  padding-right: 20px;
-}
-
-page-MusicSectionNewPage .audio_listing ul .active .ion-md-play {
-  display: none;
-}
-
-page-MusicSectionNewPage .audio_listing ul .active .ion-md-pause {
-  display: block;
-}
-
-page-MusicSectionNewPage .audio_listing ul .ion-md-pause {
-  display: none;
-}
-
-page-MusicSectionNewPage .audio_listing [col-lg-12] {
-  padding: 0px;
-}
-
-page-MusicSectionNewPage .audio_listing {
-  height: 100%;
-}
-
 page-MusicSectionNewPage span.track_time {
   padding-top: 12px;
   width: 100%;
@@ -48901,10 +48890,6 @@ page-MusicSectionNewPage .audio_player [col-lg-12] {
 
 page-MusicSectionNewPage ul.left_btns li {
   cursor: pointer;
-}
-
-page-MusicSectionNewPage .play_list.button-md:hover:not(.disable-hover) {
-  background-color: transparent;
 }
 
 page-MusicSectionNewPage .toolbar-background-md, page-MusicSectionNewPage .toolbar-ios ion-title {
@@ -48937,55 +48922,6 @@ page-MusicSectionNewPage ion-footer.footer.footer-md .grid {
 
 page-MusicSectionNewPage ion-footer.footer-ios {
   background-color: #f4f4fe;
-}
-
-page-MusicSectionNewPage .footer .button-ios .icon.ion-ios-fastforward, page-MusicSectionNewPage .footer .button-ios .icon.ion-ios-rewind {
-  color: #81859a;
-}
-
-page-MusicSectionNewPage .footer button ion-icon.ion-md-fastforward, page-MusicSectionNewPage .footer button ion-icon.ion-md-rewind {
-  color: #81859a !important;
-}
-
-page-MusicSectionNewPage ion-footer.footer .play {
-  background-color: #5f6177;
-  border-radius: 100%;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  height: 36px;
-  margin-top: 8px;
-}
-
-page-MusicSectionNewPage ion-footer.footer .play:hover:not(.disable-hover) {
-  background-color: #5f6177;
-  border-radius: 100%;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-page-MusicSectionNewPage ion-footer.footer .rewind, page-MusicSectionNewPage ion-footer.footer .fastforward {
-  background-color: transparent;
-  -webkit-box-shadow: unset;
-  box-shadow: unset;
-  margin: 0.8rem 0.2rem;
-}
-
-page-MusicSectionNewPage ion-footer.footer .rewind:hover:not(.disable-hover), page-MusicSectionNewPage ion-footer.footer .fastforward:hover:not(.disable-hover) {
-  background-color: transparent;
-  -webkit-box-shadow: unset;
-  box-shadow: unset;
-  margin: 0.8rem 0.2rem;
-}
-
-page-MusicSectionNewPage ion-footer.footer button.play .icon {
-  font-size: 15px;
-  width: 36px;
-}
-
-page-MusicSectionNewPage ion-footer.footer button.fastforward .icon, page-MusicSectionNewPage ion-footer.footer button.rewind .icon {
-  font-size: 30px;
-  padding: 0;
-  margin: 0.8rem 0.2rem;
 }
 
 page-MusicSectionNewPage ion-footer.footer [col-1] {
@@ -49028,18 +48964,6 @@ page-MusicSectionNewPage button.playing {
   background-color: #f8f8f8;
 }
 
-page-MusicSectionNewPage .list button.play_list {
-  background-color: transparent;
-  color: #363b54;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-page-MusicSectionNewPage .list button.play_list ion-icon {
-  padding: 0;
-  padding-left: 10px;
-}
-
 page-MusicSectionNewPage button.item-block ion-avatar[item-left] {
   margin-right: 0px;
 }
@@ -49063,7 +48987,7 @@ page-MusicSectionNewPage ion-item.item.item-block.item-md.item-range {
 
 page-MusicSectionNewPage .range-md .range-bar {
   left: 0;
-  top: 17px;
+  top: 12px;
   position: absolute;
   width: 100%;
   height: 8px;
@@ -49072,36 +48996,6 @@ page-MusicSectionNewPage .range-md .range-bar {
   border-radius: 10px;
   margin-top: 5px;
   margin-left: -10px;
-}
-
-page-MusicSectionNewPage .volume_icon button {
-  background-color: transparent;
-  padding: 5px;
-}
-
-page-MusicSectionNewPage .volume_icon .item.item-md {
-  width: 200px;
-  position: relative;
-  right: 10px;
-  padding-left: 0px;
-}
-
-page-MusicSectionNewPage .volume_icon .item.item-md .range-md {
-  padding: 0px;
-}
-
-page-MusicSectionNewPage .volume_icon .ios_volume_icon {
-  font-size: 36px;
-  margin-top: 3px;
-}
-
-page-MusicSectionNewPage .volume_icon .ios_volume_icon:active {
-  color: #000;
-}
-
-page-MusicSectionNewPage .volume_icon button {
-  float: left;
-  width: 40px;
 }
 
 page-MusicSectionNewPage .scroll-content button span::last-child {
@@ -49122,7 +49016,7 @@ page-MusicSectionNewPage ion-footer {
 }
 
 page-MusicSectionNewPage .range-md {
-  padding: 0px 10px;
+  padding: 0px 21px;
 }
 
 page-MusicSectionNewPage .range-ios {
@@ -49131,7 +49025,7 @@ page-MusicSectionNewPage .range-ios {
 
 page-MusicSectionNewPage .range-ios .range-bar {
   left: 0;
-  top: 18px;
+  top: 12px;
   border-radius: 10px;
   position: absolute;
   width: 100%;
@@ -49144,8 +49038,8 @@ page-MusicSectionNewPage .range-ios .range-bar {
 page-MusicSectionNewPage .range-md .range-knob-handle {
   left: 0;
   top: 21px;
-  margin-left: -21px;
-  margin-top: -17px;
+  margin-left: -33px;
+  margin-top: -22px;
   text-align: center;
   position: absolute;
   width: 42px;
@@ -49161,13 +49055,6 @@ page-MusicSectionNewPage .range-md .range-knob-handle {
   page-MusicSectionNewPage .audio_player.row {
     bottom: -9px;
   }
-  page-MusicSectionNewPage .volume_icon.col {
-    -webkit-box-flex: 1 !important;
-    -webkit-flex: auto !important;
-    -ms-flex: auto !important;
-    flex: auto !important;
-    padding: 6px;
-  }
   page-MusicSectionNewPage .footer-ios {
     background-color: #fff !important;
   }
@@ -49175,10 +49062,6 @@ page-MusicSectionNewPage .range-md .range-knob-handle {
     background-color: #f4f4fe;
     width: 80%;
     margin: 20px auto;
-  }
-  page-MusicSectionNewPage .volume_icon.col {
-    max-width: 50%;
-    margin-top: 6px;
   }
 }
 
@@ -49194,12 +49077,6 @@ page-MusicSectionNewPage .range-md .range-knob-handle {
   page-MusicSectionNewPage .audio_player.row {
     bottom: -9px;
   }
-  page-MusicSectionNewPage .volume_icon.col {
-    -webkit-box-flex: 1 !important;
-    -webkit-flex: auto !important;
-    -ms-flex: auto !important;
-    flex: auto !important;
-  }
   page-MusicSectionNewPage .footer-ios {
     background-color: #fff !important;
   }
@@ -49207,10 +49084,6 @@ page-MusicSectionNewPage .range-md .range-knob-handle {
     background-color: #f4f4fe;
     width: 80%;
     margin: 20px auto;
-  }
-  page-MusicSectionNewPage .volume_icon.col {
-    max-width: 60%;
-    margin-top: 6px;
   }
   page-MusicSectionNewPage span.bottomTagline {
     margin-top: 30px;
@@ -49251,10 +49124,6 @@ page-MusicSectionNewPage .range-md .range-knob-handle {
     width: 80%;
     margin: 20px auto;
   }
-  page-MusicSectionNewPage .volume_icon.col {
-    max-width: 60%;
-    margin-top: 6px;
-  }
 }
 
 @media screen and (max-width: 768px) and (min-width: 767px) {
@@ -49279,14 +49148,6 @@ page-MusicSectionNewPage .range-md .range-knob-handle {
     background-color: #f4f4fe !important;
     width: 80% !important;
     margin: 20px auto !important;
-  }
-  page-MusicSectionNewPage .volume_icon.col {
-    max-width: 50% !important;
-    margin-top: 6px;
-    -webkit-box-flex: inherit;
-    -webkit-flex: inherit;
-    -ms-flex: inherit;
-    flex: inherit;
   }
   page-MusicSectionNewPage span.bottomTagline {
     margin-top: 30px;

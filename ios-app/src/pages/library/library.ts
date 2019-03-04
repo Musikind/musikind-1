@@ -1,6 +1,7 @@
 import { Component, Injectable } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { MusicSectionJsonProvider } from '../../providers/music-section-json/music-section-json';
 
 /*
  * Generated class for the LibraryPage page.
@@ -44,40 +45,17 @@ export class LibraryPage {
     activeProgress: any;
     progressInterval: any;
 
-    constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule) {
+    constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService,
+         public translateModule: TranslateModule, public trackJsonProvider:MusicSectionJsonProvider) {
         this.translate.setDefaultLang('en');
         this.items_one = this.translate.instant('library.items.Items_one');
         this.items_two = this.translate.instant('library.items.items_two');
-        this.tracks = this.generateTracks();
+        //call track json function from provider and stored its return value in tracks
+        this.tracks = this.trackJsonProvider.createAudioJSON();
         this.currentTrack = this.tracks[0];
         this.item_two = this.items_two[0];      
-//        alert(title);
     }
-    generateTracks() {
-        let tracks = [];
-        for (let a = 1; a <= 100; a++) {
-            let min = this.getRandomMinutes(), sec = this.getRandomSecond();
-            let minstr = min < 10 ? "0" + min : min, secStr = sec < 10 ? "0" + sec : sec;
-
-            let track = {
-                title: `Song Title ${a}`,
-                durationString: `${minstr}:${secStr}`,
-                playing: false,
-                durationSeconds: Math.floor(min * 60 + sec),
-                progress: 0,
-                laps: 0,
-                lapsString: "0"
-            };
-            tracks.push(track);
-        }
-        return tracks;
-    }
-    getRandomMinutes() {
-        return Math.floor(Math.random() * 10);
-    }
-    getRandomSecond() {
-        return Math.floor(Math.random() * 60);
-    }
+   
     playTrack(track: any) {
         console.log('play track');
         // First stop any currently playing tracks
@@ -115,27 +93,32 @@ export class LibraryPage {
         }, track.durationSeconds * 1000);
     }
     getLapsString() {
+        //get already played audio time
         let val1 = this.currentTrack.laps;
         let min = Math.floor(val1 / 60), sec = val1 % 60;
         return (min < 10 ? "0" + min.toString() : min.toString()) + " : " + (sec < 10 ? "0" + sec.toString() : sec.toString())
     }
     getProgressValue(){
+        //calculate progress value of audio playing
         return Math.round(1 / (this.currentTrack.durationSeconds / 100) * this.currentTrack.laps);
     }
 
     pauseTrack(track) {
+        //pause audio
         track.playing = false;
         clearInterval(this.progressInterval);
 
     }
 
     nextTrack() {
+        //move to next track of play list
         let index = this.tracks.indexOf(this.currentTrack);
         index >= this.tracks.length - 1 ? index = 0 : index++;
         this.playTrack(this.tracks[index]);
     }
 
     prevTrack() {
+        //move to previous track of playlist
         let index = this.tracks.indexOf(this.currentTrack);
         index > 0 ? index-- : index = this.tracks.length - 1;
         this.playTrack(this.tracks[index]);

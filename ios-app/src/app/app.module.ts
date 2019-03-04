@@ -34,6 +34,7 @@ import {TooltipsModule} from 'ionic-tooltips';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PopOverComponent } from '../components/pop-over/pop-over';
 import { MusicSectionJsonProvider } from '../providers/music-section-json/music-section-json';
+import { IonicStorageModule } from '@ionic/storage';
 
 
 
@@ -79,7 +80,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         BrowserAnimationsModule,
         IonicModule.forRoot(MyApp),
     TooltipsModule.forRoot(),
-    
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [

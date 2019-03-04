@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { MusicSectionJsonProvider } from '../../providers/music-section-json/music-section-json';
+import { Storage } from '@ionic/storage';
 
 
 @IonicPage()
@@ -50,10 +51,13 @@ export class MusicSectionNewPage {
     activeCls: string = ""; 
     footerRowCls: string = "row"; 
     musicSectionCls:any = "step_one_heading"; 
+    benefitValue:any;
+    colorCode:any;
 
 
     constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, 
-        public translateModule: TranslateModule, public trackJsonProvider:MusicSectionJsonProvider) {
+        public translateModule: TranslateModule, public trackJsonProvider:MusicSectionJsonProvider,
+        public storage: Storage) {
         this.translate.setDefaultLang('en');
         // call MUsic Track list Json function and store returned json in a variable 'tracks'
             this.tracks =  this.trackJsonProvider.createAudioJSON();
@@ -64,6 +68,22 @@ export class MusicSectionNewPage {
             let activeCls = (this.navParams.data && typeof this.navParams.data.audio === "object") ? this.navParams.data.audio.name.toLocaleLowerCase(): "";   
             this.musicSectionCls = activeCls === ""? "step_one_heading" : "step_one_heading " + activeCls;  //(this.navParams.data && typeof this.navParams.data.audio) ? this.navParams.data.audio.name.toLocaleLowerCase(): ""  
             this.footerRowCls = activeCls === ""? "row" : "row " + activeCls;  
+
+            //get benefit value from storage 
+            this.storage.get('benefilValue').then(res=>{
+                this.benefitValue = res;
+                console.log('selected benefit value = '+this.benefitValue);
+                //assign color of background according to benefit value
+                if(this.benefitValue == 0){
+                    this.colorCode = '#b5ec73';
+                }
+                if(this.benefitValue == 1){
+                    this.colorCode = '#ffb732';
+                }
+                if(this.benefitValue == 2){
+                    this.colorCode = '#CF89CE';
+                }
+            });
         
     }
    
@@ -97,12 +117,8 @@ export class MusicSectionNewPage {
         }, track.durationSeconds * 1000);
     }
 
-    // getLapsString() {
-    //     let val1 = this.currentTrack.laps;
-    //     let min = Math.floor(val1 / 60), sec = val1 % 60;
-    //     return (min < 10 ? "0" + min.toString() : min.toString()) + " : " + (sec < 10 ? "0" + sec.toString() : sec.toString())
-    // }
     getProgressValue(){
+        //calculate progress value of audio playing
         return Math.round(1 / (this.currentTrack.durationSeconds / 100) * this.currentTrack.laps);
     }
 

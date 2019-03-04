@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams, PopoverController} from 'ionic-ang
 import { MusicStylePage } from '../music-style/music-style';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { PopOverComponent } from '../../components/pop-over/pop-over';
+import { Storage } from '@ionic/storage';
 /**
  * Generated class for the MusicBenefitPage page.
  *
@@ -20,11 +21,13 @@ export class MusicBenefitPage {
   selected:any = 0; 
   musicStyle: any; 
   items_one:any = this.translate.instant('library.items.items_two');
-  constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule,  public popoverCtrl: PopoverController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService,
+     public translateModule: TranslateModule,  public popoverCtrl: PopoverController,public storage: Storage) {
     this.translate.setDefaultLang('en');
     this.items_one = this.translate.instant('library.items.items_two');
     //set first radio button as default selected radio button
     this.musicStyle = 0;
+    storage.set('benefilValue',this.musicStyle);
    }
 
    ionViewWillEnter(){
@@ -55,12 +58,8 @@ export class MusicBenefitPage {
   //to set new value in radio button variable
   changeStatus(newValue){
     this.musicStyle = newValue; 
-    // this.updateSelected(newValue);
+    this.storage.set('benefilValue',this.musicStyle);
   }
-
-  // getFromLocal(key){
-  //   return localStorage.getItem(key)
-  // }
 
   //to fetch selected radio button row details for sending to next page
   //in parameter
@@ -74,19 +73,4 @@ export class MusicBenefitPage {
     }
     return selected;  
   }
-
-  // updateSelected(newValue){
-  //     for(let i=0; i<this.items_one.length; i++){
-  //         let item = this.items_one[i]; 
-  //         if((item.id -1) === newValue){
-  //           item.active =true; 
-  //         }else {
-  //           item.active =false; 
-  //         }
-  //     }
-  // }
-
-  // setToLocal(key, value){
-  //   localStorage.setItem(key, value);
-  // }
 }
