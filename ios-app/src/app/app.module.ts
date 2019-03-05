@@ -35,7 +35,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PopOverComponent } from '../components/pop-over/pop-over';
 import { MusicSectionJsonProvider } from '../providers/music-section-json/music-section-json';
 import { IonicStorageModule } from '@ionic/storage';
-
+import { StreamingMedia, StreamingVideoOptions } from '@ionic-native/streaming-media';
 
 
 // AoT requires an exported function for factories
@@ -110,7 +110,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AudioProvider,
     SmartAudioProvider,
-    MusicSectionJsonProvider
+    MusicSectionJsonProvider,
+    StreamingMedia
 
   ]
 })

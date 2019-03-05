@@ -87,8 +87,8 @@
         </ion-footer>
 
       </ion-col>
-      <ion-col text-center col-12 class = "bottomTagLineCol">
-              <span class="bottomTagLine">{{translate.instant("PlaylistPage.footer.str1")}}
+      <ion-col text-center col-12 class = "bottomTagLineCol" (click)="openAudioInFullScreen()">
+              <span class="bottomTagLine" >{{translate.instant("PlaylistPage.footer.str1")}}
                   <strong>{{translate.instant("PlaylistPage.footer.str2")}}</strong>
                   {{translate.instant("PlaylistPage.footer.str3")}}
                  <strong> {{translate.instant("PlaylistPage.footer.str4")}}</strong>

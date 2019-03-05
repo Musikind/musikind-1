@@ -32,13 +32,21 @@ export class MusicLengthPage {
     console.log('ionViewDidLoad MusicLengthPage');
   }
 
-  //go to previous page on back button click
+    /**
+ *Represents a functionality of back button.
+ *@constructor
+ */
   closeModal() {
+     //go to previous page on back button click
     this.navCtrl.pop();
   }
 
-  //go to next pag on Next button click
+    /**
+ *Represents a Navigation functionality.
+ *@constructor
+ */
   goToSelectMusicStyle() {
+      //go to next pag on Next button click
     if(this.customMusicLength){
         this.navCtrl.push(SelectMusicStylePage, { 
           "items_one" : this.isGroup?  this.translate.instant('MusicLength.MusicStyleGroup.Items_one'): this.translate.instant('MusicLength.MusicStyle.Items_one')
@@ -50,8 +58,13 @@ export class MusicLengthPage {
     
   }
 
-  //assign value of selected radio button
+     /**
+ *Represents a function to store value of selected radio button.
+ *@constructor
+ *@param {string} myEvent - The index of selected row.
+ */
   presentPopover(myEvent){
+    //assign value of selected radio button
     this.selectedMusicLength = myEvent;
     console.log("selected music length = "+this.selectedMusicLength);
   }

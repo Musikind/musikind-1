@@ -25,10 +25,19 @@ export class SettingAimPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad SettingAimPage');
   }
+
+    /**
+ *Represents a Navigation functionality.
+ *@constructor
+ */
   goToMusicSection() {
     this.navCtrl.push(MusicSectionPage);
   }
 
+    /**
+ *Represents a functionality of back button.
+ *@constructor
+ */
   closeModal() {
     this.navCtrl.pop();
   }

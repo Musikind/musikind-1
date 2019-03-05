@@ -11,6 +11,10 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
 })
 export class TabsPage {
 
+  /**
+ * Represents on tab click which page to navigate on
+ */
+
   tab1Root = HomePage;
   tab2Root = LibraryPage;
   tab3Root = TipsPage;

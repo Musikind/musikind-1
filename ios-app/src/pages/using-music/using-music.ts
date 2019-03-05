@@ -30,24 +30,43 @@ export class UsingMusicPage {
     console.log('ionViewDidLoad UsingMusicPage');
   }
   
-  //Move to previous page on click of Back Button
+ /**
+ *Represents a functionality of back button.
+ *@constructor
+ *@param {string} val - The index of selected value.
+ */
   closeModal() {
+     //Move to previous page on click of Back Button
     this.navCtrl.pop();
   }
 
-  //Move to Music Benefit Pafge on click og Next Button
+    /**
+ *Represents a Navigation functionality.
+ *@constructor
+ */
   goToMusicBenefit() {
+     //Move to Music Benefit Pafge on click og Next Button
     this.navCtrl.push(MusicBenefitPage);
   }
 
-  //Set Radio Button value in Radio Button parent variable
-  setModuleOption(myEvent){
+    /**
+ *Represents a function to set selected radio button value.
+ *@constructor
+ *@param {string} myEvent - The index of selected value.
+ */
+  setModuleOption(myEvent){ 
+    //Set Radio Button value in Radio Button parent variable
     console.log("selected radio button value = "+myEvent);
     this.startUsingMusicOption = myEvent;
   }
 
-  //Open popover on click of help/query icon
+    /**
+ *Represents a function to open popover.
+ *@constructor
+ *@param {string} myEvent - The index of selected value.
+ */
   presentPopover(myEvent) {
+     //Open popover on click of help/query icon
     let popover = this.popOverCtrl.create(PopOverComponent);
     popover.present({
       ev: myEvent

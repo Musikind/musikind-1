@@ -26,11 +26,19 @@ export class MusicProfilePage {
     console.log('ionViewDidLoad MusicProfilePage');
   }
   
+  /**
+ *Represents a function of back button.
+ *@constructor
+ */
   closeModal() {
     //move to previous page on back button click
     this.navCtrl.pop();
   }
 
+  /**
+ *Represents a navigation functionality.
+ *@constructor
+ */
   goToTipsPage() {
     //go to tips page on click of here hyperlink
     this.navCtrl.push(TipsPage)

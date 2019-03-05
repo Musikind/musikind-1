@@ -35,11 +35,19 @@ export class SelectMusicStylePage {
     console.log('ionViewDidLoad SelectMusicStylePage');
   }
 
+  /**
+ *Represents a back button functionality.
+ *@constructor
+ */
   closeModal() {
     //go to previous page
     this.navCtrl.pop();
   }
   
+  /**
+ *Represents a Navigation function on Next button click.
+ *@constructor
+ */
   goToPlayer(){
     //go to next page
     this.navCtrl.push(MusicSectionNewPage, {
@@ -49,9 +57,9 @@ export class SelectMusicStylePage {
   }
 
   /**
- // Represents a change in radio button.
- //@constructor
- //@param {string} val - The index of selected value.
+ *Represents a change in radio button.
+ *@constructor
+ *@param {string} val - The index of selected value.
  */
   changeChoice(val){
     //set selected radio button values

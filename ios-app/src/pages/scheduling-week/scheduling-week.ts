@@ -25,9 +25,18 @@ export class SchedulingWeekPage {
     console.log('ionViewDidLoad SchedulingWeekPage');
   }
 
+    /**
+ *Represents a functionality of back button.
+ *@constructor
+ */
   closeModal() {
     this.navCtrl.pop();
   }
+
+    /**
+ *Represents a Navigation functionality.
+ *@constructor
+ */
   goToCongratulation(){
     this.navCtrl.push(CongratulationsPage);
   }

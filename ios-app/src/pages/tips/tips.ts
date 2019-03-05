@@ -27,9 +27,19 @@ export class TipsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad TipsPage');
   }
+
+    /**
+ *Represents a Navigation functionality.
+ *@constructor
+ */
   goToUsingMusicInPersonalCare(){
     this.navCtrl.push(UsingMusicPage)
   }
+
+    /**
+ *Represents a Navigation functionality.
+ *@constructor
+ */
   goToUsingMusicActivity(){
     this.navCtrl.push(MusicActivityPage);
   }

@@ -4,6 +4,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { MusicSectionJsonProvider } from '../../providers/music-section-json/music-section-json';
 import { Storage } from '@ionic/storage';
+import { StreamingMedia, StreamingVideoOptions } from '@ionic-native/streaming-media';
 
 
 @IonicPage()
@@ -57,7 +58,7 @@ export class MusicSectionNewPage {
 
     constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, 
         public translateModule: TranslateModule, public trackJsonProvider:MusicSectionJsonProvider,
-        public storage: Storage) {
+        public storage: Storage,public streamingMedia: StreamingMedia) {
         this.translate.setDefaultLang('en');
         // call MUsic Track list Json function and store returned json in a variable 'tracks'
             this.tracks =  this.trackJsonProvider.createAudioJSON();
@@ -87,8 +88,12 @@ export class MusicSectionNewPage {
         
     }
    
+    /**
+ *Represents a function to play a Track.
+ *@constructor
+ *@param {string} track - The row value of selected track.
+ */
     playTrack(track: any) {
-       
         console.log('play track');
         // First stop any currently playing tracks
         if (this.currentTrack) {
@@ -117,11 +122,20 @@ export class MusicSectionNewPage {
         }, track.durationSeconds * 1000);
     }
 
+    /**
+    *Represents a function to calculate progress value of currently playing track.
+    *@constructor
+    */
     getProgressValue(){
         //calculate progress value of audio playing
         return Math.round(1 / (this.currentTrack.durationSeconds / 100) * this.currentTrack.laps);
     }
 
+    /**
+ *Represents a function to pause track.
+ *@constructor
+ *@param {string} track - The index of selected row.
+ */
     pauseTrack(track) {
         //pause current playing track
         track.playing = false;
@@ -129,6 +143,10 @@ export class MusicSectionNewPage {
 
     }
 
+    /**
+ *Represents a function to play next track.
+ *@constructor
+ */
     nextTrack() {
         //play next track
         let index = this.tracks.indexOf(this.currentTrack);
@@ -136,6 +154,10 @@ export class MusicSectionNewPage {
         this.playTrack(this.tracks[index]);
     }
 
+    /**
+ *Represents a function to play previous track.
+ *@constructor
+ */
     prevTrack() {
         //play prev track
         let index = this.tracks.indexOf(this.currentTrack);
@@ -144,9 +166,49 @@ export class MusicSectionNewPage {
 
     }
 
+    /**
+ *Represents a functionality of back button.
+ *@constructor
+ */
     closeModal() {
         // move to previous page
         this.navCtrl.pop();
+      }
+
+       /**
+ *Represents a functiona to open audio player on full screen (Music streaming).
+ *@constructor
+ */
+      openAudioInFullScreen(){
+        var audioUrl = '../assets/audio/ding.mp3';
+
+        // Play an audio file (not recommended, since the screen will be plain black)
+        this.streamingMedia.playAudio(audioUrl);
+      
+        // Play an audio file with options (all options optional)
+        var options = {
+          bgColor: "#FFFFFF",
+          bgImage: "<SWEET_BACKGROUND_IMAGE>",
+          bgImageScale: "fit", // other valid values: "stretch", "aspectStretch"
+          initFullscreen: false, // true is default. iOS only.
+          keepAwake: false, // prevents device from sleeping. true is default. Android only.
+          successCallback: function() {
+            console.log("Player closed without error.");
+          },
+          errorCallback: function(errMsg) {
+            console.log("Error! " + errMsg);
+          }
+        };
+        this.streamingMedia.playAudio(audioUrl, options);
+      
+        // Stop current audio
+        this.streamingMedia.stopAudio();
+      
+        // Pause current audio (iOS only)
+        this.streamingMedia.pauseAudio();
+      
+        // Resume current audio (iOS only)
+        this.streamingMedia.resumeAudio();  
       }
 
 }

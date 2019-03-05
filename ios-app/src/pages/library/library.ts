@@ -56,6 +56,11 @@ export class LibraryPage {
         this.item_two = this.items_two[0];      
     }
    
+     /**
+ *Represents a function to play a Track.
+ *@constructor
+ *@param {string} track - Currently selected track details.
+ */
     playTrack(track: any) {
         console.log('play track');
         // First stop any currently playing tracks
@@ -92,17 +97,32 @@ export class LibraryPage {
             }
         }, track.durationSeconds * 1000);
     }
+
+      /**
+ *Represents a function to get Laps time of a playing track.
+ *@constructor
+ */
     getLapsString() {
         //get already played audio time
         let val1 = this.currentTrack.laps;
         let min = Math.floor(val1 / 60), sec = val1 % 60;
         return (min < 10 ? "0" + min.toString() : min.toString()) + " : " + (sec < 10 ? "0" + sec.toString() : sec.toString())
     }
+
+      /**
+ *Represents a function to calculate progress value of currently playing track.
+ *@constructor
+ */
     getProgressValue(){
         //calculate progress value of audio playing
         return Math.round(1 / (this.currentTrack.durationSeconds / 100) * this.currentTrack.laps);
     }
 
+      /**
+ *Represents a function to pause a Track.
+ *@constructor
+ *@param {string} track - Currently selected track details.
+ */
     pauseTrack(track) {
         //pause audio
         track.playing = false;
@@ -110,6 +130,10 @@ export class LibraryPage {
 
     }
 
+  /**
+ *Represents a function to play a next Track.
+ *@constructor
+ */
     nextTrack() {
         //move to next track of play list
         let index = this.tracks.indexOf(this.currentTrack);
@@ -117,6 +141,10 @@ export class LibraryPage {
         this.playTrack(this.tracks[index]);
     }
 
+      /**
+ *Represents a function to play a previous Track.
+ *@constructor
+ */
     prevTrack() {
         //move to previous track of playlist
         let index = this.tracks.indexOf(this.currentTrack);

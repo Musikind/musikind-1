@@ -34,36 +34,51 @@ export class MusicBenefitPage {
     console.log('ionViewWillEnter' + this.selected);
   }
 
-  //Move to previous page on click of back button
+   /**
+ *Represents a functionality of back button.
+ *@constructor
+ */
   closeModal() {
+     //Move to previous page on click of back button
     this.navCtrl.pop();
   }
 
-  //Move to Music Style page on click of Next button with two paramenters
+ /**
+ *Represents a Navigation functionality.
+ *@constructor
+ */
   goToMusicStyle() {
+     //Move to Music Style page on click of Next button with two paramenters
     this.navCtrl.push(MusicStylePage, {
         "items_one" : this.translate.instant('MusicBenefit.MusicStyle.Items_one'), 
         "MusicStyle" : this.getSelectedMusicStyle()
     });
   }
 
-  //Open popover on click of help/query icon
+  
   presentPopover(myEvent) {
+    //Open popover on click of help/query icon
     let popover = this.popoverCtrl.create(PopOverComponent);
     popover.present({
       ev: myEvent
     });
   }
 
-  //to set new value in radio button variable
+ 
   changeStatus(newValue){
+    //to set new value in radio button variable
     this.musicStyle = newValue; 
     this.storage.set('benefilValue',this.musicStyle);
   }
 
-  //to fetch selected radio button row details for sending to next page
-  //in parameter
+   /**
+ *Represents a function to fetch selected row details.
+ *@constructor
+ *@param {string} newValue - The index of selected row.
+ */
   getSelectedMusicStyle(){
+     //to fetch selected radio button row details for sending to next page
+  //in parameter
      let selected = {}; 
      for(let i=0; i<this.items_one.length; i++){
       let item = this.items_one[i]; 

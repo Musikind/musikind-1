@@ -26,10 +26,19 @@ export class MusicSectionPage {
     console.log('ionViewDidLoad MusicSectionPage');
   }
 
+  /**
+ *Represents a Navigation functionality.
+ *@constructor
+ */
   goToSchedulingWeek() {
     //go to scheduling week page
     this.navCtrl.push(SchedulingWeekPage);
   }
+
+  /**
+ *Represents a functionality of back button.
+ *@constructor
+ */
   closeModal() {
     //go to previous page on click of back button
     this.navCtrl.pop();

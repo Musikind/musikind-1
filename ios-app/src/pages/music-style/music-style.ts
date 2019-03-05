@@ -44,21 +44,34 @@ export class MusicStylePage {
     console.log('ionViewDidLoad MusicStylePage');
   }
 
-  //open previous page on click of back button
+  /**
+ *Represents a functionality of back button.
+ *@constructor
+ */
   closeModal() {
+    //open previous page on click of back button
     this.navCtrl.pop();
   }
 
-  //move to Music Section Page on click of Next Button with parameters
+ /**
+ *Represents a Navigation functionality.
+ *@constructor
+ */
   goToMusicSectionNewPage(){
+     //move to Music Section Page on click of Next Button with parameters
          this.navCtrl.push(MusicSectionNewPage, {
           style : this.musicStyle, 
           audio : 'Calm'
          });
   }
 
-  //set selection value of radio button to one variable
+     /**
+ *Represents a function to store selected radio button value.
+ *@constructor
+ *@param {string} val - The index of selected row.
+ */
   changeStatus(val){
+      //set selection value of radio button to one variable
     this.commonMusicStyle = val;
   }
 

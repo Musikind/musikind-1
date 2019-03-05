@@ -32,12 +32,19 @@ export class MusicActivityPage {
     console.log('ionViewDidLoad MusicActivityPage');
   }
 
-  //go to previous page on back click
+    /**
+ *Represents a functionality of back button.
+ *@constructor
+ */
   closeModal() {
+      //go to previous page on back click
     this.navCtrl.pop();
   }
 
-
+ /**
+ *Represents a Navigation functionaity.
+ *@constructor
+ */
   goToMusicLength() {
     //go to next page
     let showCustomMusicStyle= false; 
@@ -50,6 +57,10 @@ export class MusicActivityPage {
     });
   }
 
+   /**
+ *Represents a function to assign value in variable of selected radio button.
+ *@constructor
+ */
   changeChoice(val){
     //assign selected radio button value
     this.selectedChoice = val;

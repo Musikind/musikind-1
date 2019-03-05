@@ -25,11 +25,20 @@ export class GettingStartedPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad GettingStartedPage');
   }
+
+   /**
+ *Represents a Navigation function.
+ *@constructor
+ */
   goToSettingAim() {
     //go to setting page on click of button
     this.navCtrl.push(SettingAimPage);
   }
 
+   /**
+ *Represents a Back button functionality.
+ *@constructor
+ */
   closeModal() {
     //go to previous page on click of back button
     this.navCtrl.pop();
