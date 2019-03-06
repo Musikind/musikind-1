@@ -4,7 +4,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { MusicSectionJsonProvider } from '../../providers/music-section-json/music-section-json';
 import { Storage } from '@ionic/storage';
-import { StreamingMedia, StreamingVideoOptions } from '@ionic-native/streaming-media';
+import { StreamingMedia, StreamingVideoOptions , StreamingAudioOptions} from '@ionic-native/streaming-media';
 
 
 @IonicPage()
@@ -120,6 +120,9 @@ export class MusicSectionNewPage {
                 track.progress++;
             }
         }, track.durationSeconds * 1000);
+
+        //Media Audio Streaming
+        this.openAudioInFullScreen();
     }
 
     /**
@@ -141,6 +144,8 @@ export class MusicSectionNewPage {
         track.playing = false;
         clearInterval(this.progressInterval);
 
+        // Stop current audio
+        this.streamingMedia.stopAudio();
     }
 
     /**
@@ -180,18 +185,15 @@ export class MusicSectionNewPage {
  *@constructor
  */
       openAudioInFullScreen(){
-        var audioUrl = '../assets/audio/ding.mp3';
-
-        // Play an audio file (not recommended, since the screen will be plain black)
-        this.streamingMedia.playAudio(audioUrl);
+        var audioUrl = 'http://soundbible.com/grab.php?id-2196&type=mp3';
       
         // Play an audio file with options (all options optional)
-        var options = {
-          bgColor: "#FFFFFF",
-          bgImage: "assets/imgs/big_logo.png",
-          bgImageScale: "fit", // other valid values: "stretch", "aspectStretch"
+        var options :StreamingAudioOptions= {
+        //   bgColor: "#FFFFFF",
+        //   bgImage: "assets/imgs/big_logo.png",
+        //   bgImageScale: "fit", // other valid values: "stretch", "aspectStretch"
           initFullscreen: false, // true is default. iOS only.
-          keepAwake: false, // prevents device from sleeping. true is default. Android only.
+        //   keepAwake: false, // prevents device from sleeping. true is default. Android only.
           successCallback: function() {
             console.log("Player closed without error.");
           },
@@ -200,16 +202,17 @@ export class MusicSectionNewPage {
           }
         };
     
-        this.streamingMedia.playAudio(audioUrl, options);
+         // Play an audio file
+        this.streamingMedia.playAudio('http://soundbible.com/grab.php?id-2196&type=mp3', options);
       
         // Stop current audio
-        this.streamingMedia.stopAudio();
+        // this.streamingMedia.stopAudio();
       
         // Pause current audio (iOS only)
-        this.streamingMedia.pauseAudio();
+        // this.streamingMedia.pauseAudio();
       
         // Resume current audio (iOS only)
-        this.streamingMedia.resumeAudio();  
+        // this.streamingMedia.resumeAudio();  
       }
 
 }
