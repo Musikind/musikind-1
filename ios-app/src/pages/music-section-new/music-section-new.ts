@@ -188,7 +188,7 @@ export class MusicSectionNewPage {
         // Play an audio file with options (all options optional)
         var options = {
           bgColor: "#FFFFFF",
-          bgImage: "<SWEET_BACKGROUND_IMAGE>",
+          bgImage: "assets/imgs/big_logo.png",
           bgImageScale: "fit", // other valid values: "stretch", "aspectStretch"
           initFullscreen: false, // true is default. iOS only.
           keepAwake: false, // prevents device from sleeping. true is default. Android only.
@@ -199,6 +199,7 @@ export class MusicSectionNewPage {
             console.log("Error! " + errMsg);
           }
         };
+    
         this.streamingMedia.playAudio(audioUrl, options);
       
         // Stop current audio

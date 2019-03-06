@@ -11,7 +11,7 @@
 // Shared Sass variables, which can be used to adjust Ionic's
 // default Sass variables, belong in "theme/variables.scss".
 //
-// To declare rules for a specific mode, create a child rule
+// To declare rules for a specific mode, create a child ruleƒ√
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
@@ -78,7 +78,8 @@ audio_list_icon:#363b54,
         background-color: transparent !important;
         border: 1px solid transparent !important;
     }
-    .radio-md .radio-checked:before {
+
+    .form-radio .radio-checked:before {
         border: 0px;
         content: "\f2bc";
         font-family: "Ionicons";
@@ -88,7 +89,7 @@ audio_list_icon:#363b54,
         top: 4px;
         z-index: 999;
         }
-    .radio-md .radio-icon:after{
+    .form-radio .radio-icon:after{
         content: '';
         position: absolute;
         left: 0;
@@ -99,20 +100,23 @@ audio_list_icon:#363b54,
         border-radius: 50%;
         background-color: #f0f1f7;
     }  
-    .radio-md .radio-checked:after{
-        background-color: #ffa455;
+    .form-radio .radio-checked:after{
+        background-color: #ffa455 !important;
     }
-    .radio-md .radio-checked{
+    .form-radio .radio-checked{
         border-color: transparent;
     }
-    .radio-md .radio-icon{
+    .form-radio .radio-icon{
         border-width: 0;
         border-style: none;
         border-color: transparent;
     }
-    .radio-md .radio-inner{
+    .form-radio .radio-inner{
         background-color: transparent
     }
+    #myModel .form-radio:hover {
+        background-color: transparent !important;
+        }
     *{margin: 0; padding: 0; outline: none;}
     body{font-family: "Open Sans", sans-serif;  color: #373C52;}
     @font-face {
@@ -494,12 +498,12 @@ audio_list_icon:#363b54,
     }
     .form-radio:hover
     {
-         background-color: #ffa455;
+         background-color: #ffa455 !important;
         
     }
     .form-radio:checked
     {
-         background-color: #ffa455;
+         background-color: #ffa455 !important;
          float: right;
     }
     label
@@ -513,10 +517,11 @@ audio_list_icon:#363b54,
 
 #myMusicActivity{
     .form-radio{
-        background-color: transparent !important;
+        // background-color: transparent !important;
         border: 1px solid transparent !important;
     }
-    .radio-md .radio-checked:before {
+    // .radio-md .radio-checked:before {
+        .form-radio .radio-checked:before {
         border: 0px;
         content: "\f2bc";
         font-family: "Ionicons";
@@ -526,7 +531,8 @@ audio_list_icon:#363b54,
         top: 4px;
         z-index: 999;
         }
-    .radio-md .radio-icon:after{
+    // .radio-md .radio-icon:after{
+        .form-radio .radio-icon:after{
         content: '';
         position: absolute;
         left: 0;
@@ -537,11 +543,14 @@ audio_list_icon:#363b54,
         border-radius: 50%;
         background-color: #f0f1f7;
     }  
-    .radio-md .radio-checked:after{
-        background-color: #ffa455;
-    }
-    .radio-md .radio-checked{
-        border-color: transparent;
+    // .radio-md .radio-checked:after{
+    //     background-color: #ffa455 !important;
+    // }
+    // .radio-md .radio-checked{
+    //     border-color: transparent;
+    // }
+    .form-radio .radio-checked:after{
+        background-color: #ffa455 !important;
     }
     .radio-md .radio-icon{
         border-width: 0;
