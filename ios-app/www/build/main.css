@@ -43436,7 +43436,7 @@ ion-navbar.toolbar {
   overflow-y: scroll !important;
 }
 
-.toolbar-title-md {
+.toolbar-title-md, .toolbar-title-ios {
   text-align: center !important;
   color: #ffffff !important;
 }
@@ -45453,7 +45453,7 @@ page-home .home_heading {
 page-home .home_heading h1 {
   color: #fff;
   font-size: 34px;
-  width: 40%;
+  width: 100%;
   margin: auto;
   font-weight: bold;
   padding-bottom: 60px;
@@ -45599,7 +45599,7 @@ page-home .menu_icon ul li h5 {
 
 @media (max-width: 812px) {
   page-home .home_heading h1 {
-    width: 53%;
+    width: 100%;
     padding-bottom: 34px !important;
   }
   page-home .home_heading {
@@ -45653,7 +45653,7 @@ page-home .menu_icon ul li h5 {
     padding: 5% 0px;
   }
   page-home .home_heading h1 {
-    width: 65%;
+    width: 100%;
     padding-bottom: 34px !important;
   }
   page-home .section_one {
@@ -45678,14 +45678,14 @@ page-home .menu_icon ul li h5 {
     padding: 4% 0px;
   }
   page-home .home_heading h1 {
-    width: 75%;
+    width: 100%;
     padding-bottom: 24px !important;
   }
   page-home .section_one {
     padding: 4% 0px;
   }
   page-home .home_icons {
-    width: 47%;
+    width: 100%;
     margin-top: 6px;
   }
   page-home .section_one h2 {
@@ -48449,10 +48449,7 @@ page-MusicSectionNewPage .splash_screen img {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-right: -50%;
   margin: 0;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
 page-MusicSectionNewPage .home_heading,
