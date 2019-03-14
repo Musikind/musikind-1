@@ -72,27 +72,19 @@ export class MusicSectionNewPage {
     this.currentTrack = this.tracks[0];
     this.item_two = this.items_two[0];
 
-    let activeCls =
-      this.navParams.data && typeof this.navParams.data.audio === "object"
-        ? this.navParams.data.audio.name.toLocaleLowerCase()
-        : "";
-    this.musicSectionCls =
-      activeCls === "" ? "step_one_heading" : "step_one_heading " + activeCls; //(this.navParams.data && typeof this.navParams.data.audio) ? this.navParams.data.audio.name.toLocaleLowerCase(): ""
-    this.footerRowCls = activeCls === "" ? "row" : "row " + activeCls;
-
     //get benefit value from storage
     this.storage.get("benefilValue").then(res => {
       this.benefitValue = res;
       console.log("selected benefit value = " + this.benefitValue);
       //assign color of background according to benefit value
       if (this.benefitValue == 0) {
-        this.colorCode = "#b5ec73";
-      }
-      if (this.benefitValue == 1) {
-        this.colorCode = "#ffb732";
-      }
-      if (this.benefitValue == 2) {
-        this.colorCode = "#CF89CE";
+        this.colorCode = "linear-gradient(rgba(134, 147, 255 , .75), rgba(134, 147, 255 , .75)), url(../assets/imgs/blue_bg.jpg)";
+      }else if (this.benefitValue == 1) {
+        this.colorCode = "linear-gradient(rgba(255, 143, 152 , .75), rgba(255, 143, 152 , .75)), url(../assets/imgs/blue_bg.jpg)";
+      }else if (this.benefitValue == 2) {
+        this.colorCode = "linear-gradient(rgba(119, 224, 192 , .75), rgba(119, 224, 192 , .75)), url(../assets/imgs/blue_bg.jpg)";
+      }else {
+        this.colorCode = "linear-gradient(rgba(134, 147, 255 , .05), rgba(134, 147, 255 , .05)), url(../assets/imgs/blue_bg.jpg)";
       }
     });
   }
