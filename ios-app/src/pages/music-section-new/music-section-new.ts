@@ -1,6 +1,5 @@
 import { Component, Injectable } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { MusicSectionJsonProvider } from '../../providers/music-section-json/music-section-json';
 import { Storage } from '@ionic/storage';
@@ -54,7 +53,7 @@ export class MusicSectionNewPage {
     musicSectionCls:any = "step_one_heading"; 
     benefitValue:any;
     colorCode:any;
-
+    knobValues:any;
 
     constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, 
         public translateModule: TranslateModule, public trackJsonProvider:MusicSectionJsonProvider,
@@ -86,6 +85,12 @@ export class MusicSectionNewPage {
                 }
             });
         
+    }
+
+    ionViewDidEnter(){
+        this.tracks =  this.trackJsonProvider.createAudioJSON();
+        console.log("Tracks = "+JSON.stringify(this.tracks));
+        this.currentTrack = this.tracks[0];
     }
    
     /**
