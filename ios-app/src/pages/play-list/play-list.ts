@@ -1,6 +1,7 @@
 import { Component, Injectable } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { NativePageTransitions, NativeTransitionOptions } from '@ionic-native/native-page-transitions/ngx';
 /**
  * Generated class for the PlayListPage page.
  *
@@ -20,7 +21,7 @@ export class PlayListPage {
   activeProgress: any;
   progressInterval: any;
   footer:string; 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, public translateModule: TranslateModule, private nativePageTransitions: NativePageTransitions) {
     this.translate.setDefaultLang('en');
     this.footer = this.translate.instant('PlaylistPage.footer');
     this.tracks = this.generateTracks();
@@ -48,6 +49,27 @@ export class PlayListPage {
         tracks.push(track);
     }
     return tracks;
+}
+
+ionViewWillLeave(){
+  let options: NativeTransitionOptions = {
+    direction: 'up',
+    duration: 500,
+    slowdownfactor: 3,
+    slidePixels: 20,
+    iosdelay: 100,
+    androiddelay: 150,
+    fixedPixelsTop: 0,
+    fixedPixelsBottom: 60
+   };
+
+   this.nativePageTransitions.slide(options)
+   .then(this.success)
+   .catch(this.success);
+}
+
+success(){
+
 }
 
 getRandomMinutes() {

@@ -1,7 +1,6 @@
 import { Component, Injectable } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
-import {LibraryPage} from '../library/library';
 import {MusicSectionNewPage} from '../music-section-new/music-section-new'
 
 /**

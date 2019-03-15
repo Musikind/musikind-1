@@ -18,7 +18,6 @@ import { MusicActivityPage } from '../pages/music-activity/music-activity';
 import { MusicLengthPage } from '../pages/music-length/music-length';
 import { SelectMusicStylePage } from '../pages/select-music-style/select-music-style';
 import { MusicProfilePage } from '../pages/music-profile/music-profile';
-import { CongratulationsPage } from '../pages/congratulations/congratulations';
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { HttpClient, HttpClientModule } from "@angular/common/http"; 
@@ -35,7 +34,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PopOverComponent } from '../components/pop-over/pop-over';
 import { MusicSectionJsonProvider } from '../providers/music-section-json/music-section-json';
 import { IonicStorageModule } from '@ionic/storage';
-import { StreamingMedia, StreamingVideoOptions } from '@ionic-native/streaming-media';
+import { StreamingMedia} from '@ionic-native/streaming-media';
 
 
 // AoT requires an exported function for factories

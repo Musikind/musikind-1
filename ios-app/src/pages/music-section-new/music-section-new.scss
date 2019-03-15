@@ -48,11 +48,10 @@ body, html {
 .app.splash { width: 100%; float: left; height: 100%;}
 .container.splash{ width: 100%; margin: 0px auto; height: 100%;}
 .splash_screen{background-image: url("../assets/imgs/blue_bg.jpg"); background-repeat: repeat; height: 100%;}
-.splash_screen img {position: absolute;top: 50%;left: 50%;margin-right: -50%;margin: 0;transform: translate(-50%, -50%); }
+.splash_screen img {position: absolute;top: 50%;left: 50%;margin: 0; }
 .home_heading, 
 .step_one_heading{
-    // background-image: url("../assets/imgs/blue_bg.jpg"); 
-    background-repeat: repeat; text-align: center; padding: 11% 0; background-size: auto; 
+    text-align: center; padding: 11% 0; background-size: auto; 
     height: 100%;
 }
 .home_heading h1{ color: #fff; font-size: 30px;  width: 40%; margin: auto; font-weight: normal; padding-bottom: 60px;}
@@ -793,17 +792,30 @@ span.bottomTagLine {
 }
 
 .calm{
-    background-color: #b5ec73;
-    background-image: none;
+    background:linear-gradient(
+        rgba(134, 147, 255, 0.60), 
+        rgba(134, 147, 255, 0.60)
+      ), url("../assets/imgs/white_bg.jpg"); background-repeat: repeat;
 }
 .stimulation{
-    background-color: #ffb732;
-    background-image: none;
+    background:linear-gradient(
+        rgba(119, 224, 192, 0.60), 
+        rgba(119, 224, 192, 0.60)
+      ), url("../assets/imgs/white_bg.jpg"); background-repeat: repeat;
 }
 .concentration{
-    background-color: #73b5ec;
-    background-image: none;
+    background:linear-gradient(
+        rgba(255, 143, 152, 0.60), 
+        rgba(255, 143, 152, 0.60)
+      ), url("../assets/imgs/blue_bg.jpg"); background-repeat: repeat;
 }
+.default{
+    background:linear-gradient(
+        rgba(115, 181, 236, 0.35), 
+        rgba(115, 181, 236, 0.35)
+      ), url("../assets/imgs/blue_bg.jpg"); background-repeat: repeat;
+}
+
 
 @media only screen 
     and (device-width : 375px) 

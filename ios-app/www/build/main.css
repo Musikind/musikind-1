@@ -43436,7 +43436,7 @@ ion-navbar.toolbar {
   overflow-y: scroll !important;
 }
 
-.toolbar-title-md {
+.toolbar-title-md, .toolbar-title-ios {
   text-align: center !important;
   color: #ffffff !important;
 }
@@ -45453,7 +45453,7 @@ page-home .home_heading {
 page-home .home_heading h1 {
   color: #fff;
   font-size: 34px;
-  width: 40%;
+  width: 100%;
   margin: auto;
   font-weight: bold;
   padding-bottom: 60px;
@@ -45599,7 +45599,7 @@ page-home .menu_icon ul li h5 {
 
 @media (max-width: 812px) {
   page-home .home_heading h1 {
-    width: 53%;
+    width: 100%;
     padding-bottom: 34px !important;
   }
   page-home .home_heading {
@@ -45653,7 +45653,7 @@ page-home .menu_icon ul li h5 {
     padding: 5% 0px;
   }
   page-home .home_heading h1 {
-    width: 65%;
+    width: 100%;
     padding-bottom: 34px !important;
   }
   page-home .section_one {
@@ -45678,14 +45678,14 @@ page-home .menu_icon ul li h5 {
     padding: 4% 0px;
   }
   page-home .home_heading h1 {
-    width: 75%;
+    width: 100%;
     padding-bottom: 24px !important;
   }
   page-home .section_one {
     padding: 4% 0px;
   }
   page-home .home_icons {
-    width: 47%;
+    width: 100%;
     margin-top: 6px;
   }
   page-home .section_one h2 {
@@ -48449,15 +48449,11 @@ page-MusicSectionNewPage .splash_screen img {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-right: -50%;
   margin: 0;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
 page-MusicSectionNewPage .home_heading,
 page-MusicSectionNewPage .step_one_heading {
-  background-repeat: repeat;
   text-align: center;
   padding: 11% 0;
   background-size: auto;
@@ -49205,18 +49201,27 @@ page-MusicSectionNewPage span.bottomTagLine {
 }
 
 page-MusicSectionNewPage .calm {
-  background-color: #b5ec73;
-  background-image: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(134, 147, 255, 0.6)), to(rgba(134, 147, 255, 0.6))), url("../assets/imgs/white_bg.jpg");
+  background: linear-gradient(rgba(134, 147, 255, 0.6), rgba(134, 147, 255, 0.6)), url("../assets/imgs/white_bg.jpg");
+  background-repeat: repeat;
 }
 
 page-MusicSectionNewPage .stimulation {
-  background-color: #ffb732;
-  background-image: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(119, 224, 192, 0.6)), to(rgba(119, 224, 192, 0.6))), url("../assets/imgs/white_bg.jpg");
+  background: linear-gradient(rgba(119, 224, 192, 0.6), rgba(119, 224, 192, 0.6)), url("../assets/imgs/white_bg.jpg");
+  background-repeat: repeat;
 }
 
 page-MusicSectionNewPage .concentration {
-  background-color: #73b5ec;
-  background-image: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 143, 152, 0.6)), to(rgba(255, 143, 152, 0.6))), url("../assets/imgs/blue_bg.jpg");
+  background: linear-gradient(rgba(255, 143, 152, 0.6), rgba(255, 143, 152, 0.6)), url("../assets/imgs/blue_bg.jpg");
+  background-repeat: repeat;
+}
+
+page-MusicSectionNewPage .default {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(115, 181, 236, 0.35)), to(rgba(115, 181, 236, 0.35))), url("../assets/imgs/blue_bg.jpg");
+  background: linear-gradient(rgba(115, 181, 236, 0.35), rgba(115, 181, 236, 0.35)), url("../assets/imgs/blue_bg.jpg");
+  background-repeat: repeat;
 }
 
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
