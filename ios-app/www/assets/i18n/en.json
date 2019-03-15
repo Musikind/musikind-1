@@ -137,10 +137,10 @@
         }
     }, 
     "PlaylistPage": {
-        "title": "Music Section",
+        "title": "Music section",
         "footer" : 
         {
-            "str1":"view tips on",
+            "str1":"View tips on",
             "str2":"group activites",
             "str3":"for",
             "str4":"relaxation?"

@@ -339,8 +339,8 @@ ul.left_btns {
 .audio_top ul li {
     list-style: none;
     display: inline;
-    width: 33%;
-    float: left;
+    // width: 33%;
+    // float: left;
     text-align: center;
     -webkit-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.1);
@@ -351,8 +351,8 @@ ul.left_btns {
 .audio_top ul li:last-child {
  
     display: inline;
-    width: 34%;
-    float: left;
+    // width: 34%;
+    // float: left;
     border-bottom: 1px solid #bfbfbf;
 }
 .audio_top ul li.active{
@@ -686,8 +686,14 @@ ion-footer {
     //     margin-top: 6px;
     // }
     span.bottomTagline {
-        margin-top: 30px;
-        bottom: 40%;
+        // margin-top: 30px;
+        // bottom: 40%;
+        color: #fff;
+        font-size: 18px !important ;
+        color: #fff;
+        padding-top: 77px;
+        width: 100%;
+        float: left;
     }
      .listing{
             height:382px;
@@ -755,14 +761,20 @@ ion-footer {
 //     flex: inherit;
 // }
 span.bottomTagline {
-    margin-top: 30px;
-    bottom: 4%;
+    // margin-top: 30px;
+    // bottom: 4%;
+    color: #fff;
+        font-size: 18px !important ;
+        color: #fff;
+        padding-top: 77px;
+        width: 100%;
+        float: left;
 }
 }
 
-.bottomTagLineCol{
-    padding: 30px;
-}
+// .bottomTagLineCol{
+//     // padding: 30px;
+// }
 
 @media(max-width: 768px){
 .home_heading h1 {width: 100%;padding-bottom: 30px;}
@@ -789,6 +801,9 @@ span.bottomTagLine {
     left: calc(50% - 50%);
     width: 100%;
     margin-top: 30px;
+        font-size: 18px !important ;
+        padding-top: 77px;
+        float: left;
 }
 
 .calm{

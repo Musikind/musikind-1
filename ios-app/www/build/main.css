@@ -48840,8 +48840,6 @@ page-MusicSectionNewPage .audio_top ul li:first-child {
 page-MusicSectionNewPage .audio_top ul li {
   list-style: none;
   display: inline;
-  width: 33%;
-  float: left;
   text-align: center;
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);
@@ -48851,8 +48849,6 @@ page-MusicSectionNewPage .audio_top ul li {
 
 page-MusicSectionNewPage .audio_top ul li:last-child {
   display: inline;
-  width: 34%;
-  float: left;
   border-bottom: 1px solid #bfbfbf;
 }
 
@@ -49081,8 +49077,12 @@ page-MusicSectionNewPage .range-md .range-knob-handle {
     margin: 20px auto;
   }
   page-MusicSectionNewPage span.bottomTagline {
-    margin-top: 30px;
-    bottom: 40%;
+    color: #fff;
+    font-size: 18px !important;
+    color: #fff;
+    padding-top: 77px;
+    width: 100%;
+    float: left;
   }
   page-MusicSectionNewPage .listing {
     height: 382px;
@@ -49145,13 +49145,13 @@ page-MusicSectionNewPage .range-md .range-knob-handle {
     margin: 20px auto !important;
   }
   page-MusicSectionNewPage span.bottomTagline {
-    margin-top: 30px;
-    bottom: 4%;
+    color: #fff;
+    font-size: 18px !important;
+    color: #fff;
+    padding-top: 77px;
+    width: 100%;
+    float: left;
   }
-}
-
-page-MusicSectionNewPage .bottomTagLineCol {
-  padding: 30px;
 }
 
 @media (max-width: 768px) {
@@ -49198,6 +49198,9 @@ page-MusicSectionNewPage span.bottomTagLine {
   left: calc(50% - 50%);
   width: 100%;
   margin-top: 30px;
+  font-size: 18px !important;
+  padding-top: 77px;
+  float: left;
 }
 
 page-MusicSectionNewPage .calm {
