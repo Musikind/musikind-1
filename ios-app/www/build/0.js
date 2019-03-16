@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 717:
+/***/ 721:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -58,6 +58,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+// import { NativePageTransitions, NativeTransitionOptions } from '@ionic-native/native-page-transitions';
 /**
  * Generated class for the PlayListPage page.
  *
@@ -94,6 +95,23 @@ var PlayListPage = /** @class */ (function () {
             tracks.push(track);
         }
         return tracks;
+    };
+    PlayListPage.prototype.ionViewWillLeave = function () {
+        // let options: NativeTransitionOptions = {
+        //   direction: 'up',
+        //   duration: 500,
+        //   slowdownfactor: 3,
+        //   slidePixels: 20,
+        //   iosdelay: 100,
+        //   androiddelay: 150,
+        //   fixedPixelsTop: 0,
+        //   fixedPixelsBottom: 60
+        //  };
+        //  this.nativePageTransitions.slide(options)
+        //  .then(this.success)
+        //  .catch(this.success);
+    };
+    PlayListPage.prototype.success = function () {
     };
     PlayListPage.prototype.getRandomMinutes = function () {
         return Math.floor(Math.random() * 10);
@@ -164,7 +182,8 @@ var PlayListPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-play-list',template:/*ion-inline-start:"/Users/mobileapps/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/play-list/play-list.html"*/'\n\n\n<ion-content>\n  <div class="step_one_heading">\n    <ion-list class="home">\n      <ion-row>\n        \n        <ion-col text-center col-6 class="step_one">\n          <div class="back_btn"><a href="#" (click)="closeModal()"><img src="assets/imgs/back_arrow.png"> {{translate.instant("commonBack")}}</a></div>\n          <h1 text-center ion-text>{{translate.instant("PlaylistPage.title")}}</h1>\n          <ion-list style="height: 350px; overflow: scroll;">\n            <button class="md" width="100%" detail-none ion-item *ngFor="let track of tracks; let i = index;" (click)="track.playing ? pauseTrack(track) : playTrack(track)" [ngClass]="{ \'alternate\': i % 2, \'playing\': track.playing }">\n                <ion-avatar item-left>\n                <button *ngIf="!track.playing" (click)="playTrack(currentTrack)"  class="play_list" ion-button icon-only><ion-icon name="play"></ion-icon></button>\n                <button *ngIf="track.playing" (click)="pauseTrack(currentTrack)"  class="play_list" ion-button icon-only><ion-icon name="pause"></ion-icon></button>\n                </ion-avatar>\n                  <div float-left>{{track.title}}</div> <div float-right>{{track.durationString}}</div>\n            </button>\n          </ion-list>\n          <ion-col text-center>\n              <div class="next_bta"><button ><ion-icon ios="ios-play" md="md-play"></ion-icon>&nbsp;&nbsp; Music player here </button></div>\n            </ion-col>\n        </ion-col>\n        \n          <ion-col text-center col-12>\n              <span class="txt-bottom">{{translate.instant("PlaylistPage.footer.str1")}}\n                  <strong>{{translate.instant("PlaylistPage.footer.str2")}}</strong>\n                  {{translate.instant("PlaylistPage.footer.str3")}}\n                 <strong> {{translate.instant("PlaylistPage.footer.str4")}}</strong>\n              </span>\n          </ion-col>\n      </ion-row>\n    </ion-list>\n  </div>\n  </ion-content>\n'/*ion-inline-end:"/Users/mobileapps/Desktop/Musikind-26-02-2019/musikind/ios-app/src/pages/play-list/play-list.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */],
+            __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */]])
     ], PlayListPage);
     return PlayListPage;
 }());

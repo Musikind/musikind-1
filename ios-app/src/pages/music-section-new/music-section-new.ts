@@ -1,5 +1,5 @@
 import { Component, Injectable } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController} from 'ionic-angular';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { MusicSectionJsonProvider } from '../../providers/music-section-json/music-section-json';
 import { Storage } from '@ionic/storage';
@@ -59,8 +59,9 @@ export class MusicSectionNewPage {
 
     constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService, 
         public translateModule: TranslateModule, public trackJsonProvider:MusicSectionJsonProvider,
-        public storage: Storage,public streamingMedia: StreamingMedia) {
+        public storage: Storage,public streamingMedia: StreamingMedia,public loadingCtrl: LoadingController) {
         this.translate.setDefaultLang('en');
+
         // call MUsic Track list Json function and store returned json in a variable 'tracks'
             this.tracks =  this.trackJsonProvider.createAudioJSON();
             console.log("Tracks = "+JSON.stringify(this.tracks));
@@ -90,9 +91,9 @@ export class MusicSectionNewPage {
     }
 
     ionViewDidEnter(){
-        this.tracks =  this.trackJsonProvider.createAudioJSON();
-        console.log("Tracks = "+JSON.stringify(this.tracks));
-        this.currentTrack = this.tracks[0];
+        // this.tracks =  this.trackJsonProvider.createAudioJSON();
+        // console.log("Tracks = "+JSON.stringify(this.tracks));
+        // this.currentTrack = this.tracks[0];
     }
    
     /**
