@@ -48458,6 +48458,7 @@ page-MusicSectionNewPage .step_one_heading {
   padding: 11% 0;
   background-size: auto;
   height: 100%;
+  background: url("../assets/imgs/music_note_bg.png") repeat;
 }
 
 page-MusicSectionNewPage .home_heading h1 {
