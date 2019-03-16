@@ -78,13 +78,13 @@ export class MusicSectionNewPage {
                 console.log('selected benefit value = '+this.benefitValue);
                 //assign color of background according to benefit value
                 if(this.benefitValue == 0){
-                    this.colorCode = '#b5ec73';
+                    this.colorCode = '#8693FF';
                 }
                 if(this.benefitValue == 1){
-                    this.colorCode = '#ffb732';
+                    this.colorCode = '#FF8F98';
                 }
                 if(this.benefitValue == 2){
-                    this.colorCode = '#CF89CE';
+                    this.colorCode = '#77E0C0';
                 }
             });
         
