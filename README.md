@@ -9,16 +9,6 @@ Start a new project by following our quick [Getting Started guide](https://ionic
 We would love to hear from you! If you have any feedback or run into issues using our framework, please file
 an [issue](https://github.com/ionic-team/ionic/issues/new) on this repository.
 
----
-previousText: 'What is Ionic Framework'
-previousUrl: '/docs/intro'
-nextText: 'Packages & CDN'
-nextUrl: '/docs/installation/cdn'
-contributors:
-  - rtpHarry
-  - dwieeb
----
-
 # Installing Ionic
 
 Ionic apps are created and developed primarily through the Ionic [command-line](/docs/faq/glossary#cli) utility. The Ionic CLI is the preferred method of installation, as it offers a wide range of dev tools and help options along the way. It is also the main tool through which to run the app and connect it to other services, such as Ionic Appflow.
@@ -66,7 +56,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Jason Pickering** - *Initial work* - [Lovetheidea](https://github.com/lovetheidea)
+* **Love the Idea** - *Initial work* - [Lovetheidea](https://github.com/lovetheidea)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
